@@ -1,6 +1,6 @@
 ![MHRC-Bench_example](figs/repo_examples.png)
 
-The benchmark is [MHRC-Bench Dataset on Hugging Face](https://huggingface.co/datasets/Zanehpn/MHRC-Bench)
+The benchmark link is [MHRC-Bench Dataset on Hugging Face](https://huggingface.co/datasets/Zanehpn/MHRC-Bench)
 
 ## MHRC-Bench Repository Structure
 
