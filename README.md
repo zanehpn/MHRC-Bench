@@ -1,7 +1,10 @@
 ![MHRC-Bench_example](figs/repo_examples.png)
+
+The benchmark is [MHRC-Bench Dataset on Hugging Face](https://huggingface.co/datasets/Zanehpn/MHRC-Bench)
+
 ## MHRC-Bench Repository Structure
 
-MHRC-Bench is organized to support the full lifecycle of repository-level hardware code completion research, including benchmark construction, dataset curation across multiple hardware languages, model training, and evaluation.
+MHRC-Bench is organized to support the full lifecycle of repository-level hardware code completion research, including benchmark construction, dataset curation across multiple hardware languages, model training, and evaluation. 
 
 ## Directory Description
 
