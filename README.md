@@ -3,16 +3,6 @@
 
 MHRC-Bench is organized to support the full lifecycle of repository-level hardware code completion research, including benchmark construction, dataset curation across multiple hardware languages, model training, and evaluation.
 
-```text
-MHRC-Bench/
-├── benchmark_construct/
-├── chisel_dataset/
-├── hls_dataset/
-├── systemverilog_dataset/
-├── vhdl_dataset/
-├── Model_Training/
-└── Model_evaluation/
-
 ## Directory Description
 
 ### benchmark_construct/
