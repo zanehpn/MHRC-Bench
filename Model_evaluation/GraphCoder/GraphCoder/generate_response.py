@@ -1,4 +1,5 @@
 import argparse
+import os
 from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
 from tqdm import tqdm
 import openai
@@ -26,7 +27,7 @@ def main(args, input_cases, responses_save_name):
 
     # set model and tokenizer
     if args.model == 'gpt-3.5-turbo-instruct':
-        model = openai.OpenAI(api_key="")
+        model = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY", ""))
         tokenizer = CodexTokenizer()
         max_num_tokens = 4096
     elif args.model == 'starcoder':

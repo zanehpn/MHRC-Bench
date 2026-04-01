@@ -10,7 +10,7 @@ import shutil
 import subprocess
 import tempfile
 
-ROOT = "/ssd1/zqy/Multi-hdl-language-repo"
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..")
 FV = os.path.join(ROOT, "hls_dataset", "function_verify")
 HLS = os.path.join(ROOT, "hls")
 TRAIN = os.path.join(ROOT, "hls_dataset", "train_content.jsonl")

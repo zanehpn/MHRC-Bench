@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import subprocess, os, sys
 
-BASE = "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify"
+BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "systemverilog_dataset", "function_verify")
 modules = ["axi_riscv_amos", "axi_riscv_lrsc"]
 
 for mod in modules:

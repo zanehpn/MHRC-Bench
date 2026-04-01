@@ -7,7 +7,7 @@ import textwrap
 from pathlib import Path
 
 
-ROOT = Path("/ssd1/zqy/Multi-hdl-language-repo")
+ROOT = Path(__file__).resolve().parent.parent.parent.parent.parent
 FV = ROOT / "hls_dataset" / "function_verify"
 HLS = ROOT / "hls"
 MANIFEST = FV / "design_function_verify_candidates_50.jsonl"

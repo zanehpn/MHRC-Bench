@@ -87,8 +87,8 @@ def deepseek_R1_mcts(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="sk-vIoLet eVeRGArden",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(
@@ -109,8 +109,8 @@ def deepseek_v3(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(
@@ -132,8 +132,8 @@ def gpt5(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(
@@ -155,8 +155,8 @@ def gpt4o(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(
@@ -178,8 +178,8 @@ def Qwen32B(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(
@@ -201,8 +201,8 @@ def deepseek_R1_describe(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(
@@ -223,8 +223,8 @@ def grok4(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(
@@ -245,8 +245,8 @@ def gemini2_5(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(
@@ -267,8 +267,8 @@ def claude_sonnet_4_5_thinking(prompt: str) -> str:
     Returns the raw response from the LLM without any processing.
     """
     client = OpenAI(
-        api_key="",
-        base_url="https://api.chatfire.cn/v1",
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", ""),
     )
     try:
         completions = client.chat.completions.create(

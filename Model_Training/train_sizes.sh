@@ -1,6 +1,6 @@
 python3 training_qwen.py \
-  --train-jsonl /home/zqy/LLM4CHIP/Multi-hdl-language-repo/all_dataset/train_content.jsonl \
-  --eval-jsonl /home/zqy/LLM4CHIP/Multi-hdl-language-repo/all_dataset/valid_content.jsonl \
+  --train-jsonl ../../all_dataset/train_content.jsonl \
+  --eval-jsonl ../../all_dataset/valid_content.jsonl \
   --model Qwen/Qwen2.5-Coder-7B \
   --out qwen_coder_7b_base_512 \
   --log_name trainlog_qwen_coder_7b_512 \
@@ -9,8 +9,8 @@ python3 training_qwen.py \
 
 
 python3 training_qwen.py \
-  --train-jsonl /home/zqy/LLM4CHIP/Multi-hdl-language-repo/all_dataset/train_content.jsonl \
-  --eval-jsonl /home/zqy/LLM4CHIP/Multi-hdl-language-repo/all_dataset/valid_content.jsonl \
+  --train-jsonl ../../all_dataset/train_content.jsonl \
+  --eval-jsonl ../../all_dataset/valid_content.jsonl \
   --model Qwen/Qwen2.5-Coder-7B \
   --out qwen_coder_7b_base_1024 \
   --log_name trainlog_qwen_coder_7b_1024 \
@@ -18,8 +18,8 @@ python3 training_qwen.py \
   --bf16
 
   python3 training_qwen.py \
-  --train-jsonl /home/zqy/LLM4CHIP/Multi-hdl-language-repo/all_dataset/train_content.jsonl \
-  --eval-jsonl /home/zqy/LLM4CHIP/Multi-hdl-language-repo/all_dataset/valid_content.jsonl \
+  --train-jsonl ../../all_dataset/train_content.jsonl \
+  --eval-jsonl ../../all_dataset/valid_content.jsonl \
   --model Qwen/Qwen2.5-Coder-7B \
   --out qwen_coder_7b_base_4096 \
   --log_name trainlog_qwen_coder_7b_4096 \

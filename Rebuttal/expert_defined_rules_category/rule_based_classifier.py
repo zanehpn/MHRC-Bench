@@ -1013,11 +1013,12 @@ def main():
     args = parser.parse_args()
 
     if args.run_all:
+        _repo_root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..")
         datasets = [
-            ('systemverilog', '/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset'),
-            ('hls', '/ssd1/zqy/Multi-hdl-language-repo/hls_dataset'),
-            ('vhdl', '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset'),
-            ('chisel', '/ssd1/zqy/Multi-hdl-language-repo/chisel_dataset'),
+            ('systemverilog', os.path.join(_repo_root, 'systemverilog_dataset')),
+            ('hls', os.path.join(_repo_root, 'hls_dataset')),
+            ('vhdl', os.path.join(_repo_root, 'vhdl_dataset')),
+            ('chisel', os.path.join(_repo_root, 'chisel_dataset')),
         ]
         for lang, base_dir in datasets:
             inp = os.path.join(base_dir, 'test_content.jsonl')

@@ -3,7 +3,7 @@
 
 import json, os, subprocess, glob
 
-BASE = "/ssd1/zqy/Multi-hdl-language-repo/hls_dataset/function_verify"
+BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "hls_dataset", "function_verify")
 SUPPORT = os.path.join(BASE, "_support")
 JSONL = os.path.join(BASE, "design_function_verify_candidates_50.jsonl")
 

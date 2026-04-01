@@ -7,6 +7,7 @@
 set -uo pipefail
 
 BASE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$BASE/../../.." && pwd)/.."
 WORK="$BASE/.vcs_work"
 mkdir -p "$WORK"
 
@@ -434,35 +435,35 @@ run_tb I2C_minion \
 # ---------------------------------------------------------------------------
 _T65_PACK_PATCH="$WORK/.T65_Pack_patched.vhd"
 sed 's/<TARGET>/    when Cycle_1=> return Cycle_2;\n    when Cycle_2=> return Cycle_3;/' \
-    "/ssd1/zqy/Multi-hdl-language-repo/vhdl/Apple-II_MiSTer/rtl/t65/T65_Pack.vhd" > "$_T65_PACK_PATCH"
+    "$REPO_ROOT/vhdl/Apple-II_MiSTer/rtl/t65/T65_Pack.vhd" > "$_T65_PACK_PATCH"
 
 _PKG_BLAKE_PATCH="$WORK/.PkgBlake2b_patched.vhd"
 sed "s/<TARGET>/  constant kHashLen : unsigned(7 downto 0) := x\"20\";/" \
-    "/ssd1/zqy/Multi-hdl-language-repo/vhdl/SiaFpgaMiner/PkgBlake2b.vhd" > "$_PKG_BLAKE_PATCH"
+    "$REPO_ROOT/vhdl/SiaFpgaMiner/PkgBlake2b.vhd" > "$_PKG_BLAKE_PATCH"
 
 _QUAD_G_PATCH="$WORK/.QuadG_patched.vhd"
 sed 's/<TARGET>/    A_in  : in  U64Array_t(3 downto 0);\n    B_in  : in  U64Array_t(3 downto 0);\n    C_in  : in  U64Array_t(3 downto 0);/' \
-    "/ssd1/zqy/Multi-hdl-language-repo/vhdl/SiaFpgaMiner/QuadG.vhd" > "$_QUAD_G_PATCH"
+    "$REPO_ROOT/vhdl/SiaFpgaMiner/QuadG.vhd" > "$_QUAD_G_PATCH"
 
 _MYPKG_PATCH="$WORK/.MyPkg_patched.vhd"
 sed 's/<TARGET>/   subtype sl is std_logic;/' \
-    "/ssd1/zqy/Multi-hdl-language-repo/vhdl/zynq_tdc/AXITDC/src/MyPkg.vhd" > "$_MYPKG_PATCH"
+    "$REPO_ROOT/vhdl/zynq_tdc/AXITDC/src/MyPkg.vhd" > "$_MYPKG_PATCH"
 
 _ADDERTREE_PATCH="$WORK/.adderTreeLegacy_patched.vhd"
 sed 's/<TARGET>/         result := op1 + op2;/' \
-    "/ssd1/zqy/Multi-hdl-language-repo/vhdl/zynq_tdc/AXITDC/src/adderTreeLegacy.vhd" > "$_ADDERTREE_PATCH"
+    "$REPO_ROOT/vhdl/zynq_tdc/AXITDC/src/adderTreeLegacy.vhd" > "$_ADDERTREE_PATCH"
 
 _RST_SYNC_PATCH="$WORK/.rst_sync_patched.vhd"
 sed 's/<TARGET>/begin/' \
-    "/ssd1/zqy/Multi-hdl-language-repo/vhdl/spi-fpga/examples/common/rst_sync.vhd" > "$_RST_SYNC_PATCH"
+    "$REPO_ROOT/vhdl/spi-fpga/examples/common/rst_sync.vhd" > "$_RST_SYNC_PATCH"
 
 _CLK_EN_GEN_PATCH="$WORK/.clk_en_gen_patched.vhd"
 sed 's/<TARGET>/            clk_en_1k_reg <= '"'"'0'"'"';\n        elsif (rising_edge(CLK)) then\n            clk_en_1k_reg <= clk_en_1k_comb;\n        end if;\n    end process;/' \
-    "/ssd1/zqy/Multi-hdl-language-repo/vhdl/spi-fpga/examples/common/clk_en_gen.vhd" > "$_CLK_EN_GEN_PATCH"
+    "$REPO_ROOT/vhdl/spi-fpga/examples/common/clk_en_gen.vhd" > "$_CLK_EN_GEN_PATCH"
 
 _SSEG_DRIVER_PATCH="$WORK/.sseg_driver_patched.vhd"
 sed 's/<TARGET>/                sseg_dp    <= not DOTS(2);\n                sseg_anode <= "1011";/' \
-    "/ssd1/zqy/Multi-hdl-language-repo/vhdl/spi-fpga/examples/common/sseg_driver.vhd" > "$_SSEG_DRIVER_PATCH"
+    "$REPO_ROOT/vhdl/spi-fpga/examples/common/sseg_driver.vhd" > "$_SSEG_DRIVER_PATCH"
 
 # ---------------------------------------------------------------------------
 # Simple single-file designs
@@ -581,8 +582,8 @@ run_tb_unisim Clocking_K7 \
 # Patching ieee_proposed→ieee doesn't help since VCS 2016 lacks the package.
 # These designs are skipped if ieee.fixed_pkg is unavailable.
 # ===========================================================================
-_CUST_FIXED_SRC="/ssd1/zqy/Multi-hdl-language-repo/vhdl/MandelbrotInVHDL/GHDL/src/custom_fixed_point_types.vhdl"
-_PIPE_TYPES_SRC="/ssd1/zqy/Multi-hdl-language-repo/vhdl/MandelbrotInVHDL/GHDL/src/pipeline_types.vhdl"
+_CUST_FIXED_SRC="$REPO_ROOT/vhdl/MandelbrotInVHDL/GHDL/src/custom_fixed_point_types.vhdl"
+_PIPE_TYPES_SRC="$REPO_ROOT/vhdl/MandelbrotInVHDL/GHDL/src/pipeline_types.vhdl"
 
 _CUST_FIXED_PATCH="$WORK/.custom_fixed_point_types_patched.vhd"
 _PIPE_TYPES_PATCH="$WORK/.pipeline_types_patched.vhd"
