@@ -375,7 +375,7 @@ def evaluate_single_model(
 
 
 def get_test_file_for_language(language: str) -> str:
-    base = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo"
+    base = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
     if language == "hls":
         return os.path.join(base, "hls_dataset", "test_content.jsonl")
     elif language == "vhdl":

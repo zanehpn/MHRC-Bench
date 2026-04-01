@@ -15,7 +15,7 @@ except ImportError:
 # Setup Library Path
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 PARENT_DIR = os.path.dirname(CURRENT_DIR)
-LIB_DIR = os.path.join(PARENT_DIR, "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/Model_evaluation/lib_function")
+LIB_DIR = os.path.join(CURRENT_DIR, "..", "..", "lib_function")
 if LIB_DIR not in sys.path:
     sys.path.append(LIB_DIR)
 

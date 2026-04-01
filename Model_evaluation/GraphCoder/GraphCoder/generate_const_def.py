@@ -26,7 +26,7 @@ def generate_constant_definition(input_jsonl, output_txt):
     lines.append("    max_hop = 5")
     lines.append("    max_search_top_k = 10")
     lines.append("    max_statement = 20")
-    lines.append('    repo_base_dir = f"/home/zqy/LLM4CHIP/Multi-hdl-language-repo/vhdl"')
+    lines.append('    repo_base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "vhdl")')
     lines.append('    graph_database_save_dir = f"./context_database"')
     lines.append('    query_graph_save_dir = "./graph_based_query"')
     lines.append('    dataset_dir = "./HW_Repo_Bench/vhdl"')

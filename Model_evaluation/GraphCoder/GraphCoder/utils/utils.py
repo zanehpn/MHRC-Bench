@@ -35,7 +35,7 @@ class CONSTANTS:
     max_hop = 5
     max_search_top_k = 10
     max_statement = 20
-    repo_base_dir = f"/home/zqy/LLM4CHIP/Multi-hdl-language-repo/vhdl"
+    repo_base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "vhdl")
     graph_database_save_dir = f"./context_database_vhdl"
     query_graph_save_dir = "./graph_based_query_fim"
     dataset_dir = "./HW_Repo_Bench"

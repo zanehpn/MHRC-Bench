@@ -311,26 +311,27 @@ def load_test_dataset(args):
     Loads a dataset from a JSONL file and constructs Example objects.
 
     crossfile_list 不再从 jsonl 中读取，而是从
-    /home/zqy/LLM4CHIP/Multi-hdl-language-repo/hls/<task_id>
+    <repo_root>/<language>/<task_id>
     目录下扫描 {".c", ".cpp", ".cc", ".h", ".hpp"} 文件作为 cross-file context。
     """
+    _repo_root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
     jsonl_path = ""
     if args.language == "hls":
-        HLS_TASK_ROOT = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/hls"
-        jsonl_path = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/hls_dataset/test_content.jsonl"
+        HLS_TASK_ROOT = os.path.join(_repo_root, "hls")
+        jsonl_path = os.path.join(_repo_root, "hls_dataset", "test_content.jsonl")
         HLS_CODE_EXTS = {".c", ".cpp", ".cc", ".h", ".hpp"}
     elif args.language == "vhdl":
-        HLS_TASK_ROOT = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/vhdl"
+        HLS_TASK_ROOT = os.path.join(_repo_root, "vhdl")
         HLS_CODE_EXTS = {".vhd", ".vhdl"}
-        jsonl_path = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/vhdl_dataset/test_content.jsonl"
+        jsonl_path = os.path.join(_repo_root, "vhdl_dataset", "test_content.jsonl")
     elif args.language == "systemverilog":
-        HLS_TASK_ROOT = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/systemverilog"
+        HLS_TASK_ROOT = os.path.join(_repo_root, "systemverilog")
         HLS_CODE_EXTS = {".sv", ".svh", ".v",".vh"}
-        jsonl_path = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/systemverilog_dataset/test_content.jsonl"
+        jsonl_path = os.path.join(_repo_root, "systemverilog_dataset", "test_content.jsonl")
     elif args.language == "chisel":
-        HLS_TASK_ROOT = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/chisel"
+        HLS_TASK_ROOT = os.path.join(_repo_root, "chisel")
         HLS_CODE_EXTS = {".scala"}
-        jsonl_path = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/chisel_dataset/test_content.jsonl"
+        jsonl_path = os.path.join(_repo_root, "chisel_dataset", "test_content.jsonl")
     else:
         raise ValueError(f"Unsupported language: {args.language}")
     data_frame = pd.read_json(jsonl_path, lines=True)

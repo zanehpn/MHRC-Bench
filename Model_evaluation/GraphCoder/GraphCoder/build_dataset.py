@@ -78,20 +78,21 @@ def assemble_dataset(test_content_path, repo_base_dir, output_path):
     print(f"Successfully assembled {len(dataset)} entries into {output_path}")
 
 if __name__ == "__main__":
-    TEST_CONTENT_CHISEL = '/home/zqy/LLM4CHIP/Multi-hdl-language-repo/chisel_dataset/test_content.jsonl'
-    REPO_DIR_CHISEL = '/home/zqy/LLM4CHIP/Multi-hdl-language-repo/chisel'
+    _repo_root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..")
+    TEST_CONTENT_CHISEL = os.path.join(_repo_root, 'chisel_dataset', 'test_content.jsonl')
+    REPO_DIR_CHISEL = os.path.join(_repo_root, 'chisel')
     OUTPUT_FILE_CHISEL = 'graphcoder_chisel_fim.jsonl'
 
-    TEST_CONTENT_HLS = '/home/zqy/LLM4CHIP/Multi-hdl-language-repo/hls_dataset/test_content.jsonl'
-    REPO_DIR_HLS = '/home/zqy/LLM4CHIP/Multi-hdl-language-repo/hls'
+    TEST_CONTENT_HLS = os.path.join(_repo_root, 'hls_dataset', 'test_content.jsonl')
+    REPO_DIR_HLS = os.path.join(_repo_root, 'hls')
     OUTPUT_FILE_HLS = 'graphcoder_hls_fim.jsonl'
 
-    TEST_CONTENT_VERILOG = '/home/zqy/LLM4CHIP/Multi-hdl-language-repo/systemverilog_dataset/test_content.jsonl'
-    REPO_DIR_VERILOG = '/home/zqy/LLM4CHIP/Multi-hdl-language-repo/systemverilog'
+    TEST_CONTENT_VERILOG = os.path.join(_repo_root, 'systemverilog_dataset', 'test_content.jsonl')
+    REPO_DIR_VERILOG = os.path.join(_repo_root, 'systemverilog')
     OUTPUT_FILE_VERILOG = 'graphcoder_verilog_fim.jsonl'
 
-    TEST_CONTENT_VHDL = '/home/zqy/LLM4CHIP/Multi-hdl-language-repo/vhdl_dataset/test_content.jsonl'
-    REPO_DIR_VHDL = '/home/zqy/LLM4CHIP/Multi-hdl-language-repo/vhdl'
+    TEST_CONTENT_VHDL = os.path.join(_repo_root, 'vhdl_dataset', 'test_content.jsonl')
+    REPO_DIR_VHDL = os.path.join(_repo_root, 'vhdl')
     OUTPUT_FILE_VHDL = 'graphcoder_vhdl_fim.jsonl'
 
     #assemble_dataset(TEST_CONTENT_CHISEL, REPO_DIR_CHISEL, OUTPUT_FILE_CHISEL)

@@ -3,7 +3,7 @@ import os
 
 def process_case_studies():
     # Base directory for the files
-    base_dir = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/Model_training"
+    base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "Model_training")
     
     # Define the languages to process
     languages = ["chisel", "hls", "systemverilog", "vhdl"]

@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 import re
 import nltk
 
@@ -98,13 +99,14 @@ except Exception:
 # =========================
 # 1) Configure your Tree-sitter .so paths here
 # =========================
+_ts_root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..")
 TS_SO_PATHS = {
-    "chisel": "/home/zqy/LLM4CHIP/tree-sitter-scala/build/scala.so",
-    "systemverilog": "/home/zqy/LLM4CHIP/tree-sitter-verilog/build/sv.so",
-    "vhdl": "/home/zqy/LLM4CHIP/tree-sitter-vhdl/build/vhdl.so",
+    "chisel": os.path.join(_ts_root, "tree-sitter-scala", "build", "scala.so"),
+    "systemverilog": os.path.join(_ts_root, "tree-sitter-verilog", "build", "sv.so"),
+    "vhdl": os.path.join(_ts_root, "tree-sitter-vhdl", "build", "vhdl.so"),
     # HLS uses both; we select based on file extension OR default to cpp
-    "cpp": "/home/zqy/LLM4CHIP/tree-sitter-cpp/build/cpp.so",
-    "c": "/home/zqy/LLM4CHIP/tree-sitter-c/build/c.so",
+    "cpp": os.path.join(_ts_root, "tree-sitter-cpp", "build", "cpp.so"),
+    "c": os.path.join(_ts_root, "tree-sitter-c", "build", "c.so"),
 }
 
 # The "language name" inside each grammar:

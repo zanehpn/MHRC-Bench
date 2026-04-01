@@ -137,7 +137,7 @@ def gpt5(prompt: str) -> str:
     )
     try:
         completions = client.chat.completions.create(
-            model="gpt-5.2",
+            model="gpt-5",
             messages=[
                 {"role": "system", "content": ""},
                 {"role": "user", "content": prompt},

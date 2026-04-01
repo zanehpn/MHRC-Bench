@@ -15,6 +15,7 @@ Enhancements:
 """
 
 import json
+import os
 import re
 import sys
 import time
@@ -153,7 +154,7 @@ def process_model(
 
 
 def main():
-    input_jsonl = "/home/zqy/LLM4CHIP/Multi-hdl-language-repo/Model_evaluation/GraphCoder/api_input/hls_fim.coarse2fine.10.0.prompts.fim.jsonl"
+    input_jsonl = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "api_input", "hls_fim.coarse2fine.10.0.prompts.fim.jsonl")
     output_jsonl = "graphcoder_hls_fim.jsonl"
 
     # Models to run sequentially (name, function)
