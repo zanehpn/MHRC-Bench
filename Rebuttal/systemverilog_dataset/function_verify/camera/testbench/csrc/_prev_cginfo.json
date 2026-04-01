@@ -1,0 +1,129 @@
+{
+    "MlibObjs": {},
+    "LVLData": [
+        "SIM"
+    ],
+    "PrevCompiledModules": {
+        "std": {
+            "reYIK_d": {
+                "bytes": 32686,
+                "mod": "std",
+                "archive": "archive.2/_88563_archive_1.a",
+                "out": "reYIK_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "camera_target_tb": {
+            "saKDz_d": {
+                "bytes": 12991,
+                "mod": "camera_target_tb",
+                "archive": "archive.2/_88563_archive_1.a",
+                "out": "saKDz_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7599,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        }
+    },
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "camera_target_tb": [
+            "camera_target_tb",
+            "saKDz",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CurCompileUdps": {},
+    "CompileStrategy": "fullobj",
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "camera_target_tb",
+        "camera_target_tb"
+    ],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 59629
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.039766000000000003,
+            "ru_nvcsw": 30,
+            "ru_majflt": 0,
+            "ru_minflt": 5020,
+            "ru_stime_sec": 0.013918,
+            "ru_maxrss_kb": 85680,
+            "ru_nivcsw": 0
+        },
+        "nQuads": 638,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_minflt": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 1305,
+        "totalObjSize": 113869,
+        "ru_self_end": {
+            "ru_utime_sec": 0.057140999999999997,
+            "ru_nvcsw": 32,
+            "ru_majflt": 0,
+            "ru_minflt": 6828,
+            "ru_stime_sec": 0.019047000000000001,
+            "ru_maxrss_kb": 93840,
+            "ru_nivcsw": 0
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 1,
+            "ru_majflt": 0,
+            "ru_minflt": 276,
+            "ru_stime_sec": 0.0040070000000000001,
+            "ru_maxrss_kb": 14704,
+            "ru_nivcsw": 1
+        },
+        "quadSpeed": 36719.424460431663,
+        "mopSpeed": 75107.913669064772,
+        "mop/quad": 2.0454545454545454,
+        "CodeGen(%)": 30.407238235242637,
+        "outputSizePerQuad": 178.0,
+        "Frontend(%)": 69.59276176475737
+    },
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.88563.json"
+    ],
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/camera/testbench",
+        "csrc": "csrc",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/camera/testbench/csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/camera/testbench/../simv.daidir",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/camera/simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.2"
+    },
+    "CompileStatus": "Successful"
+}

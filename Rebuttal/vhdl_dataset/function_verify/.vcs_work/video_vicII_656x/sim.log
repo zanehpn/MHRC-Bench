@@ -1,0 +1,20 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+35265 NS
+Report NOTE at 35265 NS in design unit VIDEO_VICII_656X_ORIGINAL_TARGET_TB(TB) from process /VIDEO_VICII_656X_ORIGINAL_TARGET_TB/STIM_PROC:
+    "INFO: video_vicII_656x_original_target_tb: basic reset/drive stimulus complete. baSprite26 path requires full C64 system context (PARTIAL BLOCKER)."
+235265 NS
+Report NOTE at 235265 NS in design unit VIDEO_VICII_656X_ORIGINAL_TARGET_TB(TB) from process /VIDEO_VICII_656X_ORIGINAL_TARGET_TB/STIM_PROC:
+    "SIMULATION COMPLETE: video_vicII_656x_original_target_tb"
+
+
+Process terminated by kill.
+

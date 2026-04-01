@@ -1,0 +1,1 @@
+/ssd1/zqy/Multi-hdl-language-repo/chisel_dataset/function_verify/test_project/test_run_dir/Accumu_should_set_valid_out_reg_to_0_when_counter_rolls_over/BlackBoxAdder3642.v

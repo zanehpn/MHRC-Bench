@@ -1,0 +1,126 @@
+{
+    "MlibObjs": {},
+    "LVLData": [
+        "SIM"
+    ],
+    "PrevCompiledModules": {
+        "std": {
+            "reYIK_d": {
+                "archive": "archive.2/_109222_archive_1.a",
+                "bytes": 32710,
+                "mod": "std",
+                "out": "reYIK_d.o",
+                "checksum": 0,
+                "mode": 4
+            }
+        },
+        "virtio_available_ring_monitor_target_tb": {
+            "H7QNJ_d": {
+                "archive": "archive.2/_109222_archive_1.a",
+                "bytes": 15046,
+                "mod": "virtio_available_ring_monitor_target_tb",
+                "out": "H7QNJ_d.o",
+                "checksum": 0,
+                "mode": 4
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7639,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "checksum": 0,
+                "mode": 4
+            }
+        }
+    },
+    "NameTable": {
+        "virtio_available_ring_monitor_target_tb": [
+            "virtio_available_ring_monitor_target_tb",
+            "H7QNJ",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.025066999999999999,
+            "ru_minflt": 5018,
+            "ru_stime_sec": 0.013035,
+            "ru_maxrss_kb": 85680,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 28
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 0
+        },
+        "nQuads": 886,
+        "nMops": 1563,
+        "totalObjSize": 115284,
+        "ru_self_end": {
+            "ru_utime_sec": 0.033033,
+            "ru_minflt": 6836,
+            "ru_stime_sec": 0.016015999999999999,
+            "ru_maxrss_kb": 93840,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 29
+        },
+        "outputSizePerQuad": 130.0,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.001031,
+            "ru_minflt": 275,
+            "ru_stime_sec": 0.0030950000000000001,
+            "ru_maxrss_kb": 13416,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 1
+        },
+        "Frontend(%)": 75.88472133926679,
+        "CodeGen(%)": 24.11527866073321
+    },
+    "PEModules": [],
+    "CompileStrategy": "fullobj",
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "virtio_available_ring_monitor_target_tb",
+        "virtio_available_ring_monitor_target_tb"
+    ],
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 59889
+    },
+    "CompileStatus": "Successful",
+    "CompileProcesses": [
+        "cgproc.109222.json"
+    ],
+    "Misc": {
+        "archive_dir": "archive.2",
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/virtio_available_ring_monitor/testbench",
+        "csrc": "csrc",
+        "default_output_dir": "csrc",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/virtio_available_ring_monitor/testbench/csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/virtio_available_ring_monitor/testbench/../simv.daidir",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/virtio_available_ring_monitor/simv.daidir"
+    }
+}

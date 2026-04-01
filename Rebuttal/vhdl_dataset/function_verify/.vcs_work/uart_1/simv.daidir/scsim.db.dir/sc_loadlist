@@ -1,0 +1,8 @@
+vh/ScMain.o
+vh/scscomm.o
+vh/scsFilelist.o
+vh/DEFAULT__UART_TARGET_TB__TB.o
+vh/DEFAULT__UART__RTL.o
+vh/DEFAULT__UART_CLK_DIV__RTL.o
+vh/DEFAULT__UART_RX__STUB.o
+vh/DEFAULT__UART_TX__RTL.o

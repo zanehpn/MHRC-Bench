@@ -1,0 +1,146 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "audio_info_frame_target_tb": {
+            "bpb8b_d": {
+                "checksum": 0,
+                "bytes": 24590,
+                "mod": "audio_info_frame_target_tb",
+                "mode": 4,
+                "out": "bpb8b_d.o",
+                "archive": "archive.4/_65836_archive_1.a"
+            }
+        },
+        "audio_info_frame": {
+            "FxWv4_d": {
+                "checksum": 0,
+                "bytes": 11684,
+                "mod": "audio_info_frame",
+                "mode": 4,
+                "out": "FxWv4_d.o",
+                "archive": "archive.4/_65836_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "checksum": 0,
+                "bytes": 7615,
+                "mod": "...MASTER...",
+                "mode": 4,
+                "out": "objs/amcQw_d.o"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "checksum": 0,
+                "bytes": 32694,
+                "mod": "std",
+                "mode": 4,
+                "out": "reYIK_d.o",
+                "archive": "archive.4/_65836_archive_1.a"
+            }
+        }
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "audio_info_frame",
+        "audio_info_frame",
+        "audio_info_frame_target_tb",
+        "audio_info_frame_target_tb"
+    ],
+    "NameTable": {
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "audio_info_frame": [
+            "audio_info_frame",
+            "FxWv4",
+            "module"
+        ],
+        "audio_info_frame_target_tb": [
+            "audio_info_frame_target_tb",
+            "bpb8b",
+            "module"
+        ]
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 61687
+    },
+    "CompileStrategy": "fullobj",
+    "Misc": {
+        "default_output_dir": "csrc",
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/audio_info_frame/testbench",
+        "csrc": "csrc",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/audio_info_frame/simv.daidir",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/audio_info_frame/testbench/csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/audio_info_frame/testbench/../simv.daidir",
+        "archive_dir": "archive.4"
+    },
+    "CurCompileUdps": {},
+    "stat": {
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 0
+        },
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.036881999999999998,
+            "ru_stime_sec": 0.0089709999999999998,
+            "ru_minflt": 5091,
+            "ru_maxrss_kb": 85680,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 26
+        },
+        "nMops": 4111,
+        "CodeGen(%)": 24.167283493708364,
+        "nQuads": 1380,
+        "ru_self_end": {
+            "ru_utime_sec": 0.048635999999999999,
+            "ru_stime_sec": 0.013896,
+            "ru_minflt": 7265,
+            "ru_maxrss_kb": 95880,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 27
+        },
+        "totalObjSize": 138270,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0026930000000000001,
+            "ru_minflt": 276,
+            "ru_maxrss_kb": 14288,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 1
+        },
+        "mopSpeed": 349753.27548068739,
+        "outputSizePerQuad": 100.0,
+        "quadSpeed": 117406.84022460438,
+        "mop/quad": 2.9789855072463767,
+        "Frontend(%)": 75.832716506291632
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.65836.json"
+    ],
+    "CompileStatus": "Successful"
+}

@@ -1,0 +1,27 @@
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Mar 31 17:42:49 2026
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'timescale+1ns/1ps' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+Parsing design file '_patched_flat_target_tb.sv'
+Parsing included file 'testbench/../_patched_flat_original.sv'.
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "testbench/../_patched_flat_original.sv", 104: token is 'always'
+  always @(posedge clk) begin
+        ^
+
+1 warning
+1 error
+CPU time: .068 seconds to compile

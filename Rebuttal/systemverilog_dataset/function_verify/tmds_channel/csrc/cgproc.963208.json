@@ -1,0 +1,55 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_963208_archive_1.a",
+            "size": 71648,
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "cEbVG_d.o",
+                    39154
+                ]
+            ]
+        }
+    ],
+    "reusePaths": {},
+    "Modules": {
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "tmds_channel_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "checksum": 0,
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "bytes": 7403,
+            "mode": 4
+        },
+        "reYIK_d": {
+            "checksum": 0,
+            "out": "reYIK_d.o",
+            "mod": "std",
+            "bytes": 32494,
+            "mode": 4,
+            "archive": "archive.0/_963208_archive_1.a"
+        },
+        "cEbVG_d": {
+            "checksum": 0,
+            "out": "cEbVG_d.o",
+            "mod": "tmds_channel_target_tb",
+            "bytes": 39154,
+            "mode": 4,
+            "archive": "archive.0/_963208_archive_1.a"
+        }
+    }
+}

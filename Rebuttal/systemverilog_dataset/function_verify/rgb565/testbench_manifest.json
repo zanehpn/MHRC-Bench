@@ -1,0 +1,10 @@
+{
+  "path": "mipi-csi-2/src/decoders/rgb565.sv",
+  "local_file": "rgb565/rgb565.sv",
+  "local_original_file": "rgb565_original.sv",
+  "local_testbenches": [
+    "testbench/rgb565_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "rgb565"
+}

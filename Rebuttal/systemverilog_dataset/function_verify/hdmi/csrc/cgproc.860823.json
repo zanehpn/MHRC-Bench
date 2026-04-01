@@ -1,0 +1,87 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "serializer_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "hdmi_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "hdmi_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7395,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mode": 4,
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "bytes": 32494,
+            "archive": "archive.0/_860823_archive_1.a",
+            "checksum": 0
+        },
+        "yI6HV_d": {
+            "mode": 4,
+            "mod": "serializer_0000",
+            "out": "yI6HV_d.o",
+            "bytes": 6874,
+            "archive": "archive.0/_860823_archive_1.a",
+            "checksum": 0
+        },
+        "V7T5B_d": {
+            "mode": 4,
+            "mod": "hdmi_0000",
+            "out": "V7T5B_d.o",
+            "bytes": 11864,
+            "archive": "archive.0/_860823_archive_1.a",
+            "checksum": 0
+        },
+        "nt0z9_d": {
+            "mode": 4,
+            "mod": "hdmi_target_tb",
+            "out": "nt0z9_d.o",
+            "bytes": 22174,
+            "archive": "archive.0/_860823_archive_1.a",
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "size": 73406,
+            "archive": "archive.0/_860823_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "yI6HV_d.o",
+                    6874
+                ],
+                [
+                    "V7T5B_d.o",
+                    11864
+                ],
+                [
+                    "nt0z9_d.o",
+                    22174
+                ]
+            ]
+        }
+    ]
+}

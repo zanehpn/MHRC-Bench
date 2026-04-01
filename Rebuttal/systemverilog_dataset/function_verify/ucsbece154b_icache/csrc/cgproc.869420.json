@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "ucsbece154b_icache_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_869420_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "muQ8E_d.o",
+                    36938
+                ]
+            ],
+            "size": 69432
+        }
+    ],
+    "CompUnits": {
+        "muQ8E_d": {
+            "mode": 4,
+            "mod": "ucsbece154b_icache_target_tb",
+            "bytes": 36938,
+            "out": "muQ8E_d.o",
+            "checksum": 0,
+            "archive": "archive.0/_869420_archive_1.a"
+        },
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "bytes": 7411,
+            "out": "objs/amcQw_d.o",
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mode": 4,
+            "mod": "std",
+            "bytes": 32494,
+            "out": "reYIK_d.o",
+            "checksum": 0,
+            "archive": "archive.0/_869420_archive_1.a"
+        }
+    },
+    "reusePaths": {}
+}

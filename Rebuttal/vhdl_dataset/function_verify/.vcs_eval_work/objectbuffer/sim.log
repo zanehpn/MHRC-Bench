@@ -1,0 +1,14 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+30 NS
+Assertion ERROR at 30 NS in design unit OBJECTBUFFER_TARGET_TB(SIM) from process /OBJECTBUFFER_TARGET_TB/STIM:
+    "FAIL: pixel inside box should latch previous value (WALL_RGB 0x0000FF), got 00FF00"
+ /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/objectbuffer/testbench/objectbuffer_target_tb.vhd(104):	        assert rgb = WALL_RGB

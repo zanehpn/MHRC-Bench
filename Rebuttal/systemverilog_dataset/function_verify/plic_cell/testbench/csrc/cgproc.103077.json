@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        },
+        "plic_cell_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7607,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "mode": 4,
+            "out": "reYIK_d.o",
+            "bytes": 32694,
+            "checksum": 0,
+            "archive": "archive.2/_103077_archive_1.a"
+        },
+        "x1viN_d": {
+            "mod": "plic_cell_target_tb",
+            "mode": 4,
+            "out": "x1viN_d.o",
+            "bytes": 14778,
+            "checksum": 0,
+            "archive": "archive.2/_103077_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32694
+                ],
+                [
+                    "x1viN_d.o",
+                    14778
+                ]
+            ],
+            "archive": "archive.2/_103077_archive_1.a",
+            "size": 47472
+        }
+    ]
+}

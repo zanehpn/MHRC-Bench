@@ -1,0 +1,56 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Error-[SE_TOOMANYSOURCES] Unresolved signal has multiple drivers
+  The signal '/SERIALIZER_TARGET_TB/DUT/FORS7/MASTER/BIT_INDEX' (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/unisim_stubs.vhd,
+  line: 219) is not resolved and has multiple drivers.
+  Please use resolution function to resolve the signal. Refer to sections 2.4 
+  and 4.3.1.2 of the VHDL93 LRM for more information.
+
+
+Note-[SE_SOURCEDRIVER] Driver from process
+  Driver from process /SERIALIZER_TARGET_TB/DUT/FORS7/MASTER/P_LOAD (defined 
+  at 
+  file:/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/unisim_stubs.vhd,
+  line:234)
+
+
+Note-[SE_SOURCEDRIVER] Driver from process
+  Driver from process /SERIALIZER_TARGET_TB/DUT/FORS7/MASTER/P_SHIFT (defined 
+  at 
+  file:/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/unisim_stubs.vhd,
+  line:263)
+
+
+Error-[SE_TOOMANYSOURCES] Unresolved signal has multiple drivers
+  The signal '/SERIALIZER_TARGET_TB/DUT/FORS7/SLAVE/BIT_INDEX' (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/unisim_stubs.vhd,
+  line: 219) is not resolved and has multiple drivers.
+  Please use resolution function to resolve the signal. Refer to sections 2.4 
+  and 4.3.1.2 of the VHDL93 LRM for more information.
+
+
+Note-[SE_SOURCEDRIVER] Driver from process
+  Driver from process /SERIALIZER_TARGET_TB/DUT/FORS7/SLAVE/P_LOAD (defined at
+  file:/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/unisim_stubs.vhd,
+  line:234)
+
+
+Note-[SE_SOURCEDRIVER] Driver from process
+  Driver from process /SERIALIZER_TARGET_TB/DUT/FORS7/SLAVE/P_SHIFT (defined 
+  at 
+  file:/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/unisim_stubs.vhd,
+  line:263)
+
+
+Error-[ERROR_FOUND_EXIT] Error messages reported
+  Please fix previous Error messages and re-compile your design.
+

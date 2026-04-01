@@ -1,0 +1,17 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "uart_target_tb": [
+        "uart_target_tb",
+        "gPNq6",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}

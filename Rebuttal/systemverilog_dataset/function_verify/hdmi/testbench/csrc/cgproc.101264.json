@@ -1,0 +1,87 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "packet_picker": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "serializer": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "hdmi_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7591,
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "archive": "archive.4/_101264_archive_1.a",
+            "out": "reYIK_d.o",
+            "bytes": 32686,
+            "mode": 4,
+            "checksum": 0
+        },
+        "hLvqj_d": {
+            "mod": "packet_picker",
+            "archive": "archive.4/_101264_archive_1.a",
+            "out": "hLvqj_d.o",
+            "bytes": 9331,
+            "mode": 4,
+            "checksum": 0
+        },
+        "vd0rJ_d": {
+            "mod": "serializer",
+            "archive": "archive.4/_101264_archive_1.a",
+            "out": "vd0rJ_d.o",
+            "bytes": 8708,
+            "mode": 4,
+            "checksum": 0
+        },
+        "nt0z9_d": {
+            "mod": "hdmi_target_tb",
+            "archive": "archive.4/_101264_archive_1.a",
+            "out": "nt0z9_d.o",
+            "bytes": 23253,
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.4/_101264_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32686
+                ],
+                [
+                    "hLvqj_d.o",
+                    9331
+                ],
+                [
+                    "vd0rJ_d.o",
+                    8708
+                ],
+                [
+                    "nt0z9_d.o",
+                    23253
+                ]
+            ],
+            "size": 73978
+        }
+    ]
+}

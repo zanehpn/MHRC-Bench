@@ -1,0 +1,19 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+5250 NS
+Report NOTE at 5250 NS in design unit CLOCKING_K7_ORIGINAL_TARGET_TB(TB) from process /CLOCKING_K7_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: Locked = '1' - PLL has locked"
+Report NOTE at 5250 NS in design unit CLOCKING_K7_ORIGINAL_TARGET_TB(TB) from process /CLOCKING_K7_ORIGINAL_TARGET_TB/STIM_PROC:
+    "INFO: Clocking_K7_original_target_tb complete. BLOCKER: Requires Xilinx UNISIM library (PLLE2_ADV, BUFG). PLL parameters: CLKFBOUT_MULT=25, CLKIN1_PERIOD=25.000ns, CLKOUT0_DIVIDE=5 (MiningClk=200MHz), CLKOUT1_DIVIDE=25 (UartClk=40MHz)."
+
+
+Process terminated by kill.
+

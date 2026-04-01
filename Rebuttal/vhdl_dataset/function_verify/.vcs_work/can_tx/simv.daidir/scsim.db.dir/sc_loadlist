@@ -1,0 +1,5 @@
+vh/ScMain.o
+vh/scscomm.o
+vh/scsFilelist.o
+vh/DEFAULT__CAN.o
+vh/DEFAULT__CAN_TX__SYN.o

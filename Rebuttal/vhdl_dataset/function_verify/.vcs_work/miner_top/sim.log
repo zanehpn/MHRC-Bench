@@ -1,0 +1,849 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(0)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(1)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(2)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(3)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(4)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(5)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(6)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(7)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(8)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(9)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(10)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(11)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(12)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(13)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(14)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(15)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(16)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(17)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(18)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(19)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(20)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(21)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(22)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(23)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(24)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(25)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(26)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(27)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(28)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(29)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(30)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA1/GEN_DIGESTERS(31)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(0)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(1)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(2)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(3)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(4)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(5)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(6)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(7)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(8)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(9)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(10)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(11)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(12)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(13)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(14)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(15)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(16)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(17)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(18)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(19)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(20)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(21)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(22)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(23)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(24)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(25)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(26)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(27)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(28)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(29)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(30)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+Warning-[ELW_UNBOUND] Unbound component
+  The component instantiation 
+  '/MINER_TOP_TARGET_TB/DUT/U_SHA256D_WRAPPER/SHA2/GEN_DIGESTERS(31)/SHA256_DIGESTER_X'
+  (file: 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sha256_transform_patched.vhd,
+  line: 154) will have no effect because component 'SHA256_DIGESTER' is 
+  unbound. No entity definition for component 'SHA256_DIGESTER' can be found 
+  in the following libraries (  WORK  ) referenced by the architecture 'RTL' 
+  of entity 'SHA256_TRANSFORM'.
+  Please bind the component explicitly to an entity (architecture) pair, and 
+  verify that the pair was analyzed successfully.
+
+
+1600 NS
+Report NOTE at 1600 NS in design unit MINER_TOP_TARGET_TB(TB) from process /MINER_TOP_TARGET_TB/STIM_PROC:
+    "All tests done."
+
+
+Process terminated by kill.
+

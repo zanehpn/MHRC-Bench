@@ -1,0 +1,32 @@
+{
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "_vcs_unit__2094177629": [
+        "_vcs_unit__2094177629",
+        "rBwy2",
+        "module"
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "axi_lite_pkg": [
+        "axi_lite_pkg",
+        "xJRie",
+        "module"
+    ],
+    "axi_lite_if": [
+        "axi_lite_if",
+        "ezc2T",
+        "module"
+    ],
+    "axi_lite_master_target_tb": [
+        "axi_lite_master_target_tb",
+        "cf8a3",
+        "module"
+    ]
+}

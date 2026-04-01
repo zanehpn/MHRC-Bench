@@ -1,0 +1,215 @@
+{
+    "Modules": {
+        "sfp_0002": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "ufp_0002": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "sfp": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "sfp_0003": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "ufp": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "ufp_0000": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "ufp_0003": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "ufp_0001": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "fp_op_full_target_tb": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "sfp_0000": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "sfp_0001": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "D7pxv_d": {
+            "mod": "sfp_0001",
+            "mode": 4,
+            "out": "D7pxv_d.o",
+            "bytes": 9549,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7591,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "mode": 4,
+            "out": "reYIK_d.o",
+            "bytes": 54774,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "TvIdG_d": {
+            "mod": "ufp",
+            "mode": 4,
+            "out": "TvIdG_d.o",
+            "bytes": 9533,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "DnTVR_d": {
+            "mod": "ufp_0003",
+            "mode": 4,
+            "out": "DnTVR_d.o",
+            "bytes": 9546,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "zxqPR_d": {
+            "mod": "sfp",
+            "mode": 4,
+            "out": "zxqPR_d.o",
+            "bytes": 9548,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "Asi5y_d": {
+            "mod": "fp_op_full_target_tb",
+            "mode": 4,
+            "out": "Asi5y_d.o",
+            "bytes": 58964,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "Tphpu_d": {
+            "mod": "ufp_0000",
+            "mode": 4,
+            "out": "Tphpu_d.o",
+            "bytes": 9546,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "bbqK0_d": {
+            "mod": "ufp_0001",
+            "mode": 4,
+            "out": "bbqK0_d.o",
+            "bytes": 9534,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "U33QM_d": {
+            "mod": "sfp_0003",
+            "mode": 4,
+            "out": "U33QM_d.o",
+            "bytes": 9561,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "f2e4j_d": {
+            "mod": "sfp_0002",
+            "mode": 4,
+            "out": "f2e4j_d.o",
+            "bytes": 9549,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "bPwkD_d": {
+            "mod": "ufp_0002",
+            "mode": 4,
+            "out": "bPwkD_d.o",
+            "bytes": 9534,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        },
+        "Eye7x_d": {
+            "mod": "sfp_0000",
+            "mode": 4,
+            "out": "Eye7x_d.o",
+            "bytes": 9561,
+            "checksum": 0,
+            "archive": "archive.0/_946149_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_946149_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    54774
+                ],
+                [
+                    "TvIdG_d.o",
+                    9533
+                ],
+                [
+                    "Tphpu_d.o",
+                    9546
+                ],
+                [
+                    "bbqK0_d.o",
+                    9534
+                ],
+                [
+                    "bPwkD_d.o",
+                    9534
+                ],
+                [
+                    "DnTVR_d.o",
+                    9546
+                ],
+                [
+                    "zxqPR_d.o",
+                    9548
+                ],
+                [
+                    "Eye7x_d.o",
+                    9561
+                ],
+                [
+                    "D7pxv_d.o",
+                    9549
+                ],
+                [
+                    "f2e4j_d.o",
+                    9549
+                ],
+                [
+                    "U33QM_d.o",
+                    9561
+                ],
+                [
+                    "Asi5y_d.o",
+                    58964
+                ]
+            ],
+            "size": 209199
+        }
+    ]
+}

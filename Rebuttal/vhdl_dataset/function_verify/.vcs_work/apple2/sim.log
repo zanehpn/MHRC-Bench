@@ -1,0 +1,22 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+44800 NS
+Report NOTE at 44800 NS in design unit APPLE2_ORIGINAL_TARGET_TB(TB) from process /APPLE2_ORIGINAL_TARGET_TB/STIM_PROC:
+    "INFO: apple2_original_target_tb basic port connectivity checks passed."
+Report NOTE at 44800 NS in design unit APPLE2_ORIGINAL_TARGET_TB(TB) from process /APPLE2_ORIGINAL_TARGET_TB/STIM_PROC:
+    "NOTE: Speaker toggle (C030-C03F) verification requires Apple II ROM and RAM stimulus (PARTIAL BLOCKER). Sub-entity dependencies: T65_Pack, T65, T65_MCode, T65_ALU, video_generator, character_rom, keyboard, PS2_Ctrl must all be compiled."
+45800 NS
+Report NOTE at 45800 NS in design unit APPLE2_ORIGINAL_TARGET_TB(TB) from process /APPLE2_ORIGINAL_TARGET_TB/STIM_PROC:
+    "SIMULATION COMPLETE: apple2_original_target_tb"
+
+
+Process terminated by kill.
+

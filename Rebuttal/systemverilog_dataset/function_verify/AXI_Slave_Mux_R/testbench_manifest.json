@@ -1,0 +1,10 @@
+{
+  "path": "AXI4_Interconnect/RTL/AXI_Slave_Mux_R.sv",
+  "local_file": "AXI_Slave_Mux_R/AXI_Slave_Mux_R.sv",
+  "local_original_file": "AXI_Slave_Mux_R_original.sv",
+  "local_testbenches": [
+    "testbench/AXI_Slave_Mux_R_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "AXI_Slave_Mux_R"
+}

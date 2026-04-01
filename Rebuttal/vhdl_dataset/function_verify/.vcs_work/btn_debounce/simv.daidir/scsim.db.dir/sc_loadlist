@@ -1,0 +1,5 @@
+vh/ScMain.o
+vh/scscomm.o
+vh/scsFilelist.o
+vh/DEFAULT__BTN_DEBOUNCE_TARGET_TB__SIM.o
+vh/DEFAULT__BTN_DEBOUNCE__RTL.o

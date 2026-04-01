@@ -1,0 +1,180 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "...MASTER...": {
+            "amcQw_d": {
+                "mode": 4,
+                "bytes": 7607,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "checksum": 0
+            }
+        },
+        "ufp": {
+            "TvIdG_d": {
+                "archive": "archive.2/_73056_archive_1.a",
+                "mode": 4,
+                "bytes": 9545,
+                "mod": "ufp",
+                "out": "TvIdG_d.o",
+                "checksum": 0
+            }
+        },
+        "fp_op_full_target_tb": {
+            "Asi5y_d": {
+                "archive": "archive.2/_73056_archive_1.a",
+                "mode": 4,
+                "bytes": 15966,
+                "mod": "fp_op_full_target_tb",
+                "out": "Asi5y_d.o",
+                "checksum": 0
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "archive": "archive.2/_73056_archive_1.a",
+                "mode": 4,
+                "bytes": 32694,
+                "mod": "std",
+                "out": "reYIK_d.o",
+                "checksum": 0
+            }
+        },
+        "ufp_0001": {
+            "bbqK0_d": {
+                "archive": "archive.2/_73056_archive_1.a",
+                "mode": 4,
+                "bytes": 9570,
+                "mod": "ufp_0001",
+                "out": "bbqK0_d.o",
+                "checksum": 0
+            }
+        },
+        "ufp_0000": {
+            "Tphpu_d": {
+                "archive": "archive.2/_73056_archive_1.a",
+                "mode": 4,
+                "bytes": 9558,
+                "mod": "ufp_0000",
+                "out": "Tphpu_d.o",
+                "checksum": 0
+            }
+        }
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 60734
+    },
+    "PEModules": [],
+    "NameTable": {
+        "fp_op_full_target_tb": [
+            "fp_op_full_target_tb",
+            "Asi5y",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "ufp": [
+            "ufp",
+            "TvIdG",
+            "module"
+        ],
+        "ufp_0001": [
+            "ufp_0001",
+            "bbqK0",
+            "module"
+        ],
+        "ufp_0000": [
+            "ufp_0000",
+            "Tphpu",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_minflt": 6504,
+            "ru_utime_sec": 0.039634999999999997,
+            "ru_stime_sec": 0.019817000000000001,
+            "ru_maxrss_kb": 89760,
+            "ru_nvcsw": 26,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "totalObjSize": 145674,
+        "mop/quad": 2.1603773584905661,
+        "nQuads": 1166,
+        "mopSpeed": 165267.02532476047,
+        "ru_childs_cgstart": {
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 2519,
+        "Frontend(%)": 72.225158080798877,
+        "ru_self_end": {
+            "ru_minflt": 8647,
+            "ru_utime_sec": 0.054877000000000002,
+            "ru_stime_sec": 0.026921,
+            "ru_maxrss_kb": 95568,
+            "ru_nvcsw": 27,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "CodeGen(%)": 27.77484191920113,
+        "ru_childs_end": {
+            "ru_minflt": 276,
+            "ru_utime_sec": 0.001062,
+            "ru_stime_sec": 0.002124,
+            "ru_maxrss_kb": 15064,
+            "ru_nvcsw": 1,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "quadSpeed": 76499.147093557243,
+        "outputSizePerQuad": 124.0
+    },
+    "CurCompileUdps": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "ufp",
+        "ufp",
+        "ufp_0000",
+        "ufp_0000",
+        "ufp_0001",
+        "ufp_0001",
+        "fp_op_full_target_tb",
+        "fp_op_full_target_tb"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful",
+    "Misc": {
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/fp_op_full/testbench/../simv.daidir",
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/fp_op_full/testbench",
+        "csrc": "csrc",
+        "default_output_dir": "csrc",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/fp_op_full/testbench/csrc",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/fp_op_full/simv.daidir",
+        "archive_dir": "archive.2"
+    },
+    "CompileProcesses": [
+        "cgproc.73056.json"
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "MlibObjs": {},
+    "CompileStrategy": "fullobj",
+    "PrevCompiledModules": {},
+    "CompileProcesses": [
+        "cgproc.983692.json"
+    ],
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "audio_info_frame_0000": [
+            "audio_info_frame_0000",
+            "uNvdF",
+            "module"
+        ],
+        "audio_info_frame_target_tb": [
+            "audio_info_frame_target_tb",
+            "bpb8b",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.035192000000000001,
+            "ru_stime_sec": 0.012066,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 87720,
+            "ru_minflt": 5408,
+            "ru_nivcsw": 2,
+            "ru_nvcsw": 23
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 0
+        },
+        "nQuads": 1348,
+        "mopSpeed": 397522.59792433889,
+        "CodeGen(%)": 29.794322421050524,
+        "nMops": 5937,
+        "ru_self_end": {
+            "ru_utime_sec": 0.050126999999999998,
+            "ru_stime_sec": 0.015037999999999999,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 95880,
+            "ru_minflt": 7173,
+            "ru_nivcsw": 2,
+            "ru_nvcsw": 23
+        },
+        "outputSizePerQuad": 114.0,
+        "quadSpeed": 90257.783729494491,
+        "totalObjSize": 154919,
+        "mop/quad": 4.4043026706231458,
+        "Frontend(%)": 70.205677578949476
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "audio_info_frame_0000",
+        "audio_info_frame_0000",
+        "audio_info_frame_target_tb",
+        "audio_info_frame_target_tb"
+    ],
+    "PEModules": [],
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 61649
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/audio_info_frame",
+        "default_output_dir": "csrc",
+        "csrc": "csrc",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/audio_info_frame/csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/audio_info_frame/simv.daidir",
+        "archive_dir": "archive.0",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/audio_info_frame/simv.daidir"
+    },
+    "CompileStatus": "Successful"
+}

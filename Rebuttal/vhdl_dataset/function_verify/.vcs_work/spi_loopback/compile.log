@@ -1,0 +1,18 @@
+Unsupported Linux kernel (6.8.0-106-generic), will try Linux
+                     Synopsys 1076 VHDL Analyzer
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.rst_sync_patched.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.clk_en_gen_patched.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/btn_debounce/btn_debounce_original.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/spi_master/spi_master_original.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/spi_slave/spi_slave_original.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.sseg_driver_patched.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/spi_loopback/spi_loopback_original.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/spi_loopback/testbench/spi_loopback_target_tb.vhd'

@@ -1,0 +1,6 @@
+vh/ScMain.o
+vh/scscomm.o
+vh/scsFilelist.o
+vh/DEFAULT__T65_PACK__.o
+vh/DEFAULT__T65_ALU_ORIGINAL_TARGET_TB__TB.o
+vh/DEFAULT__T65_ALU__RTL.o

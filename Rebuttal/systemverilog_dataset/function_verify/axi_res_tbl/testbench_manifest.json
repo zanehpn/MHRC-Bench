@@ -1,0 +1,10 @@
+{
+  "path": "axi_riscv_atomics/src/axi_res_tbl.sv",
+  "local_file": "axi_res_tbl/axi_res_tbl.sv",
+  "local_original_file": "axi_res_tbl_original.sv",
+  "local_testbenches": [
+    "testbench/axi_res_tbl_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "axi_res_tbl"
+}

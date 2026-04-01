@@ -1,0 +1,99 @@
+{
+    "MlibObjs": {},
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/top",
+        "archive_dir": "archive.0",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/top/simv.daidir",
+        "csrc": "csrc",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/top/csrc",
+        "default_output_dir": "csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/top/simv.daidir"
+    },
+    "CurCompileUdps": {},
+    "CompileStatus": "Successful",
+    "CompileProcesses": [
+        "cgproc.954629.json"
+    ],
+    "PrevCompiledModules": {},
+    "CompileStrategy": "fullobj",
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "top_target_tb": [
+            "top_target_tb",
+            "Hw9aK",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "stat": {
+        "outputSizePerQuad": 112.0,
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_minflt": 5105,
+            "ru_utime_sec": 0.034766999999999999,
+            "ru_stime_sec": 0.01788,
+            "ru_maxrss_kb": 85680,
+            "ru_nvcsw": 23,
+            "ru_nivcsw": 0
+        },
+        "totalObjSize": 133867,
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "mop/quad": 2.2510495382031905,
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 2681,
+        "Frontend(%)": 74.615302071037675,
+        "nQuads": 1191,
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_minflt": 6341,
+            "ru_utime_sec": 0.046594999999999998,
+            "ru_stime_sec": 0.02181,
+            "ru_maxrss_kb": 93840,
+            "ru_nvcsw": 23,
+            "ru_nivcsw": 0
+        },
+        "mopSpeed": 226665.53939803859,
+        "quadSpeed": 100693.27020629018,
+        "CodeGen(%)": 25.384697928962332
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 62173
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "top_target_tb",
+        "top_target_tb"
+    ],
+    "PEModules": []
+}

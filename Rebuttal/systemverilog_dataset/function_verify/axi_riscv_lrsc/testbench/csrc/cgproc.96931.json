@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "axi_riscv_lrsc_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7615,
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "bytes": 32694,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.3/_96931_archive_1.a"
+        },
+        "DJhjk_d": {
+            "mod": "axi_riscv_lrsc_target_tb",
+            "out": "DJhjk_d.o",
+            "bytes": 15567,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.3/_96931_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.3/_96931_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32694
+                ],
+                [
+                    "DJhjk_d.o",
+                    15567
+                ]
+            ],
+            "size": 48261
+        }
+    ]
+}

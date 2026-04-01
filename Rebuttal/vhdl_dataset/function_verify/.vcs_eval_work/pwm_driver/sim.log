@@ -1,0 +1,19 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+7756 NS
+Report NOTE at 7756 NS in design unit PWM_DRIVER_TARGET_TB(SIM) from process /PWM_DRIVER_TARGET_TB/STIM_PROC:
+    "All pwm_driver tests passed."
+
+Note-[FINISH_CALL] Call finish command
+  FINISH called from 
+  /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/pwm_driver/testbench/pwm_driver_target_tb.vhd:157
+  at 7756 NS in process /PWM_DRIVER_TARGET_TB/STIM_PROC
+

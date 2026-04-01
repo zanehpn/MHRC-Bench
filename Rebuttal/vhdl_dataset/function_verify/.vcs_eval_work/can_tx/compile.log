@@ -1,0 +1,21 @@
+Unsupported Linux kernel (6.8.0-106-generic), will try Linux
+                     Synopsys 1076 VHDL Analyzer
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/can_tx/testbench/can_tx_target_tb.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/can_tx/can_tx.vhd'
+
+Error-[IEEEVHDLSYNTAXERR] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/can_tx/can_tx.vhd, 155
+  
+        prev_send_req <= '0';
+        ^
+  Syntax error detected during VHDL parsing.
+
+"/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/can_tx/can_tx.vhd": errors: 1; warnings: 0.

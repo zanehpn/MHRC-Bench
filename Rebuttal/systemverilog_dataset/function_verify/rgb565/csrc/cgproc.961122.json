@@ -1,0 +1,71 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "rgb565": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "rgb565_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "mts2U_d": {
+            "mod": "rgb565_target_tb",
+            "out": "mts2U_d.o",
+            "mode": 4,
+            "bytes": 21413,
+            "checksum": 0,
+            "archive": "archive.0/_961122_archive_1.a"
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "bytes": 32494,
+            "checksum": 0,
+            "archive": "archive.0/_961122_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7403,
+            "checksum": 0
+        },
+        "vRnu1_d": {
+            "mod": "rgb565",
+            "out": "vRnu1_d.o",
+            "mode": 4,
+            "bytes": 7881,
+            "checksum": 0,
+            "archive": "archive.0/_961122_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_961122_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "vRnu1_d.o",
+                    7881
+                ],
+                [
+                    "mts2U_d.o",
+                    21413
+                ]
+            ],
+            "size": 61788
+        }
+    ]
+}

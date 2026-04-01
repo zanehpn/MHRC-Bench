@@ -1,0 +1,57 @@
+Selected 50 design-body candidates from `systemverilog_dataset/test_content.jsonl`.
+
+Storage layout:
+- Each extracted source is placed under `function_verify/<file-stem>/`.
+- If file-stem collisions occur, the folder name is suffixed with task id.
+
+Candidates:
+- Line 14: `virtio/rtl/virtio/available_ring/monitor/virtio_available_ring_monitor.sv` -> `virtio_available_ring_monitor/virtio_available_ring_monitor.sv`
+- Line 47: `SystemVerilogSHA256/miner.sv` -> `miner/miner.sv`
+- Line 51: `SystemVerilogSHA256/sha_mainloop.sv` -> `sha_mainloop/sha_mainloop.sv`
+- Line 53: `SystemVerilogSHA256/sha_padder.sv` -> `sha_padder/sha_padder.sv`
+- Line 65: `labs-with-cva6/labs/caching/part2/starter/ucsbece154b_victim_cache.sv` -> `ucsbece154b_victim_cache/ucsbece154b_victim_cache.sv`
+- Line 67: `labs-with-cva6/labs/caching/part2/ucsbece154b_icache.sv` -> `ucsbece154b_icache/ucsbece154b_icache.sv`
+- Line 71: `mipi-csi-2/src/camera.sv` -> `camera/camera.sv`
+- Line 72: `mipi-csi-2/src/d_phy_receiver.sv` -> `d_phy_receiver/d_phy_receiver.sv`
+- Line 74: `mipi-csi-2/src/decoders/rgb565.sv` -> `rgb565/rgb565.sv`
+- Line 75: `mipi-csi-2/src/decoders/rgb888.sv` -> `rgb888/rgb888.sv`
+- Line 89: `Convolutional-Neural-Network-using-SystemVerilog/Fully connected layer/flat.sv` -> `flat/flat.sv`
+- Line 94: `Convolutional-Neural-Network-using-SystemVerilog/pooling/maxpooling.sv` -> `maxpooling/maxpooling.sv`
+- Line 107: `axi_vip_demo/src/axi_ram/axi_ram.v` -> `axi_ram/axi_ram.v`
+- Line 124: `cdc/src/ffd_synchro.v` -> `ffd_synchro/ffd_synchro.v`
+- Line 140: `fplib/rtl/clip.sv` -> `clip/clip.sv`
+- Line 141: `fplib/rtl/fp_convert.sv` -> `fp_convert/fp_convert.sv`
+- Line 145: `fplib/rtl/fp_op_full.sv` -> `fp_op_full/fp_op_full.sv`
+- Line 152: `plic/rtl/verilog/ahb3lite/ahb3lite_plic_top.sv` -> `ahb3lite_plic_top/ahb3lite_plic_top.sv`
+- Line 154: `plic/rtl/verilog/core/plic_cell.sv` -> `plic_cell/plic_cell.sv`
+- Line 156: `plic/rtl/verilog/core/plic_dynamic_registers.sv` -> `plic_dynamic_registers/plic_dynamic_registers.sv`
+- Line 157: `plic/rtl/verilog/core/plic_gateway.sv` -> `plic_gateway/plic_gateway.sv`
+- Line 160: `AXI4_Interconnect/RTL/AXI_Arbiter_R.sv` -> `AXI_Arbiter_R/AXI_Arbiter_R.sv`
+- Line 161: `AXI4_Interconnect/RTL/AXI_Arbiter_W.sv` -> `AXI_Arbiter_W/AXI_Arbiter_W.sv`
+- Line 165: `AXI4_Interconnect/RTL/AXI_Master_Mux_W.sv` -> `AXI_Master_Mux_W/AXI_Master_Mux_W.sv`
+- Line 166: `AXI4_Interconnect/RTL/AXI_Slave_Mux_R.sv` -> `AXI_Slave_Mux_R/AXI_Slave_Mux_R.sv`
+- Line 167: `AXI4_Interconnect/RTL/AXI_Slave_Mux_W.sv` -> `AXI_Slave_Mux_W/AXI_Slave_Mux_W.sv`
+- Line 278: `analogue-pocket-utils/ip/hex_loader.v` -> `hex_loader/hex_loader.v`
+- Line 279: `analogue-pocket-utils/ip/mem/psram.sv` -> `psram/psram.sv`
+- Line 282: `analogue-pocket-utils/ip/sync_fifo.sv` -> `sync_fifo/sync_fifo.sv`
+- Line 303: `sigma_delta_converters/rtl/cic_comb.sv` -> `cic_comb/cic_comb.sv`
+- Line 306: `sigma_delta_converters/rtl/fir_compensator.sv` -> `fir_compensator/fir_compensator.sv`
+- Line 309: `sigma_delta_converters/rtl/hw_test/shifter.sv` -> `shifter/shifter.sv`
+- Line 310: `sigma_delta_converters/rtl/hw_test/top.sv` -> `top/top.sv`
+- Line 311: `sigma_delta_converters/rtl/hw_test/uart.sv` -> `uart/uart.sv`
+- Line 313: `sigma_delta_converters/rtl/sigma_delta_dac.sv` -> `sigma_delta_dac/sigma_delta_dac.sv`
+- Line 332: `axi_riscv_atomics/src/axi_res_tbl.sv` -> `axi_res_tbl/axi_res_tbl.sv`
+- Line 333: `axi_riscv_atomics/src/axi_riscv_amos.sv` -> `axi_riscv_amos/axi_riscv_amos.sv`
+- Line 339: `axi_riscv_atomics/src/axi_riscv_lrsc.sv` -> `axi_riscv_lrsc/axi_riscv_lrsc.sv`
+- Line 444: `hdmi/src/audio_info_frame.sv` -> `audio_info_frame/audio_info_frame.sv`
+- Line 445: `hdmi/src/audio_sample_packet.sv` -> `audio_sample_packet/audio_sample_packet.sv`
+- Line 447: `hdmi/src/hdmi.sv` -> `hdmi/hdmi.sv`
+- Line 449: `hdmi/src/packet_picker.sv` -> `packet_picker/packet_picker.sv`
+- Line 452: `hdmi/src/tmds_channel.sv` -> `tmds_channel/tmds_channel.sv`
+- Line 475: `axi4-interface/axi-interconnect/axi_lite_interconnect.sv` -> `axi_lite_interconnect/axi_lite_interconnect.sv`
+- Line 477: `axi4-interface/axi4/axi_master.sv` -> `axi_master/axi_master.sv`
+- Line 479: `axi4-interface/axi4/axi_slave.sv` -> `axi_slave/axi_slave.sv`
+- Line 481: `axi4-interface/axi4-lite/axi_lite_master.sv` -> `axi_lite_master/axi_lite_master.sv`
+- Line 483: `axi4-interface/axi4-lite/axi_lite_slave.sv` -> `axi_lite_slave/axi_lite_slave.sv`
+- Line 485: `axi4-interface/axi4-stream/axi_stream_master.sv` -> `axi_stream_master/axi_stream_master.sv`
+- Line 505: `tech_cells_generic/src/rtl/tc_sram.sv` -> `tc_sram/tc_sram.sv`

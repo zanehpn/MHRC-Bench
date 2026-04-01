@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "AXI_Arbiter_R_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7403,
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "bytes": 32494,
+            "archive": "archive.0/_848471_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "FuYyF_d": {
+            "mod": "AXI_Arbiter_R_target_tb",
+            "out": "FuYyF_d.o",
+            "bytes": 46240,
+            "archive": "archive.0/_848471_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_848471_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "FuYyF_d.o",
+                    46240
+                ]
+            ],
+            "size": 78734
+        }
+    ]
+}

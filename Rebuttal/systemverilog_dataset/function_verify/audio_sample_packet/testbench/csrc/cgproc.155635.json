@@ -1,0 +1,71 @@
+{
+    "reusePaths": {},
+    "Modules": {
+        "audio_sample_packet_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 10
+        },
+        "audio_sample_packet_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 10
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7623,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "mode": 4,
+            "out": "reYIK_d.o",
+            "bytes": 32702,
+            "checksum": 0,
+            "archive": "archive.9/_155635_archive_1.a"
+        },
+        "qMFLt_d": {
+            "mod": "audio_sample_packet_0000",
+            "mode": 4,
+            "out": "qMFLt_d.o",
+            "bytes": 16164,
+            "checksum": 0,
+            "archive": "archive.9/_155635_archive_1.a"
+        },
+        "p2zzd_d": {
+            "mod": "audio_sample_packet_target_tb",
+            "mode": 4,
+            "out": "p2zzd_d.o",
+            "bytes": 30518,
+            "checksum": 0,
+            "archive": "archive.9/_155635_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.9/_155635_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32702
+                ],
+                [
+                    "qMFLt_d.o",
+                    16164
+                ],
+                [
+                    "p2zzd_d.o",
+                    30518
+                ]
+            ],
+            "size": 79384
+        }
+    ]
+}

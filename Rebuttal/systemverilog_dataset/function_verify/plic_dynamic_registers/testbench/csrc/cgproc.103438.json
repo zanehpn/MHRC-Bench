@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        },
+        "plic_dynamic_registers_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7631,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mode": 4,
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "archive": "archive.2/_103438_archive_1.a",
+            "bytes": 32702,
+            "checksum": 0
+        },
+        "C1cG5_d": {
+            "mode": 4,
+            "mod": "plic_dynamic_registers_target_tb",
+            "out": "C1cG5_d.o",
+            "archive": "archive.2/_103438_archive_1.a",
+            "bytes": 14967,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_103438_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32702
+                ],
+                [
+                    "C1cG5_d.o",
+                    14967
+                ]
+            ],
+            "size": 47669
+        }
+    ]
+}

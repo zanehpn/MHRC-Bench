@@ -1,0 +1,163 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "std": {
+            "reYIK_d": {
+                "bytes": 32686,
+                "mod": "std",
+                "archive": "archive.4/_101264_archive_1.a",
+                "out": "reYIK_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "packet_picker": {
+            "hLvqj_d": {
+                "bytes": 9331,
+                "mod": "packet_picker",
+                "archive": "archive.4/_101264_archive_1.a",
+                "out": "hLvqj_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "hdmi_target_tb": {
+            "nt0z9_d": {
+                "bytes": 23253,
+                "mod": "hdmi_target_tb",
+                "archive": "archive.4/_101264_archive_1.a",
+                "out": "nt0z9_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7591,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "serializer": {
+            "vd0rJ_d": {
+                "bytes": 8708,
+                "mod": "serializer",
+                "archive": "archive.4/_101264_archive_1.a",
+                "out": "vd0rJ_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        }
+    },
+    "CompileStatus": "Successful",
+    "NameTable": {
+        "packet_picker": [
+            "packet_picker",
+            "hLvqj",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "serializer": [
+            "serializer",
+            "vd0rJ",
+            "module"
+        ],
+        "hdmi_target_tb": [
+            "hdmi_target_tb",
+            "nt0z9",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CurCompileUdps": {},
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "nQuads": 1796,
+        "ru_self_cgstart": {
+            "ru_minflt": 5491,
+            "ru_utime_sec": 0.034459999999999998,
+            "ru_nvcsw": 32,
+            "ru_stime_sec": 0.0098449999999999996,
+            "ru_maxrss_kb": 85680,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "totalObjSize": 142577,
+        "ru_self_end": {
+            "ru_minflt": 7692,
+            "ru_utime_sec": 0.048679,
+            "ru_nvcsw": 35,
+            "ru_stime_sec": 0.013908,
+            "ru_maxrss_kb": 95880,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "nMops": 3891,
+        "ru_childs_end": {
+            "ru_minflt": 279,
+            "ru_utime_sec": 0.001768,
+            "ru_nvcsw": 1,
+            "ru_stime_sec": 0.001768,
+            "ru_maxrss_kb": 14044,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "mopSpeed": 273647.93586046837,
+        "quadSpeed": 126309.86707926012,
+        "mop/quad": 2.1664810690423164,
+        "outputSizePerQuad": 79.0,
+        "Frontend(%)": 70.790279175825304,
+        "CodeGen(%)": 29.209720824174699
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "packet_picker",
+        "packet_picker",
+        "serializer",
+        "serializer",
+        "hdmi_target_tb",
+        "hdmi_target_tb"
+    ],
+    "CompileProcesses": [
+        "cgproc.101264.json"
+    ],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 61008
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "Misc": {
+        "csrc": "csrc",
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hdmi/testbench",
+        "archive_dir": "archive.4",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hdmi/testbench/csrc",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hdmi/simv.daidir",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hdmi/testbench/../simv.daidir",
+        "default_output_dir": "csrc"
+    }
+}

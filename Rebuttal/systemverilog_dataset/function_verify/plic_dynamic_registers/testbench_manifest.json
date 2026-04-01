@@ -1,0 +1,10 @@
+{
+  "path": "plic/rtl/verilog/core/plic_dynamic_registers.sv",
+  "local_file": "plic_dynamic_registers/plic_dynamic_registers.sv",
+  "local_original_file": "plic_dynamic_registers_original.sv",
+  "local_testbenches": [
+    "testbench/plic_dynamic_registers_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "plic_dynamic_registers"
+}

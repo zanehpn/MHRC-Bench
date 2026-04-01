@@ -1,0 +1,31 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+50 NS
+Report NOTE at 50 NS in design unit UART_DEBOUNCER_TARGET_TB(TB) from process /UART_DEBOUNCER_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DEB_OUT is '0' at startup"
+110 NS
+Report NOTE at 110 NS in design unit UART_DEBOUNCER_TARGET_TB(TB) from process /UART_DEBOUNCER_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DEB_OUT is '1' after sustained DEB_IN='1'"
+170 NS
+Report NOTE at 170 NS in design unit UART_DEBOUNCER_TARGET_TB(TB) from process /UART_DEBOUNCER_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DEB_OUT returns to '0' after sustained DEB_IN='0'"
+245 NS
+Report NOTE at 245 NS in design unit UART_DEBOUNCER_TARGET_TB(TB) from process /UART_DEBOUNCER_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DEB_OUT stays '0' for a single-cycle glitch"
+305 NS
+Report NOTE at 305 NS in design unit UART_DEBOUNCER_TARGET_TB(TB) from process /UART_DEBOUNCER_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DEB_OUT set to '1' in toggle test"
+365 NS
+Report NOTE at 365 NS in design unit UART_DEBOUNCER_TARGET_TB(TB) from process /UART_DEBOUNCER_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DEB_OUT reset to '0' in toggle test"
+Report NOTE at 365 NS in design unit UART_DEBOUNCER_TARGET_TB(TB) from process /UART_DEBOUNCER_TARGET_TB/STIM_PROC:
+    "ALL UART_DEBOUNCER TESTS PASSED"
+(simv): Simulation complete, time is 370 NS.

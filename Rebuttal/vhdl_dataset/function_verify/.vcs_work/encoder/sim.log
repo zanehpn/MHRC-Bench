@@ -1,0 +1,18 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+
+Error-[SIMERR_SIZEMISMATCH] Array Size Mismatch
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.adderTreeLegacy_patched.vhd, 78
+           result := op1 + op2;
+  Array size of 4 on LHS does not match the array size of 3 on RHS at 0 NS 
+  from process /ENCODER_TARGET_TB/DUT/ADDER_TREE/ADDERS.
+
+ /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_work/.adderTreeLegacy_patched.vhd(78):	         result := op1 + op2;

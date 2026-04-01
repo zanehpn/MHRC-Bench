@@ -1,0 +1,33 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+5 NS
+Report NOTE at 5 NS in design unit T65_MCODE_ORIGINAL_TARGET_TB(TB) from process /T65_MCODE_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: NOP MCycle=0 -> Inc_S=0, Dec_S=0"
+15 NS
+Report NOTE at 15 NS in design unit T65_MCODE_ORIGINAL_TARGET_TB(TB) from process /T65_MCODE_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: PHA MCycle=1 -> Write=1 (stack write path)"
+20 NS
+Report NOTE at 20 NS in design unit T65_MCODE_ORIGINAL_TARGET_TB(TB) from process /T65_MCODE_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: PHA MCycle=2 -> Dec_S=1 (stack pointer decrement path)"
+30 NS
+Report NOTE at 30 NS in design unit T65_MCODE_ORIGINAL_TARGET_TB(TB) from process /T65_MCODE_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: PLA MCycle=2 -> Inc_S=1"
+35 NS
+Report NOTE at 35 NS in design unit T65_MCODE_ORIGINAL_TARGET_TB(TB) from process /T65_MCODE_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: JSR MCycle=3 -> Dec_S=1"
+40 NS
+Report NOTE at 40 NS in design unit T65_MCODE_ORIGINAL_TARGET_TB(TB) from process /T65_MCODE_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: RTS MCycle=2 -> Inc_S=1"
+Report NOTE at 40 NS in design unit T65_MCODE_ORIGINAL_TARGET_TB(TB) from process /T65_MCODE_ORIGINAL_TARGET_TB/STIM_PROC:
+    "INFO: T65_MCode combinational decode tests complete."
+Report NOTE at 40 NS in design unit T65_MCODE_ORIGINAL_TARGET_TB(TB) from process /T65_MCODE_ORIGINAL_TARGET_TB/STIM_PROC:
+    "NOTE: BLOCKER: T65_Pack.vhd (work.T65_Pack) must be compiled into 'work' before elaboration. Exact MCycle encoding depends on T65_Pack T_Lcycle type definition."
+(simv): Simulation complete, time is 40 NS.

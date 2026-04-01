@@ -1,0 +1,126 @@
+{
+    "CompileProcesses": [
+        "cgproc.84740.json"
+    ],
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "std": {
+            "reYIK_d": {
+                "bytes": 32702,
+                "mod": "std",
+                "out": "reYIK_d.o",
+                "mode": 4,
+                "archive": "archive.2/_84740_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "axi_stream_master_target_tb": {
+            "YPaxk_d": {
+                "bytes": 15096,
+                "mod": "axi_stream_master_target_tb",
+                "out": "YPaxk_d.o",
+                "mode": 4,
+                "archive": "archive.2/_84740_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7623,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        }
+    },
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "axi_stream_master_target_tb": [
+            "axi_stream_master_target_tb",
+            "YPaxk",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "LVLData": [
+        "SIM"
+    ],
+    "stat": {
+        "ru_childs_end": {
+            "ru_utime_sec": 0.001121,
+            "ru_stime_sec": 0.0022430000000000002,
+            "ru_maxrss_kb": 14240,
+            "ru_majflt": 0,
+            "ru_minflt": 276,
+            "ru_nvcsw": 1,
+            "ru_nivcsw": 0
+        },
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.028108999999999999,
+            "ru_stime_sec": 0.0126,
+            "ru_maxrss_kb": 85680,
+            "ru_majflt": 0,
+            "ru_minflt": 5022,
+            "ru_nvcsw": 31,
+            "ru_nivcsw": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "nQuads": 654,
+        "nMops": 1311,
+        "totalObjSize": 115881,
+        "outputSizePerQuad": 177.0,
+        "ru_self_end": {
+            "ru_utime_sec": 0.032749,
+            "ru_stime_sec": 0.019264,
+            "ru_maxrss_kb": 93840,
+            "ru_majflt": 0,
+            "ru_minflt": 7072,
+            "ru_nvcsw": 33,
+            "ru_nivcsw": 0
+        },
+        "Frontend(%)": 85.831628446670123,
+        "CodeGen(%)": 14.168371553329878
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 59954
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "axi_stream_master_target_tb",
+        "axi_stream_master_target_tb"
+    ],
+    "CurCompileUdps": {},
+    "CompileStatus": "Successful",
+    "PEModules": [],
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/axi_stream_master/testbench",
+        "csrc": "csrc",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/axi_stream_master/simv.daidir",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/axi_stream_master/testbench/csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/axi_stream_master/testbench/../simv.daidir",
+        "archive_dir": "archive.2",
+        "default_output_dir": "csrc"
+    }
+}

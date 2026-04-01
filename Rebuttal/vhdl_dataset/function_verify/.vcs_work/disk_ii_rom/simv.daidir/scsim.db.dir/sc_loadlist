@@ -1,0 +1,5 @@
+vh/ScMain.o
+vh/scscomm.o
+vh/scsFilelist.o
+vh/DEFAULT__DISK_II_ROM_TARGET_TB__SIM.o
+vh/DEFAULT__DISK_II_ROM__RTL.o

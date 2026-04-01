@@ -1,0 +1,23 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+363 NS
+Report NOTE at 363 NS in design unit BLAKE2BMINERCORE_TARGET_TB(TB) from process /BLAKE2BMINERCORE_TARGET_TB/STIM_PROC:
+    "PASS: Success asserted! NonceOut=75"
+30363 NS
+Report NOTE at 30363 NS in design unit BLAKE2BMINERCORE_TARGET_TB(TB) from process /BLAKE2BMINERCORE_TARGET_TB/STIM_PROC:
+    "PASS: Success asserted during extended run. NonceOut=15075"
+30378 NS
+Report NOTE at 30378 NS in design unit BLAKE2BMINERCORE_TARGET_TB(TB) from process /BLAKE2BMINERCORE_TARGET_TB/STIM_PROC:
+    "Blake2bMinerCore testbench stimulus complete. NOTE: compilation requires work.PkgBlake2b (includes QuadG entity)."
+
+
+Process terminated by kill.
+

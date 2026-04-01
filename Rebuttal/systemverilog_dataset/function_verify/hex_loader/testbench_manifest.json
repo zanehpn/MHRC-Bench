@@ -1,0 +1,10 @@
+{
+  "path": "analogue-pocket-utils/ip/hex_loader.v",
+  "local_file": "hex_loader/hex_loader.v",
+  "local_original_file": "hex_loader_original.v",
+  "local_testbenches": [
+    "testbench/hex_loader_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "hex_loader"
+}

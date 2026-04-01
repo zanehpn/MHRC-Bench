@@ -1,0 +1,103 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_985092_archive_1.a",
+            "size": 105337,
+            "objects": [
+                [
+                    "FPMBC_d.o",
+                    6989
+                ],
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "xJRie_d.o",
+                    9408
+                ],
+                [
+                    "ezc2T_d.o",
+                    7815
+                ],
+                [
+                    "S1Z6U_d.o",
+                    48631
+                ]
+            ]
+        }
+    ],
+    "Modules": {
+        "...MASTER...": {},
+        "_vcs_unit__787639105": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_lite_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_lite_if": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_lite_slave_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 0,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7727,
+            "mode": 4
+        },
+        "ezc2T_d": {
+            "mod": "axi_lite_if",
+            "checksum": 0,
+            "out": "ezc2T_d.o",
+            "bytes": 7815,
+            "mode": 4,
+            "archive": "archive.0/_985092_archive_1.a"
+        },
+        "FPMBC_d": {
+            "mod": "_vcs_unit__787639105",
+            "checksum": 0,
+            "out": "FPMBC_d.o",
+            "bytes": 6989,
+            "mode": 4,
+            "archive": "archive.0/_985092_archive_1.a"
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "checksum": 0,
+            "out": "reYIK_d.o",
+            "bytes": 32494,
+            "mode": 4,
+            "archive": "archive.0/_985092_archive_1.a"
+        },
+        "xJRie_d": {
+            "mod": "axi_lite_pkg",
+            "checksum": 0,
+            "out": "xJRie_d.o",
+            "bytes": 9408,
+            "mode": 4,
+            "archive": "archive.0/_985092_archive_1.a"
+        },
+        "S1Z6U_d": {
+            "mod": "axi_lite_slave_target_tb",
+            "checksum": 0,
+            "out": "S1Z6U_d.o",
+            "bytes": 48631,
+            "mode": 4,
+            "archive": "archive.0/_985092_archive_1.a"
+        }
+    },
+    "reusePaths": {}
+}

@@ -1,0 +1,103 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "_vcs_unit__648217356": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_slave_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_if": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "JuDfH_d": {
+            "checksum": 0,
+            "mod": "axi_slave_target_tb",
+            "out": "JuDfH_d.o",
+            "mode": 4,
+            "bytes": 66061,
+            "archive": "archive.0/_986684_archive_1.a"
+        },
+        "amcQw_d": {
+            "checksum": 0,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7711
+        },
+        "p9GxR_d": {
+            "checksum": 0,
+            "mod": "axi_pkg",
+            "out": "p9GxR_d.o",
+            "mode": 4,
+            "bytes": 5936,
+            "archive": "archive.0/_986684_archive_1.a"
+        },
+        "cKYQ8_d": {
+            "checksum": 0,
+            "mod": "_vcs_unit__648217356",
+            "out": "cKYQ8_d.o",
+            "mode": 4,
+            "bytes": 6965,
+            "archive": "archive.0/_986684_archive_1.a"
+        },
+        "xb4mh_d": {
+            "checksum": 0,
+            "mod": "axi_if",
+            "out": "xb4mh_d.o",
+            "mode": 4,
+            "bytes": 9098,
+            "archive": "archive.0/_986684_archive_1.a"
+        },
+        "reYIK_d": {
+            "checksum": 0,
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "bytes": 32494,
+            "archive": "archive.0/_986684_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_986684_archive_1.a",
+            "objects": [
+                [
+                    "cKYQ8_d.o",
+                    6965
+                ],
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "p9GxR_d.o",
+                    5936
+                ],
+                [
+                    "xb4mh_d.o",
+                    9098
+                ],
+                [
+                    "JuDfH_d.o",
+                    66061
+                ]
+            ],
+            "size": 120554
+        }
+    ]
+}

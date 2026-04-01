@@ -1,0 +1,126 @@
+{
+    "MlibObjs": {},
+    "CurCompileUdps": {},
+    "CompileProcesses": [
+        "cgproc.147104.json"
+    ],
+    "PrevCompiledModules": {
+        "...MASTER...": {
+            "amcQw_d": {
+                "out": "objs/amcQw_d.o",
+                "bytes": 7615,
+                "checksum": 0,
+                "mod": "...MASTER...",
+                "mode": 4
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "out": "reYIK_d.o",
+                "bytes": 32694,
+                "checksum": 0,
+                "mod": "std",
+                "mode": 4,
+                "archive": "archive.6/_147104_archive_1.a"
+            }
+        },
+        "fir_compensator_target_tb": {
+            "u0SKV_d": {
+                "out": "u0SKV_d.o",
+                "bytes": 13988,
+                "checksum": 0,
+                "mod": "fir_compensator_target_tb",
+                "mode": 4,
+                "archive": "archive.6/_147104_archive_1.a"
+            }
+        }
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "fir_compensator_target_tb",
+        "fir_compensator_target_tb"
+    ],
+    "NameTable": {
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "fir_compensator_target_tb": [
+            "fir_compensator_target_tb",
+            "u0SKV",
+            "module"
+        ]
+    },
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/fir_compensator/testbench",
+        "archive_dir": "archive.6",
+        "csrc": "csrc",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/fir_compensator/testbench/csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/fir_compensator/testbench/../simv.daidir",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/fir_compensator/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_childs_cgstart": {
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0
+        },
+        "CodeGen(%)": 23.986585010207051,
+        "ru_self_cgstart": {
+            "ru_minflt": 5036,
+            "ru_utime_sec": 0.031278,
+            "ru_stime_sec": 0.0097739999999999997,
+            "ru_maxrss_kb": 85680,
+            "ru_nivcsw": 1,
+            "ru_nvcsw": 27,
+            "ru_majflt": 0
+        },
+        "ru_childs_end": {
+            "ru_minflt": 273,
+            "ru_utime_sec": 0.00088599999999999996,
+            "ru_stime_sec": 0.0017730000000000001,
+            "ru_maxrss_kb": 15020,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 1,
+            "ru_majflt": 0
+        },
+        "outputSizePerQuad": 111.0,
+        "nMops": 1981,
+        "nQuads": 1026,
+        "totalObjSize": 114027,
+        "ru_self_end": {
+            "ru_minflt": 7090,
+            "ru_utime_sec": 0.041147999999999997,
+            "ru_stime_sec": 0.012043,
+            "ru_maxrss_kb": 95880,
+            "ru_nivcsw": 1,
+            "ru_nvcsw": 28,
+            "ru_majflt": 0
+        },
+        "Frontend(%)": 76.013414989792949
+    },
+    "SIMBData": {
+        "bytes": 59730,
+        "out": "amcQwB.o"
+    },
+    "PEModules": [],
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful"
+}

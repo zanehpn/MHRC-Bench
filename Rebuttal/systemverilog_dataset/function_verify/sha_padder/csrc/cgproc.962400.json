@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "std": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "...MASTER...": {},
+        "sha_padder_target_tb": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7403,
+            "mode": 4,
+            "checksum": 0
+        },
+        "CgwFA_d": {
+            "mod": "sha_padder_target_tb",
+            "out": "CgwFA_d.o",
+            "archive": "archive.0/_962400_archive_1.a",
+            "bytes": 19660,
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "archive": "archive.0/_962400_archive_1.a",
+            "bytes": 32494,
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_962400_archive_1.a",
+            "size": 52154,
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "CgwFA_d.o",
+                    19660
+                ]
+            ]
+        }
+    ]
+}

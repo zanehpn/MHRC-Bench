@@ -1,0 +1,10 @@
+{
+  "path": "SystemVerilogSHA256/sha_mainloop.sv",
+  "local_file": "sha_mainloop/sha_mainloop.sv",
+  "local_original_file": "sha_mainloop_original.sv",
+  "local_testbenches": [
+    "testbench/sha_mainloop_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "sha_mainloop"
+}

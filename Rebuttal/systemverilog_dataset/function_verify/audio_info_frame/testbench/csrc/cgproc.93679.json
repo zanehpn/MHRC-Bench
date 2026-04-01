@@ -1,0 +1,71 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.5/_93679_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32694
+                ],
+                [
+                    "FxWv4_d.o",
+                    11684
+                ],
+                [
+                    "bpb8b_d.o",
+                    24590
+                ]
+            ],
+            "size": 68968
+        }
+    ],
+    "Modules": {
+        "audio_info_frame": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 6
+        },
+        "audio_info_frame_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 6
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 7615,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "checksum": 0,
+            "mode": 4
+        },
+        "reYIK_d": {
+            "bytes": 32694,
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "checksum": 0,
+            "mode": 4,
+            "archive": "archive.5/_93679_archive_1.a"
+        },
+        "FxWv4_d": {
+            "bytes": 11684,
+            "mod": "audio_info_frame",
+            "out": "FxWv4_d.o",
+            "checksum": 0,
+            "mode": 4,
+            "archive": "archive.5/_93679_archive_1.a"
+        },
+        "bpb8b_d": {
+            "bytes": 24590,
+            "mod": "audio_info_frame_target_tb",
+            "out": "bpb8b_d.o",
+            "checksum": 0,
+            "mode": 4,
+            "archive": "archive.5/_93679_archive_1.a"
+        }
+    },
+    "reusePaths": {}
+}

@@ -1,0 +1,30 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+3252 NS
+Report NOTE at 3252 NS in design unit UART_TARGET_TB(TB) from process /UART_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DIN_RDY is '1' at idle"
+Report NOTE at 3252 NS in design unit UART_TARGET_TB(TB) from process /UART_TARGET_TB/STIM_PROC:
+    "TEST PASSED: UART_TXD is '1' at idle"
+39566 NS
+Report NOTE at 39566 NS in design unit UART_TARGET_TB(TB) from process /UART_TARGET_TB/STIM_PROC:
+    "TEST PASSED: TX start bit detected for 0xA5"
+134958 NS
+Report NOTE at 134958 NS in design unit UART_TARGET_TB(TB) from process /UART_TARGET_TB/STIM_PROC:
+    "TEST PASSED: TX returned to idle after frame"
+171543 NS
+Report NOTE at 171543 NS in design unit UART_TARGET_TB(TB) from process /UART_TARGET_TB/STIM_PROC:
+    "TEST PASSED: TX start bit detected for 0x55"
+266935 NS
+Report NOTE at 266935 NS in design unit UART_TARGET_TB(TB) from process /UART_TARGET_TB/STIM_PROC:
+    "TEST PASSED: TX returned to idle after second frame"
+Report NOTE at 266935 NS in design unit UART_TARGET_TB(TB) from process /UART_TARGET_TB/STIM_PROC:
+    "ALL UART (uart_1) TESTS PASSED (TX path only; RX stub in use)"
+(simv): Simulation complete, time is 267030 NS.

@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "camera_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7599,
+            "checksum": 0,
+            "mode": 4
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "bytes": 32686,
+            "checksum": 0,
+            "mode": 4,
+            "archive": "archive.3/_98014_archive_1.a"
+        },
+        "saKDz_d": {
+            "mod": "camera_target_tb",
+            "out": "saKDz_d.o",
+            "bytes": 13955,
+            "checksum": 0,
+            "mode": 4,
+            "archive": "archive.3/_98014_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.3/_98014_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32686
+                ],
+                [
+                    "saKDz_d.o",
+                    13955
+                ]
+            ],
+            "size": 46641
+        }
+    ]
+}

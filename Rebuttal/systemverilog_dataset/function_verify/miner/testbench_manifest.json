@@ -1,0 +1,10 @@
+{
+  "path": "SystemVerilogSHA256/miner.sv",
+  "local_file": "miner/miner.sv",
+  "local_original_file": "miner_original.sv",
+  "local_testbenches": [
+    "testbench/miner_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "miner"
+}

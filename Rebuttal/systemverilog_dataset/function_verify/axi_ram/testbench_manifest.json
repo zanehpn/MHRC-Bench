@@ -1,0 +1,10 @@
+{
+  "path": "axi_vip_demo/src/axi_ram/axi_ram.v",
+  "local_file": "axi_ram/axi_ram.v",
+  "local_original_file": "axi_ram_original.v",
+  "local_testbenches": [
+    "testbench/axi_ram_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "axi_ram"
+}

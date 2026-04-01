@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "miner_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7591,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "archive": "archive.2/_102351_archive_1.a",
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "bytes": 32686,
+            "checksum": 0
+        },
+        "kCNdn_d": {
+            "archive": "archive.2/_102351_archive_1.a",
+            "mod": "miner_target_tb",
+            "out": "kCNdn_d.o",
+            "mode": 4,
+            "bytes": 12650,
+            "checksum": 0
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_102351_archive_1.a",
+            "size": 45336,
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32686
+                ],
+                [
+                    "kCNdn_d.o",
+                    12650
+                ]
+            ]
+        }
+    ]
+}

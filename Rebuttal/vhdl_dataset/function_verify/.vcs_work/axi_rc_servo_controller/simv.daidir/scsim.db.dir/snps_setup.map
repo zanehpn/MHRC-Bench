@@ -1,0 +1,2 @@
+synopsys_sim.setup_0 ./synopsys_sim.setup
+synopsys_sim.setup_1 /usr/synopsys/vcs-L-2016.06//bin/synopsys_sim.setup

@@ -1,0 +1,126 @@
+{
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.026308000000000002,
+            "ru_nvcsw": 31,
+            "ru_stime_sec": 0.011129999999999999,
+            "ru_maxrss_kb": 85680,
+            "ru_minflt": 5011,
+            "ru_nivcsw": 1
+        },
+        "outputSizePerQuad": 175.0,
+        "nQuads": 636,
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 1425,
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.00087000000000000001,
+            "ru_nvcsw": 1,
+            "ru_stime_sec": 0.002611,
+            "ru_maxrss_kb": 15116,
+            "ru_minflt": 276,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.035088000000000001,
+            "ru_nvcsw": 33,
+            "ru_stime_sec": 0.012383999999999999,
+            "ru_maxrss_kb": 93840,
+            "ru_minflt": 6821,
+            "ru_nivcsw": 1
+        },
+        "CodeGen(%)": 25.022799817601459,
+        "totalObjSize": 111458,
+        "Frontend(%)": 74.977200182398548
+    },
+    "PEModules": [],
+    "MlibObjs": {},
+    "CompileProcesses": [
+        "cgproc.101990.json"
+    ],
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "maxpooling_target_tb",
+        "maxpooling_target_tb"
+    ],
+    "PrevCompiledModules": {
+        "std": {
+            "reYIK_d": {
+                "out": "reYIK_d.o",
+                "bytes": 32694,
+                "mode": 4,
+                "mod": "std",
+                "checksum": 0,
+                "archive": "archive.2/_101990_archive_1.a"
+            }
+        },
+        "maxpooling_target_tb": {
+            "sMUIe_d": {
+                "out": "sMUIe_d.o",
+                "bytes": 11528,
+                "mode": 4,
+                "mod": "maxpooling_target_tb",
+                "checksum": 0,
+                "archive": "archive.2/_101990_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "out": "objs/amcQw_d.o",
+                "bytes": 7607,
+                "mode": 4,
+                "mod": "...MASTER...",
+                "checksum": 0
+            }
+        }
+    },
+    "SIMBData": {
+        "bytes": 59629,
+        "out": "amcQwB.o"
+    },
+    "NameTable": {
+        "maxpooling_target_tb": [
+            "maxpooling_target_tb",
+            "sMUIe",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/maxpooling/testbench",
+        "csrc": "csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/maxpooling/testbench/../simv.daidir",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/maxpooling/testbench/csrc",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/maxpooling/simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.2"
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful"
+}

@@ -1,0 +1,10 @@
+{
+  "path": "AXI4_Interconnect/RTL/AXI_Arbiter_W.sv",
+  "local_file": "AXI_Arbiter_W/AXI_Arbiter_W.sv",
+  "local_original_file": "AXI_Arbiter_W_original.sv",
+  "local_testbenches": [
+    "testbench/AXI_Arbiter_W_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "AXI_Arbiter_W"
+}

@@ -1,0 +1,10 @@
+{
+  "path": "hdmi/src/audio_sample_packet.sv",
+  "local_file": "audio_sample_packet/audio_sample_packet.sv",
+  "local_original_file": "audio_sample_packet_original.sv",
+  "local_testbenches": [
+    "testbench/audio_sample_packet_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "audio_sample_packet"
+}

@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "axi_lite_interconnect_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7623,
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "bytes": 32702,
+            "mode": 4,
+            "archive": "archive.2/_94404_archive_1.a",
+            "checksum": 0
+        },
+        "eNgEA_d": {
+            "mod": "axi_lite_interconnect_target_tb",
+            "out": "eNgEA_d.o",
+            "bytes": 15080,
+            "mode": 4,
+            "archive": "archive.2/_94404_archive_1.a",
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_94404_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32702
+                ],
+                [
+                    "eNgEA_d.o",
+                    15080
+                ]
+            ],
+            "size": 47782
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+# VHDL function verify candidates
+
+Total: 50
+
+Top tasks:
+- vic64-t9k: 4
+- zynq_tdc: 4
+- neoapple2: 4
+- uart-for-fpga: 4
+- vhdl-hdmi-out: 4
+- spi-fpga: 4
+- fpga_bitcoin_miner: 4
+- fmcw3: 3
+- SiaFpgaMiner: 3
+- PYNQ_softmax: 2
+- FPGA_GigabitTx: 2
+- AppleIISd: 2
+- MandelbrotInVHDL: 2
+- Designing-a-Custom-AXI-Slave-Peripheral: 2
+- flexray-interceptor: 2
+- spi-to-axi-bridge: 1
+- JSON-for-VHDL: 1
+- uart: 1
+- FPGA-I2C-Minion: 1
+
+Selected files:
+- line 129: vic64-t9k/fpga/src/lib/vicii/video_vicII_656x.vhd
+- line 124: vic64-t9k/fpga/src/lib/t65/T65.vhd
+- line 125: vic64-t9k/fpga/src/lib/t65/T65_ALU.vhd
+- line 126: vic64-t9k/fpga/src/lib/t65/T65_MCode.vhd
+- line 143: PYNQ_softmax/src/softmax_pynq.srcs/sources_1/imports/div_pipe_r4_arch2/cond_add.vhd
+- line 39: spi-to-axi-bridge/src/spi2axi.vhd
+- line 452: zynq_tdc/AXITDC/src/encoder.vhd
+- line 453: zynq_tdc/AXITDC/src/risingEdgeDetector.vhd
+- line 333: neoapple2/neoapple2/hdl/apple2.vhd
+- line 337: neoapple2/neoapple2/hdl/disk_ii_rom.vhd
+- line 342: neoapple2/neoapple2/hdl/video_generator.vhd
+- line 450: zynq_tdc/AXITDC/src/counter.vhd
+- line 451: zynq_tdc/AXITDC/src/delayLine.vhd
+- line 99: FPGA_GigabitTx/hdl/add_preamble.vhd
+- line 338: neoapple2/neoapple2/hdl/keyboard.vhd
+- line 302: uart-for-fpga/rtl/comp/uart_parity.vhd
+- line 192: vhdl-hdmi-out/rtl/serializer.vhd
+- line 194: vhdl-hdmi-out/rtl/tmds_encoder.vhd
+- line 9: AppleIISd/VHDL/AddressDecoder.vhd
+- line 258: MandelbrotInVHDL/GHDL/src/mandelbrot.vhdl
+- line 249: spi-fpga/rtl/spi_slave.vhd
+- line 189: vhdl-hdmi-out/rtl/objectbuffer.vhd
+- line 190: vhdl-hdmi-out/rtl/pattern_generator.vhd
+- line 467: Designing-a-Custom-AXI-Slave-Peripheral/axi_rc_servo_controller_v2_00_a/axi_rc_servo_controller_v2_00_a.srcs/sources_1/imports/vhdl/servo_controller.vhd
+- line 146: PYNQ_softmax/src/softmax_pynq.srcs/sources_1/imports/div_pipe_r4_arch2/nr_r4_cel.vhd
+- line 301: uart-for-fpga/rtl/comp/uart_debouncer.vhd
+- line 304: uart-for-fpga/rtl/comp/uart_tx.vhd
+- line 305: uart-for-fpga/rtl/uart.vhd
+- line 465: Designing-a-Custom-AXI-Slave-Peripheral/axi_rc_servo_controller_v2_00_a/axi_rc_servo_controller_v2_00_a.srcs/sources_1/imports/vhdl/axi_rc_servo_controller.vhd
+- line 13: AppleIISd/VHDL/SpiController.vhd
+- line 103: FPGA_GigabitTx/hdl/rgmii_tx.vhd
+- line 248: spi-fpga/rtl/spi_master.vhd
+- line 417: fmcw3/fpga/fmcw3/fmcw3.srcs/sources_1/new/spi.vhd
+- line 413: fmcw3/fpga/fmcw3/fmcw3.srcs/sources_1/new/control.vhd
+- line 416: fmcw3/fpga/fmcw3/fmcw3.srcs/sources_1/new/sample_packer.vhd
+- line 253: MandelbrotInVHDL/FPGA-VHDL/Mandelbrot.vhd
+- line 396: flexray-interceptor/can_tx.vhd
+- line 242: spi-fpga/examples/common/btn_debounce.vhd
+- line 246: spi-fpga/examples/loopback/spi_loopback.vhd
+- line 159: JSON-for-VHDL/examples/Boards_VUnit.vhdl
+- line 404: flexray-interceptor/pwm_driver.vhd
+- line 119: fpga_bitcoin_miner/FPGA/sha256d.srcs/sources_1/new/miner_top.vhd
+- line 120: fpga_bitcoin_miner/FPGA/sha256d.srcs/sources_1/new/pulse_cdc.vhd
+- line 122: fpga_bitcoin_miner/FPGA/sha256d.srcs/sources_1/new/sha256_transform.vhd
+- line 123: fpga_bitcoin_miner/FPGA/sha256d.srcs/sources_1/new/sha256d_wrapper.vhd
+- line 48: uart/source/uart.vhd
+- line 274: SiaFpgaMiner/Blake2bMinerCore.vhd
+- line 275: SiaFpgaMiner/Example/Clocking_K7.vhd
+- line 279: SiaFpgaMiner/MixG_FlopPipe_4.vhd
+- line 14: FPGA-I2C-Minion/I2C_minion.vhd

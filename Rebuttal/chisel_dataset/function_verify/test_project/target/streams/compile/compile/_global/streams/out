@@ -1,0 +1,10 @@
+[error] /ssd1/zqy/Multi-hdl-language-repo/chisel_dataset/function_verify/test_project/src/main/scala/Tap.scala:130:3: in XML literal: in XML content, please use '}}' to express '}'
+[error]   }
+[error]   ^
+[error] /ssd1/zqy/Multi-hdl-language-repo/chisel_dataset/function_verify/test_project/src/main/scala/Tap.scala:129:1:  I encountered a '}' where I didn't expect one, maybe this tag isn't closed <TARGET>
+[error] <TARGET>
+[error] ^
+[error] /ssd1/zqy/Multi-hdl-language-repo/chisel_dataset/function_verify/test_project/src/main/scala/Tap.scala:148:2: '}' expected but eof found.
+[error] }
+[error]  ^
+[error] three errors found

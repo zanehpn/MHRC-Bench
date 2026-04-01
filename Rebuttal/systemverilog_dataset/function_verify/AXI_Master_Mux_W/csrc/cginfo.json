@@ -1,0 +1,99 @@
+{
+    "stat": {
+        "Frontend(%)": 79.431725806756518,
+        "ru_self_end": {
+            "ru_nvcsw": 22,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.052897,
+            "ru_stime_sec": 0.014971,
+            "ru_maxrss_kb": 93840,
+            "ru_minflt": 6406,
+            "ru_nivcsw": 0
+        },
+        "ru_self_cgstart": {
+            "ru_nvcsw": 22,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.042016999999999999,
+            "ru_stime_sec": 0.012004000000000001,
+            "ru_maxrss_kb": 83640,
+            "ru_minflt": 5052,
+            "ru_nivcsw": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0
+        },
+        "totalObjSize": 129719,
+        "nMops": 2881,
+        "nQuads": 1308,
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0
+        },
+        "CodeGen(%)": 20.568274193243475,
+        "mopSpeed": 264797.79411764705,
+        "quadSpeed": 120220.58823529411,
+        "mop/quad": 2.202599388379205,
+        "outputSizePerQuad": 99.0
+    },
+    "CompileProcesses": [
+        "cgproc.982813.json"
+    ],
+    "MlibObjs": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 62754
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PrevCompiledModules": {},
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "AXI_Master_Mux_W_target_tb": [
+            "AXI_Master_Mux_W_target_tb",
+            "M2LQv",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "AXI_Master_Mux_W_target_tb",
+        "AXI_Master_Mux_W_target_tb"
+    ],
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/AXI_Master_Mux_W",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/AXI_Master_Mux_W/csrc",
+        "csrc": "csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/AXI_Master_Mux_W/simv.daidir",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/AXI_Master_Mux_W/simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.0"
+    },
+    "PEModules": [],
+    "CompileStatus": "Successful"
+}

@@ -1,0 +1,211 @@
+FIRRTL version 1.2.0
+circuit IMem :
+  module IMem : @[src/main/scala/IMem.scala 10:7]
+    input clock : Clock @[src/main/scala/IMem.scala 10:7]
+    input reset : UInt<1> @[src/main/scala/IMem.scala 10:7]
+    input io_imem_add_addr : UInt<32> @[src/main/scala/IMem.scala 11:30]
+    input io_r_imem_dat_req : UInt<1> @[src/main/scala/IMem.scala 11:30]
+    output io_r_imem_dat_ack : UInt<1> @[src/main/scala/IMem.scala 11:30]
+    output io_r_imem_dat_data : UInt<32> @[src/main/scala/IMem.scala 11:30]
+    input io_w_imem_dat_req : UInt<1> @[src/main/scala/IMem.scala 11:30]
+    output io_w_imem_dat_ack : UInt<1> @[src/main/scala/IMem.scala 11:30]
+    input io_w_imem_dat_data : UInt<32> @[src/main/scala/IMem.scala 11:30]
+    input io_w_imem_dat_byteenable : UInt<4> @[src/main/scala/IMem.scala 11:30]
+
+    mem mem_3 : @[src/main/scala/IMem.scala 30:47]
+      data-type => UInt<8>
+      depth => 12288
+      read-latency => 1
+      write-latency => 1
+      reader => io_r_imem_dat_data_MPORT
+      writer => MPORT
+      read-under-write => undefined
+    mem mem_2 : @[src/main/scala/IMem.scala 31:47]
+      data-type => UInt<8>
+      depth => 12288
+      read-latency => 1
+      write-latency => 1
+      reader => io_r_imem_dat_data_MPORT_1
+      writer => MPORT_1
+      read-under-write => undefined
+    mem mem_1 : @[src/main/scala/IMem.scala 32:47]
+      data-type => UInt<8>
+      depth => 12288
+      read-latency => 1
+      write-latency => 1
+      reader => io_r_imem_dat_data_MPORT_2
+      writer => MPORT_2
+      read-under-write => undefined
+    mem mem_0 : @[src/main/scala/IMem.scala 33:47]
+      data-type => UInt<8>
+      depth => 12288
+      read-latency => 1
+      write-latency => 1
+      reader => io_r_imem_dat_data_MPORT_3
+      writer => MPORT_3
+      read-under-write => undefined
+    reg r_ack : UInt<1>, clock with :
+      reset => (UInt<1>("h0"), r_ack) @[src/main/scala/IMem.scala 13:30]
+    reg w_ack : UInt<1>, clock with :
+      reset => (UInt<1>("h0"), w_ack) @[src/main/scala/IMem.scala 14:30]
+    node _valid_address_T = geq(io_imem_add_addr, UInt<1>("h0")) @[src/main/scala/IMem.scala 17:49]
+    node _valid_address_T_1 = leq(io_imem_add_addr, UInt<14>("h3000")) @[src/main/scala/IMem.scala 17:83]
+    node valid_address = and(_valid_address_T, _valid_address_T_1) @[src/main/scala/IMem.scala 17:62]
+    node r_req = and(io_r_imem_dat_req, valid_address) @[src/main/scala/IMem.scala 21:41]
+    node w_req = and(io_w_imem_dat_req, valid_address) @[src/main/scala/IMem.scala 22:41]
+    node wdat_3 = bits(io_w_imem_dat_data, 31, 24) @[src/main/scala/IMem.scala 35:42]
+    node wdat_2 = bits(io_w_imem_dat_data, 23, 16) @[src/main/scala/IMem.scala 36:42]
+    node wdat_1 = bits(io_w_imem_dat_data, 15, 8) @[src/main/scala/IMem.scala 37:42]
+    node wdat_0 = bits(io_w_imem_dat_data, 7, 0) @[src/main/scala/IMem.scala 38:42]
+    node _addr_align_T = shr(io_imem_add_addr, 2) @[src/main/scala/IMem.scala 40:56]
+    node _addr_align_T_1 = sub(_addr_align_T, UInt<1>("h0")) @[src/main/scala/IMem.scala 40:69]
+    node _addr_align_T_2 = tail(_addr_align_T_1, 1) @[src/main/scala/IMem.scala 40:69]
+    node _addr_align_T_3 = shr(io_imem_add_addr, 2) @[src/main/scala/IMem.scala 41:37]
+    node _addr_align_T_4 = sub(_addr_align_T_3, UInt<1>("h0")) @[src/main/scala/IMem.scala 41:50]
+    node _addr_align_T_5 = tail(_addr_align_T_4, 1) @[src/main/scala/IMem.scala 41:50]
+    node _addr_align_T_6 = mux(w_req, _addr_align_T_5, UInt<32>("hffffffff")) @[src/main/scala/IMem.scala 41:12]
+    node addr_align = mux(r_req, _addr_align_T_2, _addr_align_T_6) @[src/main/scala/IMem.scala 40:31]
+    node _T = eq(r_req, UInt<1>("h1")) @[src/main/scala/IMem.scala 50:16]
+    node _T_1 = eq(io_w_imem_dat_byteenable, UInt<4>("hf")) @[src/main/scala/IMem.scala 51:25]
+    node _GEN_0 = validif(UInt<1>("h1"), addr_align) @[src/main/scala/IMem.scala 53:{27,27}]
+    node _io_r_imem_dat_data_WIRE = _GEN_0 @[src/main/scala/IMem.scala 53:27]
+    node _io_r_imem_dat_data_T = bits(_io_r_imem_dat_data_WIRE, 13, 0) @[src/main/scala/IMem.scala 53:27]
+    node _GEN_1 = mux(UInt<1>("h1"), UInt<1>("h1"), UInt<1>("h0")) @[src/main/scala/IMem.scala 53:{27,27} 30:47]
+    node _GEN_2 = validif(UInt<1>("h1"), _io_r_imem_dat_data_T) @[src/main/scala/IMem.scala 53:{27,27}]
+    node _GEN_3 = validif(UInt<1>("h1"), clock) @[src/main/scala/IMem.scala 53:{27,27}]
+    node _io_r_imem_dat_data_WIRE_1 = _GEN_0 @[src/main/scala/IMem.scala 54:27]
+    node _io_r_imem_dat_data_T_1 = bits(_io_r_imem_dat_data_WIRE_1, 13, 0) @[src/main/scala/IMem.scala 54:27]
+    node _GEN_4 = validif(UInt<1>("h1"), _io_r_imem_dat_data_T_1) @[src/main/scala/IMem.scala 54:{27,27}]
+    node _io_r_imem_dat_data_WIRE_2 = _GEN_0 @[src/main/scala/IMem.scala 55:27]
+    node _io_r_imem_dat_data_T_2 = bits(_io_r_imem_dat_data_WIRE_2, 13, 0) @[src/main/scala/IMem.scala 55:27]
+    node _GEN_5 = validif(UInt<1>("h1"), _io_r_imem_dat_data_T_2) @[src/main/scala/IMem.scala 55:{27,27}]
+    node _io_r_imem_dat_data_WIRE_3 = _GEN_0 @[src/main/scala/IMem.scala 56:27]
+    node _io_r_imem_dat_data_T_3 = bits(_io_r_imem_dat_data_WIRE_3, 13, 0) @[src/main/scala/IMem.scala 56:27]
+    node _GEN_6 = validif(UInt<1>("h1"), _io_r_imem_dat_data_T_3) @[src/main/scala/IMem.scala 56:{27,27}]
+    node io_r_imem_dat_data_lo = cat(mem_1.io_r_imem_dat_data_MPORT_2.data, mem_0.io_r_imem_dat_data_MPORT_3.data) @[src/main/scala/IMem.scala 52:39]
+    node io_r_imem_dat_data_hi = cat(mem_3.io_r_imem_dat_data_MPORT.data, mem_2.io_r_imem_dat_data_MPORT_1.data) @[src/main/scala/IMem.scala 52:39]
+    node _io_r_imem_dat_data_T_4 = cat(io_r_imem_dat_data_hi, io_r_imem_dat_data_lo) @[src/main/scala/IMem.scala 52:39]
+    node _GEN_7 = mux(_T_1, _GEN_1, UInt<1>("h0")) @[src/main/scala/IMem.scala 51:35 30:47]
+    node _GEN_8 = validif(_T_1, _GEN_2) @[src/main/scala/IMem.scala 51:35]
+    node _GEN_9 = validif(_T_1, _GEN_3) @[src/main/scala/IMem.scala 51:35]
+    node _GEN_10 = validif(_T_1, _GEN_4) @[src/main/scala/IMem.scala 51:35]
+    node _GEN_11 = validif(_T_1, _GEN_5) @[src/main/scala/IMem.scala 51:35]
+    node _GEN_12 = validif(_T_1, _GEN_6) @[src/main/scala/IMem.scala 51:35]
+    node _GEN_13 = mux(_T_1, _io_r_imem_dat_data_T_4, UInt<1>("h0")) @[src/main/scala/IMem.scala 51:35 52:33 59:33]
+    node _T_2 = eq(w_req, UInt<1>("h1")) @[src/main/scala/IMem.scala 63:22]
+    node _T_3 = bits(io_w_imem_dat_byteenable, 3, 3) @[src/main/scala/IMem.scala 65:24]
+    node _T_4 = bits(addr_align, 13, 0) @[src/main/scala/IMem.scala 65:41]
+    node _GEN_14 = validif(_T_3, _T_4) @[src/main/scala/IMem.scala 65:{28,41}]
+    node _GEN_15 = validif(_T_3, clock) @[src/main/scala/IMem.scala 65:{28,41}]
+    node _GEN_16 = mux(_T_3, UInt<1>("h1"), UInt<1>("h0")) @[src/main/scala/IMem.scala 65:{28,41} 30:47]
+    node _GEN_17 = validif(_T_3, UInt<1>("h1")) @[src/main/scala/IMem.scala 65:{28,41}]
+    node _GEN_18 = validif(_T_3, wdat_3) @[src/main/scala/IMem.scala 65:{28,41}]
+    node _T_5 = bits(io_w_imem_dat_byteenable, 2, 2) @[src/main/scala/IMem.scala 66:24]
+    node _T_6 = bits(addr_align, 13, 0) @[src/main/scala/IMem.scala 66:41]
+    node _GEN_19 = validif(_T_5, _T_6) @[src/main/scala/IMem.scala 66:{28,41}]
+    node _GEN_20 = validif(_T_5, clock) @[src/main/scala/IMem.scala 66:{28,41}]
+    node _GEN_21 = mux(_T_5, UInt<1>("h1"), UInt<1>("h0")) @[src/main/scala/IMem.scala 66:{28,41} 31:47]
+    node _GEN_22 = validif(_T_5, UInt<1>("h1")) @[src/main/scala/IMem.scala 66:{28,41}]
+    node _GEN_23 = validif(_T_5, wdat_2) @[src/main/scala/IMem.scala 66:{28,41}]
+    node _T_7 = bits(io_w_imem_dat_byteenable, 1, 1) @[src/main/scala/IMem.scala 67:24]
+    node _T_8 = bits(addr_align, 13, 0) @[src/main/scala/IMem.scala 67:41]
+    node _GEN_24 = validif(_T_7, _T_8) @[src/main/scala/IMem.scala 67:{28,41}]
+    node _GEN_25 = validif(_T_7, clock) @[src/main/scala/IMem.scala 67:{28,41}]
+    node _GEN_26 = mux(_T_7, UInt<1>("h1"), UInt<1>("h0")) @[src/main/scala/IMem.scala 67:{28,41} 32:47]
+    node _GEN_27 = validif(_T_7, UInt<1>("h1")) @[src/main/scala/IMem.scala 67:{28,41}]
+    node _GEN_28 = validif(_T_7, wdat_1) @[src/main/scala/IMem.scala 67:{28,41}]
+    node _T_9 = bits(io_w_imem_dat_byteenable, 0, 0) @[src/main/scala/IMem.scala 68:24]
+    node _T_10 = bits(addr_align, 13, 0) @[src/main/scala/IMem.scala 68:41]
+    node _GEN_29 = validif(_T_9, _T_10) @[src/main/scala/IMem.scala 68:{28,41}]
+    node _GEN_30 = validif(_T_9, clock) @[src/main/scala/IMem.scala 68:{28,41}]
+    node _GEN_31 = mux(_T_9, UInt<1>("h1"), UInt<1>("h0")) @[src/main/scala/IMem.scala 68:{28,41} 33:47]
+    node _GEN_32 = validif(_T_9, UInt<1>("h1")) @[src/main/scala/IMem.scala 68:{28,41}]
+    node _GEN_33 = validif(_T_9, wdat_0) @[src/main/scala/IMem.scala 68:{28,41}]
+    node _GEN_34 = validif(_T_2, _GEN_14) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_35 = validif(_T_2, _GEN_15) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_36 = mux(_T_2, _GEN_16, UInt<1>("h0")) @[src/main/scala/IMem.scala 63:34 30:47]
+    node _GEN_37 = validif(_T_2, _GEN_17) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_38 = validif(_T_2, _GEN_18) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_39 = validif(_T_2, _GEN_19) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_40 = validif(_T_2, _GEN_20) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_41 = mux(_T_2, _GEN_21, UInt<1>("h0")) @[src/main/scala/IMem.scala 63:34 31:47]
+    node _GEN_42 = validif(_T_2, _GEN_22) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_43 = validif(_T_2, _GEN_23) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_44 = validif(_T_2, _GEN_24) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_45 = validif(_T_2, _GEN_25) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_46 = mux(_T_2, _GEN_26, UInt<1>("h0")) @[src/main/scala/IMem.scala 63:34 32:47]
+    node _GEN_47 = validif(_T_2, _GEN_27) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_48 = validif(_T_2, _GEN_28) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_49 = validif(_T_2, _GEN_29) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_50 = validif(_T_2, _GEN_30) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_51 = mux(_T_2, _GEN_31, UInt<1>("h0")) @[src/main/scala/IMem.scala 63:34 33:47]
+    node _GEN_52 = validif(_T_2, _GEN_32) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_53 = validif(_T_2, _GEN_33) @[src/main/scala/IMem.scala 63:34]
+    node _GEN_54 = mux(_T_2, UInt<1>("h1"), UInt<1>("h0")) @[src/main/scala/IMem.scala 63:34 70:15 73:15]
+    node _GEN_55 = mux(_T_2, UInt<1>("h0"), UInt<1>("h0")) @[src/main/scala/IMem.scala 63:34 71:15 74:15]
+    node _GEN_56 = mux(_T, _GEN_7, UInt<1>("h0")) @[src/main/scala/IMem.scala 50:28 30:47]
+    node _GEN_57 = validif(_T, _GEN_8) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_58 = validif(_T, _GEN_9) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_59 = validif(_T, _GEN_10) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_60 = validif(_T, _GEN_11) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_61 = validif(_T, _GEN_12) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_62 = validif(_T, _GEN_13) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_63 = mux(_T, UInt<1>("h1"), _GEN_55) @[src/main/scala/IMem.scala 50:28 61:15]
+    node _GEN_64 = mux(_T, UInt<1>("h0"), _GEN_54) @[src/main/scala/IMem.scala 50:28 62:15]
+    node _GEN_65 = validif(eq(_T, UInt<1>("h0")), _GEN_34) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_66 = validif(eq(_T, UInt<1>("h0")), _GEN_35) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_67 = mux(_T, UInt<1>("h0"), _GEN_36) @[src/main/scala/IMem.scala 50:28 30:47]
+    node _GEN_68 = validif(eq(_T, UInt<1>("h0")), _GEN_37) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_69 = validif(eq(_T, UInt<1>("h0")), _GEN_38) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_70 = validif(eq(_T, UInt<1>("h0")), _GEN_39) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_71 = validif(eq(_T, UInt<1>("h0")), _GEN_40) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_72 = mux(_T, UInt<1>("h0"), _GEN_41) @[src/main/scala/IMem.scala 50:28 31:47]
+    node _GEN_73 = validif(eq(_T, UInt<1>("h0")), _GEN_42) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_74 = validif(eq(_T, UInt<1>("h0")), _GEN_43) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_75 = validif(eq(_T, UInt<1>("h0")), _GEN_44) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_76 = validif(eq(_T, UInt<1>("h0")), _GEN_45) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_77 = mux(_T, UInt<1>("h0"), _GEN_46) @[src/main/scala/IMem.scala 50:28 32:47]
+    node _GEN_78 = validif(eq(_T, UInt<1>("h0")), _GEN_47) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_79 = validif(eq(_T, UInt<1>("h0")), _GEN_48) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_80 = validif(eq(_T, UInt<1>("h0")), _GEN_49) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_81 = validif(eq(_T, UInt<1>("h0")), _GEN_50) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_82 = mux(_T, UInt<1>("h0"), _GEN_51) @[src/main/scala/IMem.scala 50:28 33:47]
+    node _GEN_83 = validif(eq(_T, UInt<1>("h0")), _GEN_52) @[src/main/scala/IMem.scala 50:28]
+    node _GEN_84 = validif(eq(_T, UInt<1>("h0")), _GEN_53) @[src/main/scala/IMem.scala 50:28]
+    io_r_imem_dat_ack <= r_ack @[src/main/scala/IMem.scala 47:25]
+    io_r_imem_dat_data <= _GEN_62
+    io_w_imem_dat_ack <= w_ack @[src/main/scala/IMem.scala 45:25]
+    r_ack <= mux(reset, UInt<1>("h0"), _GEN_63) @[src/main/scala/IMem.scala 13:{30,30}]
+    w_ack <= mux(reset, UInt<1>("h0"), _GEN_64) @[src/main/scala/IMem.scala 14:{30,30}]
+    mem_3.io_r_imem_dat_data_MPORT.addr <= _GEN_57
+    mem_3.io_r_imem_dat_data_MPORT.en <= _GEN_56
+    mem_3.io_r_imem_dat_data_MPORT.clk <= _GEN_58
+    mem_3.MPORT.addr <= _GEN_65
+    mem_3.MPORT.en <= _GEN_67
+    mem_3.MPORT.clk <= _GEN_66
+    mem_3.MPORT.data <= _GEN_69
+    mem_3.MPORT.mask <= _GEN_68
+    mem_2.io_r_imem_dat_data_MPORT_1.addr <= _GEN_59
+    mem_2.io_r_imem_dat_data_MPORT_1.en <= _GEN_56
+    mem_2.io_r_imem_dat_data_MPORT_1.clk <= _GEN_58
+    mem_2.MPORT_1.addr <= _GEN_70
+    mem_2.MPORT_1.en <= _GEN_72
+    mem_2.MPORT_1.clk <= _GEN_71
+    mem_2.MPORT_1.data <= _GEN_74
+    mem_2.MPORT_1.mask <= _GEN_73
+    mem_1.io_r_imem_dat_data_MPORT_2.addr <= _GEN_60
+    mem_1.io_r_imem_dat_data_MPORT_2.en <= _GEN_56
+    mem_1.io_r_imem_dat_data_MPORT_2.clk <= _GEN_58
+    mem_1.MPORT_2.addr <= _GEN_75
+    mem_1.MPORT_2.en <= _GEN_77
+    mem_1.MPORT_2.clk <= _GEN_76
+    mem_1.MPORT_2.data <= _GEN_79
+    mem_1.MPORT_2.mask <= _GEN_78
+    mem_0.io_r_imem_dat_data_MPORT_3.addr <= _GEN_61
+    mem_0.io_r_imem_dat_data_MPORT_3.en <= _GEN_56
+    mem_0.io_r_imem_dat_data_MPORT_3.clk <= _GEN_58
+    mem_0.MPORT_3.addr <= _GEN_80
+    mem_0.MPORT_3.en <= _GEN_82
+    mem_0.MPORT_3.clk <= _GEN_81
+    mem_0.MPORT_3.data <= _GEN_84
+    mem_0.MPORT_3.mask <= _GEN_83

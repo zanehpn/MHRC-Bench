@@ -1,0 +1,55 @@
+{
+    "reusePaths": {},
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "plic_gateway_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "vNGvP_d": {
+            "checksum": 0,
+            "mod": "plic_gateway_target_tb",
+            "out": "vNGvP_d.o",
+            "archive": "archive.0/_949773_archive_1.a",
+            "bytes": 55222,
+            "mode": 4
+        },
+        "amcQw_d": {
+            "checksum": 0,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7403,
+            "mode": 4
+        },
+        "reYIK_d": {
+            "checksum": 0,
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "archive": "archive.0/_949773_archive_1.a",
+            "bytes": 32494,
+            "mode": 4
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 87716,
+            "archive": "archive.0/_949773_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "vNGvP_d.o",
+                    55222
+                ]
+            ]
+        }
+    ]
+}

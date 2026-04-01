@@ -1,0 +1,10 @@
+{
+  "path": "virtio/rtl/virtio/available_ring/monitor/virtio_available_ring_monitor.sv",
+  "local_file": "virtio_available_ring_monitor/virtio_available_ring_monitor.sv",
+  "local_original_file": "virtio_available_ring_monitor_original.sv",
+  "local_testbenches": [
+    "testbench/virtio_available_ring_monitor_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "virtio_available_ring_monitor"
+}

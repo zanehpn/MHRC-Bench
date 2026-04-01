@@ -1,0 +1,55 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.6/_147104_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32694
+                ],
+                [
+                    "u0SKV_d.o",
+                    13988
+                ]
+            ],
+            "size": 46682
+        }
+    ],
+    "Modules": {
+        "std": {
+            "Compiled Times": 7,
+            "Compiled": "Yes"
+        },
+        "...MASTER...": {},
+        "fir_compensator_target_tb": {
+            "Compiled Times": 7,
+            "Compiled": "Yes"
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "reYIK_d": {
+            "checksum": 0,
+            "mod": "std",
+            "bytes": 32694,
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "archive": "archive.6/_147104_archive_1.a"
+        },
+        "amcQw_d": {
+            "checksum": 0,
+            "mod": "...MASTER...",
+            "bytes": 7615,
+            "out": "objs/amcQw_d.o",
+            "mode": 4
+        },
+        "u0SKV_d": {
+            "checksum": 0,
+            "mod": "fir_compensator_target_tb",
+            "bytes": 13988,
+            "out": "u0SKV_d.o",
+            "mode": 4,
+            "archive": "archive.6/_147104_archive_1.a"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "path": "sigma_delta_converters/rtl/cic_comb.sv",
+  "local_file": "cic_comb/cic_comb.sv",
+  "local_original_file": "cic_comb_original.sv",
+  "local_testbenches": [
+    "testbench/cic_comb_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "cic_comb"
+}

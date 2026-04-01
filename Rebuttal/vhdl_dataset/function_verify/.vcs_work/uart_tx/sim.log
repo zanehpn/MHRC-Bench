@@ -1,0 +1,33 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+75 NS
+Report NOTE at 75 NS in design unit UART_TX_TARGET_TB(TB) from process /UART_TX_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DIN_RDY is '1' at idle"
+95 NS
+Report NOTE at 95 NS in design unit UART_TX_TARGET_TB(TB) from process /UART_TX_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DIN_RDY is '0' during transmission"
+135 NS
+Report NOTE at 135 NS in design unit UART_TX_TARGET_TB(TB) from process /UART_TX_TARGET_TB/STIM_PROC:
+    "TEST PASSED: UART_TXD is '0' during start bit"
+2695 NS
+Report NOTE at 2695 NS in design unit UART_TX_TARGET_TB(TB) from process /UART_TX_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DIN_RDY returns '1' after full transmission"
+Report NOTE at 2695 NS in design unit UART_TX_TARGET_TB(TB) from process /UART_TX_TARGET_TB/STIM_PROC:
+    "TEST PASSED: UART_TXD is '1' at idle after frame"
+2715 NS
+Report NOTE at 2715 NS in design unit UART_TX_TARGET_TB(TB) from process /UART_TX_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DIN_RDY is '0' for second transmission"
+4955 NS
+Report NOTE at 4955 NS in design unit UART_TX_TARGET_TB(TB) from process /UART_TX_TARGET_TB/STIM_PROC:
+    "TEST PASSED: DIN_RDY returns '1' after second transmission"
+Report NOTE at 4955 NS in design unit UART_TX_TARGET_TB(TB) from process /UART_TX_TARGET_TB/STIM_PROC:
+    "ALL UART_TX TESTS PASSED"
+(simv): Simulation complete, time is 4960 NS.

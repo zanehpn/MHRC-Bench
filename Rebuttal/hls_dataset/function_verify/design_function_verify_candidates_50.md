@@ -1,0 +1,72 @@
+# HLS function verify candidates
+
+Total: 50
+
+Top tasks:
+- AlexNet-FPGA-implementation: 4
+- ACA-HLS: 4
+- hls-spmv: 4
+- HLSBitNet: 4
+- hl5: 4
+- GlobalCorrelator_HLS: 4
+- hls_tutorial_examples: 4
+- HLS_FPGA: 4
+- hls-crypto: 4
+- vivado_hls: 4
+- HLS-CNN: 4
+- HLS_FPGA_NES: 3
+- DTQR-HLS: 1
+- High-Level-Synthesis: 1
+- Fast-Float4HLS: 1
+
+Selected files:
+- line 305: AlexNet-FPGA-implementation/Conv2/src/conv2.cpp
+- line 315: AlexNet-FPGA-implementation/Norm2/src/norm2.cpp
+- line 309: AlexNet-FPGA-implementation/Conv4/src/conv4.cpp
+- line 311: AlexNet-FPGA-implementation/Conv5/src/conv5.cpp
+- line 242: ACA-HLS/Final/Encrypted Computing/ACA-Final-Team1-Encrypted-Computing-main/src/kernel/K_add.cpp
+- line 246: ACA-HLS/Final/Encrypted Computing/ACA-Final-Team1-Encrypted-Computing-main/src/kernel/K_mulWise.cpp
+- line 249: ACA-HLS/Final/Encrypted Computing/ACA-Final-Team1-Encrypted-Computing-main/src/kernel/mod.cpp
+- line 8: hls-spmv/src/spmv.cpp
+- line 9: hls-spmv/src/spmv_fast_stream.cpp
+- line 208: HLSBitNet/forward_llama_app_kernels/src/forward-unrolling.cpp
+- line 247: ACA-HLS/Final/Encrypted Computing/ACA-Final-Team1-Encrypted-Computing-main/src/kernel/K_ntt.cpp
+- line 10: hls-spmv/src/spmv_naive_stream.cpp
+- line 11: hls-spmv/src/spmv_partial_unrolling.cpp
+- line 207: HLSBitNet/forward_llama_app_kernels/src/forward-min-area.cpp
+- line 209: HLSBitNet/forward_llama_app_kernels/src/forward.cpp
+- line 410: hl5/src/execute.cpp
+- line 412: hl5/src/fedec.cpp
+- line 416: hl5/src/memwb.cpp
+- line 380: GlobalCorrelator_HLS/regionizer/regionizer_ref.cpp
+- line 448: hls_tutorial_examples/example_5/xilinx/Entry.cpp
+- line 210: HLSBitNet/llama_app/src/llama2.cpp
+- line 379: GlobalCorrelator_HLS/regionizer/firmware/regionizer.cpp
+- line 145: HLS_FPGA/dsp_pipeline.cpp
+- line 164: hls-crypto/PRESENT/masked_reconf/present.cpp
+- line 433: hls_tutorial_examples/example_1/xilinx/Example1.cpp
+- line 442: hls_tutorial_examples/example_3/xilinx/Example3_Time.cpp
+- line 449: hls_tutorial_examples/example_5/xilinx/Example5.cpp
+- line 127: vivado_hls/HLS_OpenCV/core.cpp
+- line 16: DTQR-HLS/1D/tsqr_df.cpp
+- line 351: HLS-CNN/Code/05-Vitis-HLS/conv.cc
+- line 390: GlobalCorrelator_HLS/vertexing/simple_vtx_ref.cpp
+- line 129: vivado_hls/anisotropic_diff/core.cpp
+- line 375: GlobalCorrelator_HLS/firmware/simple_fullpfalgo.cpp
+- line 142: HLS_FPGA/HLS_MAC_accel.cpp
+- line 148: HLS_FPGA/lock_free_SPSCq.cpp
+- line 151: HLS_FPGA/rf_doppler_spoof_engine.cpp
+- line 160: hls-crypto/AES/masked_reconf/aes.cpp
+- line 166: hls-crypto/PRESENT/naive-lutsbox/present.cpp
+- line 170: hls-crypto/Serpent/naive-lutsbox/serpent.cpp
+- line 130: vivado_hls/hist_stretch/doHiststretch.cpp
+- line 134: vivado_hls/histogram_src/doHist.cpp
+- line 348: HLS-CNN/Code/05-Vitis-HLS/cnn.cc
+- line 181: High-Level-Synthesis/Source/main.cpp
+- line 415: hl5/src/hl5_datatypes.hpp
+- line 353: HLS-CNN/Code/05-Vitis-HLS/dense.cc
+- line 355: HLS-CNN/Code/05-Vitis-HLS/flat.cc
+- line 65: Fast-Float4HLS/examples/bubble_sort/bubble_sort.cpp
+- line 217: HLS_FPGA_NES/mariones_C_source_codes/ppu.c
+- line 227: HLS_FPGA_NES/mariones_C_source_for_VivadoHLS/registers.c
+- line 212: HLS_FPGA_NES/mariones_C_source_codes/main.c

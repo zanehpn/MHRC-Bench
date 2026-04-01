@@ -1,0 +1,29 @@
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Wed Apr  1 09:33:57 2026
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'timescale+1ns/1ps' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+Parsing design file '_patched_axi_pkg.sv'
+Parsing design file '_patched_axi_riscv_amos_alu.sv'
+Parsing design file '_patched_axi_riscv_amos_target_tb.sv'
+Parsing included file 'testbench/../_patched_axi_riscv_amos_original.sv'.
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "testbench/../_patched_axi_riscv_amos_original.sv", 432: token is 'end'
+              end // WAIT_RESULT_AW, SEND_AW
+                 ^
+
+1 warning
+1 error
+CPU time: .065 seconds to compile

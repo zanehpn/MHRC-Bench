@@ -1,0 +1,71 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "ahb3lite_plic_top_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "ahb3lite_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "ZjhaY_d": {
+            "mode": 4,
+            "mod": "ahb3lite_plic_top_target_tb",
+            "bytes": 46056,
+            "out": "ZjhaY_d.o",
+            "checksum": 0,
+            "archive": "archive.0/_983245_archive_1.a"
+        },
+        "NECV5_d": {
+            "mode": 4,
+            "mod": "ahb3lite_pkg",
+            "bytes": 5989,
+            "out": "NECV5_d.o",
+            "checksum": 0,
+            "archive": "archive.0/_983245_archive_1.a"
+        },
+        "reYIK_d": {
+            "mode": 4,
+            "mod": "std",
+            "bytes": 32494,
+            "out": "reYIK_d.o",
+            "checksum": 0,
+            "archive": "archive.0/_983245_archive_1.a"
+        },
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "bytes": 7585,
+            "out": "objs/amcQw_d.o",
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_983245_archive_1.a",
+            "size": 84539,
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "NECV5_d.o",
+                    5989
+                ],
+                [
+                    "ZjhaY_d.o",
+                    46056
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+#Successful Tests
+#Tue Mar 31 15:28:53 SGT 2026
+MSM.PMNaiveFuncSpec=1774771270866
+asyncqueue.modules.ClockCrossingRegFuncSpec=1774771270626
+asyncqueue.modules.SynchronizerRegFuncSpec=1774785210024
+core.ALUFuncSpec=1774771270644
+cpu.MemoryFuncSpec=1774941665729
+dispatch.DispatchFuncSpec=1774771270636
+final_project.AccumuFuncSpec=1774942133553
+final_project.MaxpoolFuncSpec=1774941338244
+freechips.rocketchip.util.AsyncResetRegVecFuncSpec=1774771270626
+gcd.DecoupledGcdFuncSpec=1774786401926
+icenet.AlignerFuncSpec=1774786497673
+icenet.BufferFuncSpec=1774786488910
+icenet.LimiterFuncSpec=1774786443720
+icenet.PauserFuncSpec=1774786469542
+icenet.TapFuncSpec=1774771270660
+icenet.TestUtilsFuncSpec=1774786274714
+loywong.examples.CounterExampleFuncSpec=1774786307197
+loywong.examples.CounterMaxFuncSpec=1774771270628
+loywong.examples.EncoderExampleFuncSpec=1774772896287
+loywong.examples.ShiftRegFuncSpec=1774771270626
+loywong.examples.decoder_exampleFuncSpec=1774771270626
+loywong.examples.delay_chain_exampleFuncSpec=1774771270626
+lsu.MemLoadStoreUnitFuncSpec=1774771676243
+magmasi.components.RegorFuncSpec=1774771270917
+mem.DMemFuncSpec=1774941727107
+mem.IMemFuncSpec=1774941770804
+perfect.util.PwmFuncSpec=1774786389064
+pythia.MaxNFuncSpec=1774941596700
+router.table.ArpCacheFuncSpec=1774941620924
+rself.RegFileFuncSpec=1774941481881
+scheduler.SchedulerFuncSpec=1774773413625

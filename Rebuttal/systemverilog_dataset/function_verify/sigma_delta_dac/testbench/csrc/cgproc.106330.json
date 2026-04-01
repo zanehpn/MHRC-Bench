@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "sigma_delta_dac_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 7615,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "bytes": 32694,
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "archive": "archive.3/_106330_archive_1.a",
+            "checksum": 0
+        },
+        "iYz9Y_d": {
+            "bytes": 15512,
+            "mod": "sigma_delta_dac_target_tb",
+            "out": "iYz9Y_d.o",
+            "mode": 4,
+            "archive": "archive.3/_106330_archive_1.a",
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.3/_106330_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32694
+                ],
+                [
+                    "iYz9Y_d.o",
+                    15512
+                ]
+            ],
+            "size": 48206
+        }
+    ]
+}

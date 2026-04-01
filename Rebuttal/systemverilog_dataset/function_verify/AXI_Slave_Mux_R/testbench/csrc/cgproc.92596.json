@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        },
+        "AXI_Slave_Mux_R_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "checksum": 0,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7615
+        },
+        "reYIK_d": {
+            "mode": 4,
+            "mod": "std",
+            "archive": "archive.2/_92596_archive_1.a",
+            "checksum": 0,
+            "out": "reYIK_d.o",
+            "bytes": 32694
+        },
+        "AeP1N_d": {
+            "mode": 4,
+            "mod": "AXI_Slave_Mux_R_target_tb",
+            "archive": "archive.2/_92596_archive_1.a",
+            "checksum": 0,
+            "out": "AeP1N_d.o",
+            "bytes": 14978
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_92596_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32694
+                ],
+                [
+                    "AeP1N_d.o",
+                    14978
+                ]
+            ],
+            "size": 47672
+        }
+    ]
+}

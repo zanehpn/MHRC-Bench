@@ -1,0 +1,10 @@
+{
+  "path": "hdmi/src/audio_info_frame.sv",
+  "local_file": "audio_info_frame/audio_info_frame.sv",
+  "local_original_file": "audio_info_frame_original.sv",
+  "local_testbenches": [
+    "testbench/audio_info_frame_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "audio_info_frame"
+}

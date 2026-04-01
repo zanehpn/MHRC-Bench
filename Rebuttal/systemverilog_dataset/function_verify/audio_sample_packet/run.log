@@ -1,0 +1,76 @@
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Wed Apr  1 09:30:58 2026
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'timescale+1ns/1ps' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+Parsing design file '_patched_audio_sample_packet_target_tb.sv'
+Parsing included file 'testbench/../_patched_audio_sample_packet_original.sv'.
+Back to file '_patched_audio_sample_packet_target_tb.sv'.
+Top Level Modules:
+       audio_sample_packet_target_tb
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+3 unique modules to generate
+3 modules and 0 UDP read. 
+recompiling package std
+recompiling module audio_sample_packet
+recompiling module audio_sample_packet_target_tb
+All of 3 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _984132_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .094 seconds to compile + .095 seconds to elab + .125 seconds to link
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Apr  1 09:30 2026
+FAIL T1_B_bit_sample0: expected 1 got x
+FAIL T1_B_bit_sample1: expected 0 got x
+FAIL T1_B_bit_sample2: expected 0 got x
+FAIL T1_B_bit_sample3: expected 0 got x
+FAIL T1_present_bits: expected 1111 got xxxx
+FAIL T2_B_bit_sample0_not_present: expected 0 got x
+FAIL T2_B_bit_sample1: expected 0 got x
+FAIL T3_no_B_bits_fc4: expected 0 got x
+FAIL T3_no_B_bits_fc4_s0: expected 0 got x
+FAIL T4_fc188_no_B: expected 0 got x
+FAIL T4_fc188_no_B_s3: expected 0 got x
+FAIL T5_fc189_B_sample3: expected 1 got x
+FAIL T5_fc189_no_B_s0: expected 0 got x
+FAIL T5_fc189_no_B_s1: expected 0 got x
+FAIL T5_fc189_no_B_s2: expected 0 got x
+FAIL T6_fc190_B_sample2: expected 1 got x
+FAIL T6_fc190_no_B_s0: expected 0 got x
+FAIL T6_fc190_no_B_s1: expected 0 got x
+FAIL T6_fc190_no_B_s3: expected 0 got x
+FAIL T7_fc191_B_sample1: expected 1 got x
+FAIL T7_fc191_no_B_s0: expected 0 got x
+FAIL T7_fc191_no_B_s2: expected 0 got x
+FAIL T7_fc191_no_B_s3: expected 0 got x
+FAIL T8_fc192_B_sample0: expected 1 got x
+FAIL T8_fc192_no_B_s1: expected 0 got x
+FAIL T9_fc100_no_B: expected 0 got x
+FAIL T9_present_0101: expected 0101 got xxxx
+FAIL T10_fc189_s3_not_present_no_B: expected 0 got x
+FAIL T12_fc50_no_B_s0: expected 0 got x
+FAIL T12_fc50_no_B_s1: expected 0 got x
+FAIL T12_fc50_no_B_s2: expected 0 got x
+FAIL T12_fc50_no_B_s3: expected 0 got x
+[TB_REAL] audio_sample_packet FAILED 32 / 36 tests
+$finish called from file "_patched_audio_sample_packet_target_tb.sv", line 234.
+$finish at simulation time                12000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 12000 ps
+CPU Time:      0.100 seconds;       Data structure size:   0.0Mb
+Wed Apr  1 09:30:59 2026

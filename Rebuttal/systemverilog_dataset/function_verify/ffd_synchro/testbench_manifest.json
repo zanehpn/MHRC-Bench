@@ -1,0 +1,10 @@
+{
+  "path": "cdc/src/ffd_synchro.v",
+  "local_file": "ffd_synchro/ffd_synchro.v",
+  "local_original_file": "ffd_synchro_original.v",
+  "local_testbenches": [
+    "testbench/ffd_synchro_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "ffd_synchro"
+}

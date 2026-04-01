@@ -1,0 +1,10 @@
+{
+  "path": "plic/rtl/verilog/core/plic_gateway.sv",
+  "local_file": "plic_gateway/plic_gateway.sv",
+  "local_original_file": "plic_gateway_original.sv",
+  "local_testbenches": [
+    "testbench/plic_gateway_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "plic_gateway"
+}

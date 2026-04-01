@@ -1,0 +1,10 @@
+{
+  "path": "fplib/rtl/fp_convert.sv",
+  "local_file": "fp_convert/fp_convert.sv",
+  "local_original_file": "fp_convert_original.sv",
+  "local_testbenches": [
+    "testbench/fp_convert_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "creal_to_sfp"
+}

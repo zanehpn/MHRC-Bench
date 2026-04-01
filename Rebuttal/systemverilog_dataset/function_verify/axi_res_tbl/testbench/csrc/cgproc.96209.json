@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "axi_res_tbl_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7607,
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "bytes": 32694,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.3/_96209_archive_1.a"
+        },
+        "CtPT8_d": {
+            "mod": "axi_res_tbl_target_tb",
+            "out": "CtPT8_d.o",
+            "bytes": 15516,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.3/_96209_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.3/_96209_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32694
+                ],
+                [
+                    "CtPT8_d.o",
+                    15516
+                ]
+            ],
+            "size": 48210
+        }
+    ]
+}

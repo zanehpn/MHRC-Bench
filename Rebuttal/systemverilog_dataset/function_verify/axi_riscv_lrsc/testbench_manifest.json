@@ -1,0 +1,10 @@
+{
+  "path": "axi_riscv_atomics/src/axi_riscv_lrsc.sv",
+  "local_file": "axi_riscv_lrsc/axi_riscv_lrsc.sv",
+  "local_original_file": "axi_riscv_lrsc_original.sv",
+  "local_testbenches": [
+    "testbench/axi_riscv_lrsc_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "axi_riscv_lrsc"
+}

@@ -1,0 +1,10 @@
+{
+  "path": "sigma_delta_converters/rtl/sigma_delta_dac.sv",
+  "local_file": "sigma_delta_dac/sigma_delta_dac.sv",
+  "local_original_file": "sigma_delta_dac_original.sv",
+  "local_testbenches": [
+    "testbench/sigma_delta_dac_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "sigma_delta_dac"
+}

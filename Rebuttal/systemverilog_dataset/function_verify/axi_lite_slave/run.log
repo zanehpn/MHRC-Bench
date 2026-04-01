@@ -1,0 +1,59 @@
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Wed Apr  1 09:32:11 2026
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[UNK_COMP_ARG] Unknown compile time plus argument used
+  Unknown compile time plus argument 'timescale+1ns/1ps' is ignored.
+
+ + use `+plusarg_save' to bind in runtime plusargs;
+ + use `+plusarg_ignore' to suppress this message.
+Parsing design file '_patched_0_axi_lite_pkg.sv'
+Parsing design file '_patched_axi_lite_if.sv'
+Parsing design file '_patched_axi_lite_slave_target_tb.sv'
+Parsing included file 'testbench/../_patched_axi_lite_slave_original.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+testbench/../_patched_axi_lite_slave_original.sv, 1
+$unit
+  Package 'axi_lite_pkg' already wildcard imported. 
+  Ignoring axi_lite_pkg::*
+  See the System Verilog LRM(1800-2005), section 18.1.
+
+Back to file '_patched_axi_lite_slave_target_tb.sv'.
+Top Level Modules:
+       axi_lite_slave_target_tb
+TimeScale is 1 ns / 1 ps
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+5 unique modules to generate
+5 modules and 0 UDP read. 
+recompiling package _vcs_unit__787639105
+recompiling package std
+recompiling package axi_lite_pkg
+recompiling module axi_lite_if
+recompiling module axi_lite_slave_target_tb
+All of 5 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _985092_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .104 seconds to compile + .169 seconds to elab + .085 seconds to link
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Apr  1 09:32 2026
+FAIL: T14: write complete IDLE - state=3 (exp 0)
+FAIL: T15: 3 reads done IDLE - state=3 (exp 0)
+[TB_REAL] axi_lite_slave FAILED 2 / 27 tests
+$finish called from file "_patched_axi_lite_slave_target_tb.sv", line 223.
+$finish at simulation time               566000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 566000 ps
+CPU Time:      0.100 seconds;       Data structure size:   0.0Mb
+Wed Apr  1 09:32:12 2026

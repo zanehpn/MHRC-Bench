@@ -1,0 +1,129 @@
+{
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hex_loader/testbench",
+        "csrc": "csrc",
+        "archive_dir": "archive.2",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hex_loader/testbench/csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hex_loader/testbench/../simv.daidir",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hex_loader/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_nivcsw": 0,
+            "ru_minflt": 5018,
+            "ru_utime_sec": 0.034709999999999998,
+            "ru_stime_sec": 0.017354999999999999,
+            "ru_nvcsw": 30,
+            "ru_maxrss_kb": 83640,
+            "ru_majflt": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 0,
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0
+        },
+        "nMops": 1551,
+        "CodeGen(%)": 27.673938863536915,
+        "Frontend(%)": 72.326061136463082,
+        "mop/quad": 2.3011869436201779,
+        "quadSpeed": 50749.190572999018,
+        "nQuads": 674,
+        "ru_self_end": {
+            "ru_nivcsw": 0,
+            "ru_minflt": 7044,
+            "ru_utime_sec": 0.047990999999999999,
+            "ru_stime_sec": 0.026443999999999999,
+            "ru_nvcsw": 32,
+            "ru_maxrss_kb": 91800,
+            "ru_majflt": 0
+        },
+        "mopSpeed": 116783.37474587756,
+        "totalObjSize": 112370,
+        "ru_childs_end": {
+            "ru_nivcsw": 0,
+            "ru_minflt": 275,
+            "ru_utime_sec": 0.000919,
+            "ru_stime_sec": 0.0018389999999999999,
+            "ru_nvcsw": 1,
+            "ru_maxrss_kb": 14304,
+            "ru_majflt": 0
+        },
+        "outputSizePerQuad": 166.0
+    },
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "hex_loader_target_tb": {
+            "h3kUf_d": {
+                "bytes": 12424,
+                "mod": "hex_loader_target_tb",
+                "out": "h3kUf_d.o",
+                "mode": 4,
+                "archive": "archive.2/_101629_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "bytes": 32694,
+                "mod": "std",
+                "out": "reYIK_d.o",
+                "mode": 4,
+                "archive": "archive.2/_101629_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7607,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        }
+    },
+    "PEModules": [],
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "hex_loader_target_tb": [
+            "hex_loader_target_tb",
+            "h3kUf",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "LVLData": [
+        "SIM"
+    ],
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 59645
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "hex_loader_target_tb",
+        "hex_loader_target_tb"
+    ],
+    "CompileProcesses": [
+        "cgproc.101629.json"
+    ],
+    "CompileStatus": "Successful"
+}

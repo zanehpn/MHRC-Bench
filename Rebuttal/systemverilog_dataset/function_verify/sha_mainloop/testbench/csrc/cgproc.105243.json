@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "sha_mainloop_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.4/_105243_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32694
+                ],
+                [
+                    "PzDUs_d.o",
+                    11298
+                ]
+            ],
+            "size": 43992
+        }
+    ],
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 0,
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7607
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "checksum": 0,
+            "mode": 4,
+            "out": "reYIK_d.o",
+            "archive": "archive.4/_105243_archive_1.a",
+            "bytes": 32694
+        },
+        "PzDUs_d": {
+            "mod": "sha_mainloop_target_tb",
+            "checksum": 0,
+            "mode": 4,
+            "out": "PzDUs_d.o",
+            "archive": "archive.4/_105243_archive_1.a",
+            "bytes": 11298
+        }
+    },
+    "reusePaths": {}
+}

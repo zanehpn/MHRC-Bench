@@ -1,0 +1,103 @@
+{
+    "Modules": {
+        "_vcs_unit__2094177629": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_lite_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_lite_if": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_lite_master_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "checksum": 0,
+            "bytes": 7727,
+            "out": "objs/amcQw_d.o"
+        },
+        "reYIK_d": {
+            "mode": 4,
+            "mod": "std",
+            "checksum": 0,
+            "bytes": 32494,
+            "out": "reYIK_d.o",
+            "archive": "archive.0/_984610_archive_1.a"
+        },
+        "rBwy2_d": {
+            "mode": 4,
+            "mod": "_vcs_unit__2094177629",
+            "checksum": 0,
+            "bytes": 6990,
+            "out": "rBwy2_d.o",
+            "archive": "archive.0/_984610_archive_1.a"
+        },
+        "xJRie_d": {
+            "mode": 4,
+            "mod": "axi_lite_pkg",
+            "checksum": 0,
+            "bytes": 9408,
+            "out": "xJRie_d.o",
+            "archive": "archive.0/_984610_archive_1.a"
+        },
+        "ezc2T_d": {
+            "mode": 4,
+            "mod": "axi_lite_if",
+            "checksum": 0,
+            "bytes": 7816,
+            "out": "ezc2T_d.o",
+            "archive": "archive.0/_984610_archive_1.a"
+        },
+        "cf8a3_d": {
+            "mode": 4,
+            "mod": "axi_lite_master_target_tb",
+            "checksum": 0,
+            "bytes": 35580,
+            "out": "cf8a3_d.o",
+            "archive": "archive.0/_984610_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_984610_archive_1.a",
+            "size": 92288,
+            "objects": [
+                [
+                    "rBwy2_d.o",
+                    6990
+                ],
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "xJRie_d.o",
+                    9408
+                ],
+                [
+                    "ezc2T_d.o",
+                    7816
+                ],
+                [
+                    "cf8a3_d.o",
+                    35580
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+FIRRTL version 1.2.0
+circuit Foo :
+  module Foo : @[src/main/scala/Foo.scala 18:7]
+    input clock : Clock @[src/main/scala/Foo.scala 18:7]
+    input reset : UInt<1> @[src/main/scala/Foo.scala 18:7]
+    input x : UInt<1> @[src/main/scala/Foo.scala 19:16]
+    input s_a : UInt<8> @[src/main/scala/Foo.scala 20:16]
+    input s_b : UInt<8> @[src/main/scala/Foo.scala 20:16]
+    input s_c : UInt<8> @[src/main/scala/Foo.scala 20:16]
+    input s_bundle_z : UInt<1> @[src/main/scala/Foo.scala 20:16]
+    input io_a : UInt<1> @[src/main/scala/Foo.scala 23:14]
+    input io_b : UInt<1> @[src/main/scala/Foo.scala 23:14]
+    output io_out : UInt<8> @[src/main/scala/Foo.scala 23:14]
+
+    node _io_out_T = add(io_a, io_b) @[src/main/scala/Foo.scala 36:18]
+    node _io_out_T_1 = tail(_io_out_T, 1) @[src/main/scala/Foo.scala 36:18]
+    node _T = eq(reset, UInt<1>("h0")) @[src/main/scala/Foo.scala 38:9]
+    node io_a_ = UInt<1>("h1") @[src/main/scala/Foo.scala 21:18 35:10]
+    io_out <= pad(_io_out_T_1, 8) @[src/main/scala/Foo.scala 36:10]
+    printf(clock, and(and(UInt<1>("h1"), _T), UInt<1>("h1")), "s: MyBundle(a -> %d, b -> %d, c -> %d, bundle -> AnonymousBundle(z -> %d))\n", s_a, s_b, s_c, s_bundle_z) : printf @[src/main/scala/Foo.scala 38:9]

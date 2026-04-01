@@ -1,0 +1,113 @@
+{
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "serializer_0000",
+        "serializer_0000",
+        "hdmi_0000",
+        "hdmi_0000",
+        "hdmi_target_tb",
+        "hdmi_target_tb"
+    ],
+    "MlibObjs": {},
+    "CurCompileUdps": {},
+    "PrevCompiledModules": {},
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.040307000000000003,
+            "ru_stime_sec": 0.010076,
+            "ru_maxrss_kb": 89760,
+            "ru_minflt": 6242,
+            "ru_nvcsw": 23,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.055389000000000001,
+            "ru_stime_sec": 0.010076,
+            "ru_maxrss_kb": 97920,
+            "ru_minflt": 7389,
+            "ru_nvcsw": 23,
+            "ru_nivcsw": 0
+        },
+        "totalObjSize": 143179,
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 1810,
+        "mopSpeed": 120010.60867258985,
+        "nQuads": 807,
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "quadSpeed": 53507.492375016584,
+        "mop/quad": 2.2428748451053284,
+        "outputSizePerQuad": 177.0,
+        "Frontend(%)": 72.770766758742724,
+        "CodeGen(%)": 27.229233241257283
+    },
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "serializer_0000": [
+            "serializer_0000",
+            "yI6HV",
+            "module"
+        ],
+        "hdmi_0000": [
+            "hdmi_0000",
+            "V7T5B",
+            "module"
+        ],
+        "hdmi_target_tb": [
+            "hdmi_target_tb",
+            "nt0z9",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStrategy": "fullobj",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 62378
+    },
+    "CompileStatus": "Successful",
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hdmi",
+        "archive_dir": "archive.0",
+        "csrc": "csrc",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hdmi/csrc",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hdmi/simv.daidir",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/hdmi/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.860823.json"
+    ]
+}

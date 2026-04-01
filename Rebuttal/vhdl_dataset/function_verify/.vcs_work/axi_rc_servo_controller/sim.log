@@ -1,0 +1,42 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+250 NS
+Report NOTE at 250 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: AXI ready signals driven (not unknown) after reset"
+300 NS
+Report NOTE at 300 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "INFO: Initiating AXI4-Lite write transaction"
+345 NS
+Report NOTE at 345 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: AXI4-Lite write transaction completed"
+395 NS
+Report NOTE at 395 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: BVALID deasserted after write response accepted"
+Report NOTE at 395 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "INFO: Initiating AXI4-Lite read transaction"
+435 NS
+Report NOTE at 435 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "INFO: AXI read returned data = 0xXXXXXXXX"
+Report NOTE at 435 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: AXI4-Lite read transaction completed"
+485 NS
+Report NOTE at 485 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: RVALID deasserted after read response accepted"
+Report NOTE at 485 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "PASS: servo_control_output is driven"
+Report NOTE at 485 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "INFO: axi_rc_servo_controller_original_target_tb complete."
+Report NOTE at 485 NS in design unit AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB(TB) from process /AXI_RC_SERVO_CONTROLLER_ORIGINAL_TARGET_TB/STIM_PROC:
+    "NOTE: clock_divider and servo_controller sub-modules must be compiled. Library 'axi_rc_servo_controller' in DUT source may need remapping to 'work'."
+
+
+Process terminated by kill.
+

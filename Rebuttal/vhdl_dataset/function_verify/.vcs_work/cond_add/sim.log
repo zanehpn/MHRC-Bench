@@ -1,0 +1,14 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+50 NS
+Report NOTE at 50 NS in design unit COND_ADD_TARGET_TB(TB) from process /COND_ADD_TARGET_TB/STIM_PROC:
+    "cond_add testbench complete."
+(simv): Simulation complete, time is 50 NS.

@@ -1,0 +1,10 @@
+{
+  "path": "hdmi/src/hdmi.sv",
+  "local_file": "hdmi/hdmi.sv",
+  "local_original_file": "hdmi_original.sv",
+  "local_testbenches": [
+    "testbench/hdmi_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "hdmi"
+}

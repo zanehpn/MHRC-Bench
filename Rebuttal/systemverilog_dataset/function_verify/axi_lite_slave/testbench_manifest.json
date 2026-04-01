@@ -1,0 +1,10 @@
+{
+  "path": "axi4-interface/axi4-lite/axi_lite_slave.sv",
+  "local_file": "axi_lite_slave/axi_lite_slave.sv",
+  "local_original_file": "axi_lite_slave_original.sv",
+  "local_testbenches": [
+    "testbench/axi_lite_slave_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "axi_lite_slave"
+}

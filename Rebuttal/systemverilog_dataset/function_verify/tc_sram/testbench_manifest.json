@@ -1,0 +1,10 @@
+{
+  "path": "tech_cells_generic/src/rtl/tc_sram.sv",
+  "local_file": "tc_sram/tc_sram.sv",
+  "local_original_file": "tc_sram_original.sv",
+  "local_testbenches": [
+    "testbench/tc_sram_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "tc_sram"
+}

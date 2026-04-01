@@ -1,0 +1,86 @@
+Unsupported Linux kernel (6.8.0-106-generic), will try Linux
+                     Synopsys 1076 VHDL Analyzer
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_eval_work/.rst_sync_patched.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_eval_work/.clk_en_gen_patched.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/btn_debounce/btn_debounce.vhd'
+
+Error-[IEEEVHDLSYNTAXERR] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/btn_debounce/btn_debounce.vhd, 61
+  
+          end if;
+              ^
+  Syntax error detected during VHDL parsing.
+
+
+Error-[SYNERR_KEYWORDPROCESSEXPECTED] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/btn_debounce/btn_debounce.vhd, 61
+RTL
+  
+          end if;
+          ^
+  The keyword PROCESS is expected at this location.
+
+
+Error-[IEEEVHDLSYNTAXERR] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/btn_debounce/btn_debounce.vhd, 64
+  
+      btn_raw_diff <= btn_raw_sample_reg xor btn_raw_sync_reg2;
+      ^
+  Syntax error detected during VHDL parsing.
+
+
+Error-[IEEEVHDLSYNTAXERR] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/btn_debounce/btn_debounce.vhd, 65
+  
+      end process;
+      ^
+  Syntax error detected during VHDL parsing.
+
+
+Error-[IEEEVHDLSYNTAXERR] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/btn_debounce/btn_debounce.vhd, 67
+  
+      btn_raw_diff <= btn_raw_sample_reg xor btn_raw_sync_reg2;
+      ^
+  Syntax error detected during VHDL parsing.
+
+
+Error-[IEEEVHDLSYNTAXERR] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/btn_debounce/btn_debounce.vhd, 73
+  
+      deb_cnt_p : process (CLK, ASYNC_RST)
+      ^
+  Syntax error detected during VHDL parsing.
+
+"/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/btn_debounce/btn_debounce.vhd": errors: 6; warnings: 0.
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/spi_master/spi_master.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/spi_slave/spi_slave.vhd'
+
+Error-[IEEEVHDLSYNTAXERR] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/spi_slave/spi_slave.vhd, 130
+  
+      last_bit_en_p : process (CLK)
+      ^
+  Syntax error detected during VHDL parsing.
+
+"/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/spi_slave/spi_slave.vhd": errors: 1; warnings: 0.
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.vcs_eval_work/.sseg_driver_patched.vhd'
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/spi_loopback/spi_loopback.vhd'
+
+Error-[IEEEVHDLSYNTAXERR] Syntax error
+/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/spi_loopback/spi_loopback.vhd, 266
+  
+              end if;
+                  ^
+  Syntax error detected during VHDL parsing.
+
+"/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/.eval_work_agentic/spi_loopback/spi_loopback.vhd": errors: 1; warnings: 0.
+Parsing design file '/ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/spi_loopback/testbench/spi_loopback_target_tb.vhd'

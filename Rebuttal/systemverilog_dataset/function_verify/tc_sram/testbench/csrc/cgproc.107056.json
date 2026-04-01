@@ -1,0 +1,55 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.4/_107056_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    32686
+                ],
+                [
+                    "YnYz3_d.o",
+                    15887
+                ]
+            ],
+            "size": 48573
+        }
+    ],
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "tc_sram_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 7599,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "bytes": 32686,
+            "mod": "std",
+            "archive": "archive.4/_107056_archive_1.a",
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "YnYz3_d": {
+            "bytes": 15887,
+            "mod": "tc_sram_target_tb",
+            "archive": "archive.4/_107056_archive_1.a",
+            "out": "YnYz3_d.o",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {}
+}

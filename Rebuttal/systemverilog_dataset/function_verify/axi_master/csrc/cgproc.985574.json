@@ -1,0 +1,103 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "_vcs_unit__2145838893": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_master_target_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "axi_if": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "m8FDb_d.o",
+                    6974
+                ],
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "p9GxR_d.o",
+                    5936
+                ],
+                [
+                    "xb4mh_d.o",
+                    9099
+                ],
+                [
+                    "pdxHv_d.o",
+                    50291
+                ]
+            ],
+            "archive": "archive.0/_985574_archive_1.a",
+            "size": 104794
+        }
+    ],
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 7711,
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "mode": 4,
+            "checksum": 0
+        },
+        "m8FDb_d": {
+            "bytes": 6974,
+            "out": "m8FDb_d.o",
+            "mod": "_vcs_unit__2145838893",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_985574_archive_1.a"
+        },
+        "pdxHv_d": {
+            "bytes": 50291,
+            "out": "pdxHv_d.o",
+            "mod": "axi_master_target_tb",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_985574_archive_1.a"
+        },
+        "reYIK_d": {
+            "bytes": 32494,
+            "out": "reYIK_d.o",
+            "mod": "std",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_985574_archive_1.a"
+        },
+        "xb4mh_d": {
+            "bytes": 9099,
+            "out": "xb4mh_d.o",
+            "mod": "axi_if",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_985574_archive_1.a"
+        },
+        "p9GxR_d": {
+            "bytes": 5936,
+            "out": "p9GxR_d.o",
+            "mod": "axi_pkg",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_985574_archive_1.a"
+        }
+    },
+    "reusePaths": {}
+}

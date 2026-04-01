@@ -1,0 +1,99 @@
+{
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "plic_gateway_target_tb",
+        "plic_gateway_target_tb"
+    ],
+    "PEModules": [],
+    "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "plic_gateway_target_tb": [
+            "plic_gateway_target_tb",
+            "vNGvP",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.052533999999999997,
+            "ru_nivcsw": 0,
+            "ru_stime_sec": 0.018540999999999998,
+            "ru_nvcsw": 22,
+            "ru_maxrss_kb": 83640,
+            "ru_minflt": 5011
+        },
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.065741999999999995,
+            "ru_nivcsw": 0,
+            "ru_stime_sec": 0.023626000000000001,
+            "ru_nvcsw": 22,
+            "ru_maxrss_kb": 91800,
+            "ru_minflt": 6546
+        },
+        "quadSpeed": 133025.43912780136,
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0
+        },
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0
+        },
+        "nMops": 3301,
+        "nQuads": 1757,
+        "mopSpeed": 249924.28831011514,
+        "totalObjSize": 156222,
+        "mop/quad": 1.8787706317586796,
+        "outputSizePerQuad": 88.0,
+        "CodeGen(%)": 20.090657418393111,
+        "Frontend(%)": 79.909342581606893
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 61103
+    },
+    "CurCompileUdps": {},
+    "CompileProcesses": [
+        "cgproc.949773.json"
+    ],
+    "Misc": {
+        "cwd": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/plic_gateway",
+        "csrc": "csrc",
+        "daidir": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/plic_gateway/simv.daidir",
+        "csrc_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/plic_gateway/csrc",
+        "daidir_abs": "/ssd1/zqy/Multi-hdl-language-repo/systemverilog_dataset/function_verify/plic_gateway/simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.0"
+    },
+    "CompileStatus": "Successful"
+}

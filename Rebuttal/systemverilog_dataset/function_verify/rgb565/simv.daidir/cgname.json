@@ -1,0 +1,22 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "rgb565": [
+        "rgb565",
+        "vRnu1",
+        "module"
+    ],
+    "rgb565_target_tb": [
+        "rgb565_target_tb",
+        "mts2U",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}

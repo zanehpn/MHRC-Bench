@@ -1,0 +1,10 @@
+{
+  "path": "labs-with-cva6/labs/caching/part2/ucsbece154b_icache.sv",
+  "local_file": "ucsbece154b_icache/ucsbece154b_icache.sv",
+  "local_original_file": "ucsbece154b_icache_original.sv",
+  "local_testbenches": [
+    "testbench/ucsbece154b_icache_target_tb.sv"
+  ],
+  "testbench_kind": "dut_instantiation_target_focused",
+  "module_name": "cva6_icache"
+}

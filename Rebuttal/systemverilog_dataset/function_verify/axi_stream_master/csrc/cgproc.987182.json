@@ -1,0 +1,103 @@
+{
+    "Modules": {
+        "axi_stream_pkg": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "...MASTER...": {},
+        "axi_stream_master_target_tb": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "std": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "_vcs_unit__3277591013": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "axi_stream_if": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "kxI8y_d": {
+            "mod": "axi_stream_if",
+            "out": "kxI8y_d.o",
+            "checksum": 0,
+            "bytes": 6626,
+            "mode": 4,
+            "archive": "archive.0/_987182_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "checksum": 0,
+            "bytes": 7727,
+            "mode": 4
+        },
+        "tDAVi_d": {
+            "mod": "axi_stream_pkg",
+            "out": "tDAVi_d.o",
+            "checksum": 0,
+            "bytes": 5983,
+            "mode": 4,
+            "archive": "archive.0/_987182_archive_1.a"
+        },
+        "fxBnf_d": {
+            "mod": "_vcs_unit__3277591013",
+            "out": "fxBnf_d.o",
+            "checksum": 0,
+            "bytes": 6998,
+            "mode": 4,
+            "archive": "archive.0/_987182_archive_1.a"
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "checksum": 0,
+            "bytes": 32494,
+            "mode": 4,
+            "archive": "archive.0/_987182_archive_1.a"
+        },
+        "YPaxk_d": {
+            "mod": "axi_stream_master_target_tb",
+            "out": "YPaxk_d.o",
+            "checksum": 0,
+            "bytes": 45807,
+            "mode": 4,
+            "archive": "archive.0/_987182_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_987182_archive_1.a",
+            "objects": [
+                [
+                    "fxBnf_d.o",
+                    6998
+                ],
+                [
+                    "reYIK_d.o",
+                    32494
+                ],
+                [
+                    "tDAVi_d.o",
+                    5983
+                ],
+                [
+                    "kxI8y_d.o",
+                    6626
+                ],
+                [
+                    "YPaxk_d.o",
+                    45807
+                ]
+            ],
+            "size": 97908
+        }
+    ]
+}

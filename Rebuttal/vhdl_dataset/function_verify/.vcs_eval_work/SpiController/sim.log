@@ -1,0 +1,14 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+6010 NS
+Assertion FAILURE at 6010 NS in design unit SPICONTROLLER_TARGET_TB(TB) from process /SPICONTROLLER_TARGET_TB/STIM:
+    "ASSERT FAIL: data_out(0) should be '1' (slavesel='1') after reset read of addr=11"
+ /ssd1/zqy/Multi-hdl-language-repo/vhdl_dataset/function_verify/SpiController/testbench/SpiController_target_tb.vhd(154):	        assert data_out(0) = '1'

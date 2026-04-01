@@ -1,0 +1,17 @@
+              Synopsys VCS MX Compiled Simulator(simv)
+                  Version L-2016.06 -- May 24, 2016
+              Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+4960 NS
+Report NOTE at 4960 NS in design unit SPI_SLAVE_TARGET_TB(TB) from process /SPI_SLAVE_TARGET_TB/STIM:
+    "spi_slave_target_tb: ALL ASSERTIONS PASSED"
+
+
+Process terminated by kill.
+

@@ -1,0 +1,5 @@
+vh/ScMain.o
+vh/scscomm.o
+vh/scsFilelist.o
+vh/DEFAULT__UART_PARITY_TARGET_TB__TB.o
+vh/DEFAULT__UART_PARITY__RTL.o

@@ -1,0 +1,32 @@
+{
+    "_vcs_unit__2145838893": [
+        "_vcs_unit__2145838893",
+        "m8FDb",
+        "module"
+    ],
+    "axi_master_target_tb": [
+        "axi_master_target_tb",
+        "pdxHv",
+        "module"
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "axi_pkg": [
+        "axi_pkg",
+        "p9GxR",
+        "module"
+    ],
+    "axi_if": [
+        "axi_if",
+        "xb4mh",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}
