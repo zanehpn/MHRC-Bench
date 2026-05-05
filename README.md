@@ -1,10 +1,10 @@
-![MHRC-Bench_example](figs/repo_examples.png)
+![HDL-repo bench example](figs/repo_examples.png)
 
-The benchmark link is [MHRC-Bench Dataset on Hugging Face](https://huggingface.co/datasets/Zanehpn/MHRC-Bench). You can download them and put them into the responding folders.
+The benchmark link is [HDL-repo bench Dataset on Hugging Face](https://huggingface.co/datasets/Zanehpn/HDL-repo-bench). You can download them and put them into the responding folders.
 
-## MHRC-Bench Repository Structure
+## HDL-repo bench Repository Structure
 
-MHRC-Bench is organized to support the full lifecycle of repository-level hardware code completion research, including benchmark construction, dataset curation across multiple hardware languages, model training, and evaluation. 
+HDL-repo bench is organized to support the full lifecycle of repository-level hardware code completion research, including benchmark construction, dataset curation across multiple hardware languages, model training, and evaluation. 
 
 ## Directory Description
 
@@ -45,13 +45,13 @@ It complements SystemVerilog by providing language diversity and structurally di
 ---
 
 ### Model_Training/
-Training scripts and configurations for supervised fine-tuning on **MHRC-Bench-Train**.  
+Training scripts and configurations for supervised fine-tuning on **HDL-repo bench-Train**.  
 This module supports repository-level fill-in-the-middle training and is used to improve hardware code completion performance of code LLMs.
 
 ---
 
 ### Model_evaluation/
-Evaluation scripts for **MHRC-Bench-Eval**, including:
+Evaluation scripts for **HDL-repo bench-Eval**, including:
 - repository-level code completion inference,
 - computation of EM, ES, BLEU, and CodeBLEU metrics,
 - analysis across hardware languages, code-structure depth, and hardware semantic categories.

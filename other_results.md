@@ -1,6 +1,6 @@
-# Rebuttal Summary
+# Other Results Summary
 
-The `Rebuttal/` directory contains supplementary experiments and materials addressing reviewer concerns, organized into six parts:
+The `Other_results/` directory contains supplementary experiments and materials, organized into six parts:
 
 ---
 

@@ -54,7 +54,7 @@ Include relavent files up to very large context windows (as defined by the upper
 
 ## Local LLMs
 
-Local LLMs fine-tuned on MHRC-Bench-Train. We also report the effect of varying input context windows on model performance
+Local LLMs fine-tuned on HDL-repo bench-Train. We also report the effect of varying input context windows on model performance
 
 | Model | Context window | Chisel EM | Chisel ES | V/SV EM | V/SV ES | VHDL EM | VHDL ES | HLS EM | HLS ES |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -88,7 +88,7 @@ We compare our models with `CodeV` (Zhao et al., 2025), a model based on `Qwen2.
 | Model | Context window | Chisel EM | Chisel ES | V/SV EM | V/SV ES | VHDL EM | VHDL ES | HLS EM | HLS ES |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | CodeV-All-QC | 2,048 | 22.91 | 60.73 | 18.11 | 51.36 | 5.44 | 42.34 | 20.39 | 49.79 |
-| MHRC-Qwen-Coder-7B | 2,048 | 26.6| 66.7| 39.0| 70.8| 34.5| 71.9| 35.5| 69.5|
+| HDL-repo-Qwen-Coder-7B | 2,048 | 26.6| 66.7| 39.0| 70.8| 34.5| 71.9| 35.5| 69.5|
 
 Note that `VHDL` and `HLS` are not supported by `CodeV` and results are for reference only.
 
