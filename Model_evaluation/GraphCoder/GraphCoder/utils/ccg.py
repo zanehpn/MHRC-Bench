@@ -1,3 +1,4 @@
+import os
 import networkx as nx
 from tree_sitter import Language, Parser
 from utils.utils import CONSTANTS
@@ -680,7 +681,7 @@ def java_data_dependence_graph(CFG, CCG):
 
 def cpp_control_dependence_graph(root_node, CCG, src_lines, parent):
     node_id = len(CCG.nodes)
-    
+
     # Define C++ specific node types
     control_structures = ['if_statement', 'for_statement', 'while_statement', 'do_statement', 'switch_statement']
     definitions = ['function_definition', 'class_specifier', 'struct_specifier', 'namespace_definition']
@@ -745,7 +746,7 @@ def cpp_control_dependence_graph(root_node, CCG, src_lines, parent):
         if child.type == 'identifier':
             row, col_start, col_end = child.start_point[0], child.start_point[1], child.end_point[1]
             identifier_name = src_lines[row][col_start:col_end].strip()
-            
+
             if parent is not None:
                 p_type = CCG.nodes[parent]['nodeType']
                 # Definition logic for C++
@@ -770,7 +771,7 @@ def cpp_control_dependence_graph(root_node, CCG, src_lines, parent):
                     CCG.nodes[parent]['defSet'].add(identifier_name)
                 else:
                     CCG.nodes[parent]['useSet'].add(identifier_name)
-        
+
         cpp_control_dependence_graph(child, CCG, src_lines, parent)
 
     return
@@ -807,11 +808,11 @@ def cpp_control_flow_graph(CCG):
     edge_list = []
     for v in CCG.nodes:
         v_type = CCG.nodes[v]['nodeType']
-        
+
         # 1. Flow into the block
         if first_children.get(v) is not None:
             edge_list.append((v, first_children[v], 'CFG'))
-            
+
         # 2. Specific control flow types
         if v_type in ['return_statement', 'break_statement', 'continue_statement']:
             if v_type in ['break_statement', 'continue_statement']:
@@ -835,7 +836,7 @@ def cpp_control_flow_graph(CCG):
             for u in CCG.neighbors(v):
                 if any(x in CCG.nodes[u]['nodeType'] for x in ['clause', 'case', 'default']):
                     edge_list.append((v, u, 'CFG'))
-        
+
         # 3. Standard sequential flow
         u = next_sibling.get(v)
         if u is None:
@@ -867,7 +868,7 @@ def cpp_data_dependence_graph(CFG, CCG):
         for u in CCG.nodes:
             if v == u or 'preproc' in CCG.nodes[v]['nodeType']:
                 continue
-            
+
             # Contextual Check: v should not be a child definition of u's context
             u_def = u
             u_def_set = set()
@@ -875,17 +876,17 @@ def cpp_data_dependence_graph(CFG, CCG):
                 u_def = list(CCG.predecessors(u_def))[0]
                 if any(x in CCG.nodes[u_def]['nodeType'] for x in ['definition', 'specifier']):
                     u_def_set.add(u_def)
-            
+
             if any(x in v_node['nodeType'] for x in ['definition', 'specifier']) and v not in u_def_set:
                 continue
-            
+
             # Data dependency logic
             shared_vars = v_node['defSet'] & CCG.nodes[u]['useSet']
             if len(shared_vars) != 0 and nx.has_path(CFG, v, u):
                 has_clean_path = False
                 # Use shortest paths as a heuristic (consistent with Python snippet)
                 paths = list(nx.all_shortest_paths(CFG, source=v, target=u))
-                
+
                 for var in shared_vars:
                     for path in paths:
                         # Check if 'var' is redefined on the path between v and u
@@ -898,13 +899,13 @@ def cpp_data_dependence_graph(CFG, CCG):
                             has_clean_path = True
                             break
                     if has_clean_path: break
-                
+
                 if has_clean_path:
                     CCG.add_edge(v, u, 'DDG')
     return
 def verilog_control_dependence_graph(root_node, CCG, src_lines, parent):
     node_id = len(CCG.nodes)
-    
+
     # Define Verilog specific node types
     control_structures = ['if_statement', 'case_statement', 'for_statement', 'generate_block']
     procedural_blocks = ['always_construct', 'initial_construct', 'final_construct']
@@ -967,7 +968,7 @@ def verilog_control_dependence_graph(root_node, CCG, src_lines, parent):
         if child.type == 'simple_identifier':
             row, col_start, col_end = child.start_point[0], child.start_point[1], child.end_point[1]
             identifier_name = src_lines[row][col_start:col_end].strip()
-            
+
             if parent is not None:
                 p_type = CCG.nodes[parent]['nodeType']
                 # Verilog Def/Use Logic
@@ -985,7 +986,7 @@ def verilog_control_dependence_graph(root_node, CCG, src_lines, parent):
                     CCG.nodes[parent]['useSet'].add(identifier_name)
                 else:
                     CCG.nodes[parent]['useSet'].add(identifier_name)
-        
+
         verilog_control_dependence_graph(child, CCG, src_lines, parent)
 
 def verilog_control_flow_graph(CCG):
@@ -1019,11 +1020,11 @@ def verilog_control_flow_graph(CCG):
     edge_list = []
     for v in CCG.nodes:
         v_type = CCG.nodes[v]['nodeType']
-        
+
         # Flow into block
         if first_children.get(v) is not None:
             edge_list.append((v, first_children[v], 'CFG'))
-            
+
         # Control structures
         if v_type in ['if_statement', 'case_statement']:
             for u in CCG.neighbors(v):
@@ -1060,15 +1061,15 @@ def verilog_data_dependence_graph(CFG, CCG):
         v_node = CCG.nodes[v]
         for u in CCG.nodes:
             if v == u: continue
-            
+
             # Filter cross-module dependencies to keep graph local to retrieval context
             # (Checking if v and u share a common module ancestor is handled by CCG structure)
-            
+
             shared_vars = v_node['defSet'] & CCG.nodes[u]['useSet']
             if len(shared_vars) != 0 and nx.has_path(CFG, v, u):
                 has_clean_path = False
                 paths = list(nx.all_shortest_paths(CFG, source=v, target=u))
-                
+
                 for var in shared_vars:
                     for path in paths:
                         redefined = False
@@ -1080,14 +1081,14 @@ def verilog_data_dependence_graph(CFG, CCG):
                             has_clean_path = True
                             break
                     if has_clean_path: break
-                
+
                 if has_clean_path:
                     CCG.add_edge(v, u, 'DDG')
     return
 
 def vhdl_control_dependence_graph(root_node, CCG, src_lines, parent):
     node_id = len(CCG.nodes)
-    
+
     # Define VHDL specific node types
     control_structures = ['if_statement', 'case_statement', 'loop_statement', 'elsif_clause', 'else_clause']
     procedural_blocks = ['process_statement', 'block_statement']
@@ -1153,11 +1154,11 @@ def vhdl_control_dependence_graph(root_node, CCG, src_lines, parent):
         if child.type == 'identifier':
             row, col_start, col_end = child.start_point[0], child.start_point[1], child.end_point[1]
             identifier_name = src_lines[row][col_start:col_end].strip().lower() # VHDL is case-insensitive
-            
+
             if parent is not None:
                 p_node = CCG.nodes[parent]
                 p_type = p_node['nodeType']
-                
+
                 if p_type in declarations:
                     p_node['defSet'].add(identifier_name)
                 elif p_type in assignments:
@@ -1171,7 +1172,7 @@ def vhdl_control_dependence_graph(root_node, CCG, src_lines, parent):
                     # Check if child belongs to the LHS component
                     if 'target' in str(child.parent.type) or child == child.parent.children[0]:
                         is_lhs = True
-                    
+
                     if is_lhs: p_node['defSet'].add(identifier_name)
                     else: p_node['useSet'].add(identifier_name)
                 elif 'loop' in p_type and 'iteration' in str(child.parent.type):
@@ -1179,7 +1180,7 @@ def vhdl_control_dependence_graph(root_node, CCG, src_lines, parent):
                     p_node['defSet'].add(identifier_name)
                 else:
                     p_node['useSet'].add(identifier_name)
-        
+
         vhdl_control_dependence_graph(child, CCG, src_lines, parent)
 
 def vhdl_control_flow_graph(CCG):
@@ -1213,16 +1214,16 @@ def vhdl_control_flow_graph(CCG):
     edge_list = []
     for v in CCG.nodes:
         v_type = CCG.nodes[v]['nodeType']
-        
+
         if first_children.get(v) is not None:
             edge_list.append((v, first_children[v], 'CFG'))
-            
+
         if v_type in ['if_statement', 'case_statement']:
             for u in CCG.neighbors(v):
                 u_type = CCG.nodes[u]['nodeType']
                 if any(x in u_type for x in ['elsif', 'else', 'alternative']):
                     edge_list.append((v, u, 'CFG'))
-        
+
         u = next_sibling.get(v)
         if u is None:
             # Handle return flow for loops and parent blocks
@@ -1248,12 +1249,12 @@ def vhdl_data_dependence_graph(CFG, CCG):
         v_node = CCG.nodes[v]
         for u in CCG.nodes:
             if v == u: continue
-            
+
             shared_vars = v_node['defSet'] & CCG.nodes[u]['useSet']
             if len(shared_vars) != 0 and nx.has_path(CFG, v, u):
                 has_clean_path = False
                 paths = list(nx.all_shortest_paths(CFG, source=v, target=u))
-                
+
                 for var in shared_vars:
                     for path in paths:
                         redefined = False
@@ -1265,14 +1266,14 @@ def vhdl_data_dependence_graph(CFG, CCG):
                             has_clean_path = True
                             break
                     if has_clean_path: break
-                
+
                 if has_clean_path:
                     CCG.add_edge(v, u, 'DDG')
     return
 
 def scala_control_dependence_graph(root_node, CCG, src_lines, parent):
     node_id = len(CCG.nodes)
-    
+
     # Define Scala specific node types
     control_structures = ['if_expression', 'while_statement', 'for_expression', 'match_expression', 'do_statement']
     definitions = ['class_definition', 'object_definition', 'trait_definition', 'function_definition', 'val_definition', 'var_definition', 'type_definition']
@@ -1346,11 +1347,11 @@ def scala_control_dependence_graph(root_node, CCG, src_lines, parent):
         if child.type == 'identifier':
             row, col_start, col_end = child.start_point[0], child.start_point[1], child.end_point[1]
             identifier_name = src_lines[row][col_start:col_end].strip()
-            
+
             if parent is not None:
                 p_node = CCG.nodes[parent]
                 p_type = p_node['nodeType']
-                
+
                 # Check if identifier is part of a definition pattern
                 if any(x in p_type for x in ['definition', 'import']):
                     # Check if it's the target of val/var/def
@@ -1362,7 +1363,7 @@ def scala_control_dependence_graph(root_node, CCG, src_lines, parent):
                         # If it's the 'name' field or inside 'pattern' of val/var
                         if child == curr.parent.child_by_field_name('name') or 'pattern' in str(child.parent.type):
                             is_def = True
-                    
+
                     if is_def: p_node['defSet'].add(identifier_name)
                     else: p_node['useSet'].add(identifier_name)
                 elif p_type == 'assignment_expression':
@@ -1374,7 +1375,7 @@ def scala_control_dependence_graph(root_node, CCG, src_lines, parent):
                         p_node['useSet'].add(identifier_name)
                 else:
                     p_node['useSet'].add(identifier_name)
-        
+
         scala_control_dependence_graph(child, CCG, src_lines, parent)
 
 def scala_control_flow_graph(CCG):
@@ -1407,15 +1408,15 @@ def scala_control_flow_graph(CCG):
     edge_list = []
     for v in CCG.nodes:
         v_type = CCG.nodes[v]['nodeType']
-        
+
         if first_children.get(v) is not None:
             edge_list.append((v, first_children[v], 'CFG'))
-            
+
         if v_type in ['if_expression', 'match_expression']:
             for u in CCG.neighbors(v):
                 if 'clause' in CCG.nodes[u]['nodeType']:
                     edge_list.append((v, u, 'CFG'))
-        
+
         u = next_sibling.get(v)
         if u is None:
             p = v
@@ -1441,12 +1442,12 @@ def scala_data_dependence_graph(CFG, CCG):
         v_node = CCG.nodes[v]
         for u in CCG.nodes:
             if v == u: continue
-            
+
             shared_vars = v_node['defSet'] & CCG.nodes[u]['useSet']
             if len(shared_vars) != 0 and nx.has_path(CFG, v, u):
                 has_clean_path = False
                 paths = list(nx.all_shortest_paths(CFG, source=v, target=u))
-                
+
                 for var in shared_vars:
                     for path in paths:
                         redefined = False
@@ -1458,7 +1459,7 @@ def scala_data_dependence_graph(CFG, CCG):
                             has_clean_path = True
                             break
                     if has_clean_path: break
-                
+
                 if has_clean_path:
                     CCG.add_edge(v, u, 'DDG')
     return
@@ -1470,10 +1471,10 @@ def create_graph(code_lines, repo_name):
 
     if len(src_lines) != 0:
         src_lines[-1] = src_lines[-1].rstrip().strip('(').strip('[').strip(',')
-    
+
     # Define tree-sitter parser
     repo_lang = CONSTANTS.repos_language[repo_name]
-    language = Language('./my-languages.so', repo_lang)
+    language = Language(os.environ.get('MHRC_GRAMMAR_LIBRARY', './my-languages.so'), repo_lang)
     parser = Parser()
     parser.set_language(language)
 
@@ -1566,7 +1567,7 @@ def create_graph(code_lines, repo_name):
     node_list = list(ccg.nodes)
     if not node_list:
         return ccg
-        
+
     node_list.sort()
     comment_lines.reverse()
     max_comment_line = 0
@@ -1582,11 +1583,11 @@ def create_graph(code_lines, repo_name):
             ccg.nodes[insert_id]['startRow'] = comment_line_num
             end_row = ccg.nodes[insert_id]['endRow']
             ccg.nodes[insert_id]['sourceLines'] = code_lines[comment_line_num: end_row + 1]
-            
+
     if max_comment_line != 0 and node_list:
         last_node_id = node_list[-1]
         ccg.nodes[last_node_id]['endRow'] = max_comment_line
         start_row = ccg.nodes[last_node_id]['startRow']
         ccg.nodes[last_node_id]['sourceLines'] = code_lines[start_row: max_comment_line + 1]
-        
+
     return ccg

@@ -2,7 +2,7 @@ import json
 
 def generate_constant_definition(input_jsonl, output_txt):
     unique_repos = []
-    
+
     # 1. Extract unique repository names from the JSONL
     try:
         with open(input_jsonl, 'r', encoding='utf-8') as f:
@@ -30,7 +30,7 @@ def generate_constant_definition(input_jsonl, output_txt):
     lines.append('    graph_database_save_dir = f"./context_database"')
     lines.append('    query_graph_save_dir = "./graph_based_query"')
     lines.append('    dataset_dir = "./HW_Repo_Bench/vhdl"')
-    
+
     # Format the repos list
     if unique_repos:
         lines.append("    repos = [")

@@ -7,7 +7,34 @@ from typing import List
 import shutil
 import json
 from typing import Dict, List
-from openai import OpenAI
+try:
+    from openai import OpenAI
+except ImportError:
+    # Fallback: minimal OpenAI-compatible client using requests
+    class _Msg:
+        def __init__(self, content): self.content = content
+    class _Choice:
+        def __init__(self, msg): self.message = msg
+    class _Resp:
+        def __init__(self, choices): self.choices = choices
+    class _Completions:
+        def __init__(self, api_key, base_url):
+            self._key = api_key; self._url = base_url.rstrip("/")
+        def create(self, model, messages, **kw):
+            import requests as _r
+            h = {"Authorization": "Bearer " + self._key, "Content-Type": "application/json"}
+            d = {"model": model, "messages": messages}
+            d.update(kw)
+            resp = _r.post(self._url + "/chat/completions", headers=h, json=d, timeout=120)
+            resp.raise_for_status()
+            c = resp.json()["choices"][0]["message"]["content"]
+            return _Resp([_Choice(_Msg(c))])
+    class _Chat:
+        def __init__(self, api_key, base_url):
+            self.completions = _Completions(api_key, base_url)
+    class OpenAI:
+        def __init__(self, api_key="", base_url=""):
+            self.chat = _Chat(api_key, base_url)
 
 
 def extract_after_think(text: str) -> str:
@@ -88,7 +115,7 @@ def deepseek_R1_mcts(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -110,7 +137,7 @@ def deepseek_v3(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -133,7 +160,7 @@ def gpt5(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -156,7 +183,7 @@ def gpt4o(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -179,7 +206,7 @@ def Qwen32B(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -202,7 +229,7 @@ def deepseek_R1_describe(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -224,7 +251,7 @@ def grok4(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -246,7 +273,7 @@ def gemini2_5(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -268,7 +295,7 @@ def claude_sonnet_4_5_thinking(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -290,7 +317,7 @@ def gemini2_5(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(
@@ -312,7 +339,7 @@ def deepseek_v3_2(prompt: str) -> str:
     """
     client = OpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", ""),
-        base_url=os.environ.get("OPENAI_BASE_URL", ""),
+        base_url=os.environ.get("OPENAI_BASE_URL", "https://api.chatfire.cn/v1"),
     )
     try:
         completions = client.chat.completions.create(

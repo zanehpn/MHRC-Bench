@@ -54,32 +54,32 @@ def hit(search_cases, hits=None):
     if hits is None:
         hits = [1, 5, 10]
     hit_res = [0.0 for _ in range(0, len(hits))]
-    
+
     # Track how many cases actually had search results
     valid_cases_count = 0
-    
+
     for case in search_cases:
         # Skip cases that don't have search results (e.g., due to timeout)
         if 'top_k_context' not in case or not case['top_k_context']:
             continue
-            
+
         valid_cases_count += 1
         target_lines = [line.strip() for line in case['metadata']['ground_truth'].splitlines() if line.strip()]
         # Note: Changed to handle both Python and C++ style comments
         target_lines = [line for line in target_lines if not (line.startswith('#') or line.startswith('//'))]
         target_line = "".join(target_lines)
-        
+
         hit_pos = np.inf
         # top_k_context items are tuples, index 0 is the code context 'val'
         for i in range(1, len(case['top_k_context']) + 1):
             prediction_lines = [line.strip() for line in case['top_k_context'][-i][0].splitlines() if line.strip()]
             prediction_lines = [line for line in prediction_lines if not (line.startswith('#') or line.startswith('//'))]
             prediction_line = "".join(prediction_lines)
-            
+
             if target_line in prediction_line:
                 hit_pos = i
                 break
-        
+
         for i in range(0, len(hits)):
             if hits[i] >= hit_pos:
                 hit_res[i] += 1.0
@@ -88,7 +88,7 @@ def hit(search_cases, hits=None):
     total = len(search_cases) if len(search_cases) > 0 else 1
     for i in range(0, len(hit_res)):
         hit_res[i] /= total
-        
+
     return hit_res
 
 

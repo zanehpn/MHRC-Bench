@@ -46,37 +46,18 @@ except ImportError as e:
 LINE_PROMPT_PREFIX = """You are a precise code-completion model completing a repository blank completion task. Input: a repository concatenation where each file of the repo is wrapped in `--- FILE: <repo_name>/<rel/path/to/file> (BEGIN) ---
 <file content...>
 --- FILE: <repo name>/<rel/path/to/file> (END) ---
-`. Some lines have been replaced by the exact token `<TARGET>`. Your task: reconstruct **only** the replaced line, using the repository context. Note that for certain large repositories, functions of lesser importance were removed of their implementation, and only the signature/documentation were kept for the sake of simplicity.
+`. Some lines have been replaced by the exact token `<TARGET>`. Your task: reconstruct **only** the missing code span, using the repository context. Note that for certain large repositories, functions of lesser importance were removed of their implementation, and only the signature/documentation were kept for the sake of simplicity.
 
 
-OUTPUT: the reconstructed line(and nothing else)."""
+OUTPUT: the reconstructed code span (and nothing else)."""
 
 
-def load_test_data(file_path: str) -> List[Dict]:
-    """
-    Loads test data from a .jsonl file (one JSON object per line).
-    Includes error handling for individual malformed lines.
-    """
-    test_data = []
-    print(f"Reading test data from {file_path}...")
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            for line_num, line in enumerate(f, 1):
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    test_data.append(json.loads(line))
-                except json.JSONDecodeError as e:
-                    print(f"Warning: Skipped malformed JSON on line {line_num}: {e}")
-
-        print(f"Successfully loaded {len(test_data)} test entries from {file_path}")
-        return test_data
-    except Exception as e:
-        print(f"Critical error opening/reading file: {e}")
-        return []
 
 
+
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from release_io import load_test_data, item_id, validate_prompt_budget
 def extract_hls_code(llm_output: str) -> str:
     """
     Cleans LLM-generated code outputs by removing format markers,
@@ -107,6 +88,8 @@ def evaluate_single_model(
     test_data: List[Dict],
     output_dir: str,
     language: str,
+    max_tokens: int = 2048,
+    tokenizer_name: str = "microsoft/unixcoder-base",
 ) -> Tuple[float, float, float]:
     """
     Single-pass evaluation for one model:
@@ -144,6 +127,7 @@ def evaluate_single_model(
                 prompt_pre = entry.get("prompt", "")
                 prompt_prefix = LINE_PROMPT_PREFIX
                 prompt = f"{prompt_prefix}\n{prompt_pre}\n"
+                validate_prompt_budget(prompt, tokenizer_name, max_tokens)
 
                 if not prompt or not ground_truth:
                     print(
@@ -167,7 +151,7 @@ def evaluate_single_model(
 
                 # Exact match
                 try:
-                    em_score = evaluate_em(generated_code, ground_truth)
+                    em_score = evaluate_em(generated_code, ground_truth, lang=language)
                 except Exception as e:
                     print(
                         f"Error in EM for entry {i} (repo: {repo_name}, model: {model_name}): {e}"
@@ -176,7 +160,7 @@ def evaluate_single_model(
 
                 # Edit similarity
                 try:
-                    es_score = evaluate_es(generated_code, ground_truth)
+                    es_score = evaluate_es(generated_code, ground_truth, lang=language)
                 except Exception as e:
                     print(
                         f"Error in ES for entry {i} (repo: {repo_name}, model: {model_name}): {e}"
@@ -213,6 +197,8 @@ def evaluate_single_model(
                     "language": language,
                     "prompt": prompt,
                     "ground_truth": ground_truth,
+                    "item_id": item_id(entry, language),
+                    "path": entry.get("path", ""),
                     "generated_code": generated_code,
                     "em_score": float(em_score),
                     "es_score": float(es_score),
@@ -236,6 +222,8 @@ def evaluate_single_model(
     except Exception as e:
         print(f"Error saving per-model results for {model_name}: {e}")
 
+    if len(em_scores) != len(test_data):
+        raise RuntimeError(f"Incomplete evaluation: {len(em_scores)}/{len(test_data)} samples")
     avg_em = sum(em_scores) / len(em_scores) if em_scores else 0.0
     avg_es = sum(es_scores) / len(es_scores) if es_scores else 0.0
     avg_bleu = sum(bleu_scores) / len(bleu_scores) if bleu_scores else 0.0
@@ -248,25 +236,11 @@ def evaluate_single_model(
     return avg_em, avg_bleu, avg_es
 
 
-def get_test_file_for_language(language: str) -> str:
-    """
-    Map language to test_content.jsonl path.
-    """
-    base = CURRENT_DIR
-    if language == "hls":
-        return os.path.join(base, "test_rlcoder_hls.jsonl")
-    elif language == "vhdl":
-        return os.path.join(base, "test_rlcoder_vhdl.jsonl")
-    elif language == "systemverilog":
-        return os.path.join(base, "test_rlcoder_systemverilog.jsonl")
-    elif language == "chisel":
-        return os.path.join(base, "test_rlcoder_chisel.jsonl")
-    else:
-        raise ValueError(f"Unsupported language: {language}")
 
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--test-jsonl", required=True, help="External evaluation JSONL.")
     parser.add_argument(
         "--language",
         type=str,
@@ -287,9 +261,11 @@ def main():
     parser.add_argument(
         "--output_dir",
         type=str,
-        default="eval_results",
+        required=True,
         help="Directory to store evaluation outputs.",
     )
+    parser.add_argument("--max_tokens", type=int, default=2048)
+    parser.add_argument("--tokenizer_name", default="microsoft/unixcoder-base")
     args = parser.parse_args()
 
     language = args.language
@@ -319,7 +295,7 @@ def main():
         print("No valid models selected. Exiting.")
         return
 
-    test_file_path = get_test_file_for_language(language)
+    test_file_path = args.test_jsonl.format(language=language)
     output_dir = f"{args.output_dir}"
 
     test_data = load_test_data(test_file_path)
@@ -341,6 +317,8 @@ def main():
                 test_data=test_data,
                 output_dir=output_dir,
                 language=language,
+                max_tokens=args.max_tokens,
+                tokenizer_name=args.tokenizer_name,
             )
 
             summary_results[model_name] = {
@@ -365,6 +343,7 @@ def main():
                 "language": language,
                 "error": str(e),
             }
+            raise
 
     # Save summary (evaluation_summary_<language>.json)
     summary_file = os.path.join(output_dir, f"evaluation_summary_{language}_{model_name}.json")

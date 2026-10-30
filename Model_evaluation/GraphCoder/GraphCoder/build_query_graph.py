@@ -38,14 +38,14 @@ def build_query_subgraph(task_name):
     test_cases = load_jsonl(input_file)
     graph_test_cases = []
     tokenizer = CodexTokenizer()
-    
+
     print(f"Processing {task_name}...")
     with tqdm(total=len(test_cases)) as pbar:
         for case in test_cases:
             case_path = os.path.join(*case['metadata']['fpath_tuple'])
             line_no = case['metadata']['line_no']
             case_id = case['metadata']['task_id'].split('/')[0]
-            
+
             if case_id not in CONSTANTS.repos:
                 pbar.update(1)
                 continue
@@ -53,32 +53,32 @@ def build_query_subgraph(task_name):
             try:
                 # --- START TIMEOUT ---
                 signal.alarm(30) # 30 seconds limit
-                
+
                 full_repo_path = os.path.join(CONSTANTS.repo_base_dir, case_path)
                 with open(full_repo_path, 'r') as f:
                     src_lines = f.readlines()
-                
+
                 query_context = src_lines[:line_no]
-                
+
                 # These two calls are where the code usually hangs
                 ccg = create_graph(query_context, case_id)
                 if ccg is None:
                     raise Exception("CCG generation returned None")
-                    
+
                 query_ctx, query_line_list, query_graph = last_n_context_lines_graph(ccg)
-                
+
                 # Build result object
                 graph_case = dict()
                 graph_case['query_forward_graph'] = graph_to_json(query_graph)
                 graph_case['query_forward_context'] = query_ctx
                 graph_case['query_forward_encoding'] = tokenizer.tokenize(query_ctx)
-                
+
                 context_lines = case['prompt'].splitlines(keepends=True)
                 graph_case['context'] = context_lines
                 #graph_case['right_context'] = case['metadata'].get('right_context', '')
                 graph_case['metadata'] = copy.deepcopy(case['metadata'])
                 graph_case['metadata']['forward_context_line_list'] = query_line_list
-                
+
                 graph_test_cases.append(copy.deepcopy(graph_case))
 
             except TimeoutException:

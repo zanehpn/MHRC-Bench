@@ -15,7 +15,7 @@ def assemble_dataset(test_content_path, repo_base_dir, output_path):
         for line in f:
             if not line.strip():
                 continue
-            
+
             data = json.loads(line)
             repo_name = data.get("task_id") # e.g., "hls_tutorial_examples"
             rel_path = data.get("path")     # e.g., "hls_tutorial_examples/example_7/..."
@@ -25,7 +25,7 @@ def assemble_dataset(test_content_path, repo_base_dir, output_path):
 
             # --- FIX 1: Join directly because rel_path already contains the repo folder ---
             full_path = os.path.join(repo_base_dir, rel_path)
-            
+
             if not os.path.exists(full_path):
                 print(f"Warning: File not found {full_path}. Skipping.")
                 continue
@@ -35,8 +35,8 @@ def assemble_dataset(test_content_path, repo_base_dir, output_path):
 
             # 3. Calculate Line Numbers
             context_lines = left_context.splitlines()
-            line_no = len(context_lines) 
-            
+            line_no = len(context_lines)
+
             start_index = file_content.find(left_context)
             if start_index != -1:
                 content_before_target = file_content[:start_index + len(left_context)]
@@ -52,7 +52,7 @@ def assemble_dataset(test_content_path, repo_base_dir, output_path):
             repo_counters[repo_name] = count + 1
 
             # --- FIX 2: Build fpath_tuple without duplicating repo_name ---
-            # Since rel_path is "hls_tutorial_examples/path/to/file", 
+            # Since rel_path is "hls_tutorial_examples/path/to/file",
             # Path(rel_path).parts already starts with "hls_tutorial_examples"
             fpath_parts = list(Path(rel_path).parts)
 
@@ -74,7 +74,7 @@ def assemble_dataset(test_content_path, repo_base_dir, output_path):
     with open(output_path, 'w', encoding='utf-8') as out_f:
         for item in dataset:
             out_f.write(json.dumps(item) + '\n')
-    
+
     print(f"Successfully assembled {len(dataset)} entries into {output_path}")
 
 if __name__ == "__main__":

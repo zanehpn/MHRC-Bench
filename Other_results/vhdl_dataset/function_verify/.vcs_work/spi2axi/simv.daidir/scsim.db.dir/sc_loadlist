@@ -1,6 +1,0 @@
-vh/ScMain.o
-vh/scscomm.o
-vh/scsFilelist.o
-vh/DEFAULT__SPI2AXI_TARGET_TB__TB.o
-vh/DEFAULT__SPI2AXI__RTL.o
-vh/DEFAULT__SYNCHRONIZER__RTL.o

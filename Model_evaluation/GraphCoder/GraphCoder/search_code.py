@@ -67,7 +67,7 @@ class SimilarityScore:
                         g_emb = tokenizer.tokenize("".join(graph.nodes[un]['sourceLines']))
                         sim = SimilarityScore.text_jaccard_similarity(q_emb, g_emb)
                         sim_score.append((sim, vn, un))
-                
+
                 sim_score.sort(key=lambda x: -x[0])
                 for sim, vn, un in sim_score:
                     if vn not in query_graph_visited and un not in graph_visited:
@@ -136,7 +136,7 @@ class CodeSearchWorker:
         repo_path = os.path.join(CONSTANTS.graph_database_save_dir, f"{repo_name}.jsonl")
         if not os.path.exists(repo_path):
             return query_case
-        
+
         repo_cases = load_jsonl(repo_path)
         start_t = time.time()
 
@@ -153,7 +153,7 @@ class CodeSearchWorker:
         filtered = []
         for rc, sim in results:
             filtered.append((rc['val'], rc['statement'], rc['key_forward_context'], rc['fpath_tuple'], sim))
-        
+
         query_case['top_k_context'] = sorted(filtered, key=lambda x: x[-1])[-self.max_top_k:]
         duration = time.time() - start_t
         query_case['text_runtime'] = duration if self.mode == 'coarse' else 0
@@ -165,7 +165,7 @@ class CodeSearchWorker:
             for query_case in self.query_cases:
                 case_id = query_case['metadata']['task_id']
                 try:
-                    signal.alarm(self.timeout) 
+                    signal.alarm(self.timeout)
                     if self.mode in ['coarse', 'fine']:
                         res = self._find_top_k_context(query_case, "one")
                     else:
@@ -175,7 +175,7 @@ class CodeSearchWorker:
                 except TimeoutException:
                     print(f'case {case_id} TIMEOUT - skipping search')
                     # --- FIX: Ensure the key exists even on timeout ---
-                    query_case['top_k_context'] = [] 
+                    query_case['top_k_context'] = []
                     query_case['text_runtime'] = 0
                     query_case['graph_runtime'] = 0
                     results.append(query_case)
@@ -184,7 +184,7 @@ class CodeSearchWorker:
                     query_case['top_k_context'] = []
                     results.append(query_case)
                 finally:
-                    signal.alarm(0) 
+                    signal.alarm(0)
             dump_jsonl(results, self.output_path)
 
 if __name__ == '__main__':
@@ -197,8 +197,8 @@ if __name__ == '__main__':
     # Apply timeout to the pre-processing step (the likely source of your hang)
     print(f"Building query subgraphs for {args.query_cases}...")
     try:
-        # Note: If build_query_subgraph hangs internally on a file, 
-        # this alarm might trigger. You may need to edit build_query_graph.py 
+        # Note: If build_query_subgraph hangs internally on a file,
+        # this alarm might trigger. You may need to edit build_query_graph.py
         # similarly if it has its own internal loop.
         signal.alarm(300) # Give the whole builder 5 mins
         build_query_subgraph(f"{args.query_cases}.test.jsonl")

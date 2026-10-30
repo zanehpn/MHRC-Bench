@@ -8,13 +8,13 @@ import subprocess
 import json
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-if not GITHUB_TOKEN:
-    raise SystemExit("Please set GITHUB_TOKEN")
 
 HEADERS = {
     "Authorization": f"token {GITHUB_TOKEN}",
     "Accept": "application/vnd.github.v3+json",
 }
+
+PERMISSIVE_LICENSES = {"mit", "apache-2.0", "bsd-2-clause", "bsd-3-clause", "isc", "zlib", "bsl-1.0", "unlicense", "cc0-1.0"}
 
 SEARCH_URL = "https://api.github.com/search/repositories"
 
@@ -131,11 +131,11 @@ def build_github_query(lang: str, min_stars: int, created_after: str) -> str:
     else:
         raise ValueError(f"Unsupported --lang: {lang}")
     if lang == "chisel":
-        return f"chisel language:{gh_lang} stars:>={min_stars} created:>{created_after} topic:chisel"
+        return f"chisel language:{gh_lang} stars:>{min_stars} created:>{created_after} topic:chisel"
     elif lang == "hls":
-        return f"High level synthesis language:{gh_lang} stars:>={min_stars} created:>{created_after}"
+        return f"High level synthesis language:{gh_lang} stars:>{min_stars} created:>{created_after}"
     else:
-        return f"language:{gh_lang} stars:>={min_stars} created:>{created_after}"
+        return f"language:{gh_lang} stars:>{min_stars} created:>{created_after}"
 
 
 # -----------------------------
@@ -150,7 +150,7 @@ def main():
     parser.add_argument("--created-after", type=str, default="2000-01-01")
     parser.add_argument("--min-files", type=int, default=10)
     parser.add_argument("--max-files", type=int, default=50)
-    parser.add_argument("--dest", default="./repos")
+    parser.add_argument("--dest", required=True)
     parser.add_argument("--max-pages", type=int, default=10)
 
     # Optional override: if user passes --ext, it overrides LANG_EXTS[lang]
@@ -158,6 +158,8 @@ def main():
                         help="Override file extensions to count (repeatable): --ext .v --ext .sv")
 
     args = parser.parse_args()
+    if not GITHUB_TOKEN:
+        parser.error("Set GITHUB_TOKEN before collecting repositories")
 
     lang = args.lang.lower()
     default_exts = LANG_EXTS.get(lang)
@@ -177,6 +179,10 @@ def main():
     os.makedirs(args.dest, exist_ok=True)
 
     for r in repos:
+        license_key = (r.get("license") or {}).get("key", "").lower()
+        if license_key not in PERMISSIVE_LICENSES:
+            print("Skipping repository without a recognized permissive license:", r["full_name"])
+            continue
         name = r["full_name"]
         print(f"\nChecking {name} ...")
 

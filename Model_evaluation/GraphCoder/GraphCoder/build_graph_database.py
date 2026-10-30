@@ -29,7 +29,7 @@ class GraphDatabaseBuilder:
         code_files = iterate_repository_file(self.repo_base_dir, repo_name)
         file_num = 0
         make_needed_dir(os.path.join(self.graph_database_save_dir, repo_name))
-        
+
         # Register the signal handler
         signal.signal(signal.SIGALRM, timeout_handler)
 
@@ -38,21 +38,21 @@ class GraphDatabaseBuilder:
                 pbar.set_description(f"Processing {os.path.basename(file)}")
                 try:
                     signal.alarm(self.file_timeout) # Start timer
-                    
+
                     with open(file, 'r') as f:
                         src_lines = f.readlines()
                     ccg = create_graph(src_lines, repo_name)
                     if ccg is None:
                         pbar.update(1)
                         continue
-                    
+
                     save_path = os.path.join(self.graph_database_save_dir, repo_name, f"{file_num}.json")
                     file_num += 1
                     make_needed_dir(save_path)
                     with open(save_path, 'w') as f:
                         # Fixed typo: changed pdg to ccg
                         f.write(json.dumps(json_graph.node_link_data(ccg), default=set_default))
-                
+
                 except TimeoutException:
                     print(f"\n[Timeout] Skipping {file} - took longer than {self.file_timeout}s")
                 except Exception as e:
@@ -75,13 +75,13 @@ class GraphDatabaseBuilder:
         with tqdm(total=len(code_files)) as pbar:
             for file in code_files:
                 pbar.set_description(f"Slicing {os.path.basename(file)}")
-                
+
                 try:
                     signal.alarm(self.file_timeout) # Start timer
-                    
+
                     with open(file, 'r') as f:
                         src_lines = f.readlines()
-                    
+
                     ccg = create_graph(src_lines, repo_name)
                     if ccg is None:
                         pbar.update(1)
@@ -100,13 +100,13 @@ class GraphDatabaseBuilder:
                         end_line_row = min(statement_line_row+10, len(src_lines))
                         curr_dict['val'] = "".join(src_lines[start_line_row:end_line_row])
                         curr_dict['fpath_tuple'] = file.split('/')[repo_base_dir_len:]
-                        
+
                         max_forward_line = 0
                         if len(forward_line) != 0:
                             max_forward_line = max(forward_line)
                         curr_dict['max_line_no'] = max(max_forward_line, end_line_row)
                         repo_dict.append(curr_dict.copy())
-                
+
                 except TimeoutException:
                     print(f"\n[Timeout] Skipping {file} - Slicing took longer than {self.file_timeout}s")
                 except Exception as e:

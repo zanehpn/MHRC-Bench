@@ -1,11 +1,11 @@
 import torch.nn as nn
-import torch    
+import torch
 from transformers import AutoTokenizer, AutoModel
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 from bm25 import TaskSpecificBM25
 import random
-import os 
+import os
 import pandas as pd
 
 
@@ -101,7 +101,7 @@ class CustomDataset(Dataset):
 
     def __len__(self):
         return len(self.examples)
-    
+
     def __getitem__(self, idx):
         text = str(self.examples[idx])
         extracted_import = str(self.extracted_imports[idx]) if self.extracted_imports else ''
@@ -250,7 +250,7 @@ class Retriever(nn.Module):
             topk_codeblocks.append(topk_codeblocks_query)
             start_idx += num_candidates
         return topk_codeblocks
-    
+
 # Retrieves code blocks based on different inference types.
 def retrieve_codeblocks(args, examples, bm25, retriever, dataset_name, is_training=False, inference_type=None):
     """
@@ -274,10 +274,10 @@ def retrieve_codeblocks(args, examples, bm25, retriever, dataset_name, is_traini
             bm25[dataset_name] = TaskSpecificBM25(examples, args)
 
         if inference_type == "repocoder":
-            bm25_topk = 50 
+            bm25_topk = 50
         elif inference_type == "rl_coder":
-            bm25_topk = args.sample_number * 10 
-            unixcoder_topk = args.sample_number 
+            bm25_topk = args.sample_number * 10
+            unixcoder_topk = args.sample_number
         replacement_token = "<TARGET>"
         for example in examples:
             queries.append(f"{example.left_context}\n{replacement_token}\n{example.right_context}\n")
@@ -299,9 +299,9 @@ def retrieve_codeblocks(args, examples, bm25, retriever, dataset_name, is_traini
             else:
                 if not args.disable_stop_block:
                     candidate_codeblocks = [x + [CodeBlock("", "Don't need cross file context for completion", "",'')] for x,y in zip(candidate_codeblocks, examples)]
-                
+
                 candidate_codeblocks = retriever.retrieve(queries,  candidate_codeblocks, topk=unixcoder_topk)
-        
+
             return queries, candidate_codeblocks
 
     raise ValueError("Unsupported inference type: {}".format(args.inference_type))
@@ -311,27 +311,26 @@ def load_test_dataset(args):
     Loads a dataset from a JSONL file and constructs Example objects.
 
     crossfile_list 不再从 jsonl 中读取，而是从
-    <repo_root>/<language>/<task_id>
+    <repo-root>/hls/<task_id>
     目录下扫描 {".c", ".cpp", ".cc", ".h", ".hpp"} 文件作为 cross-file context。
     """
-    _repo_root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
     jsonl_path = ""
     if args.language == "hls":
-        HLS_TASK_ROOT = os.path.join(_repo_root, "hls")
-        jsonl_path = os.path.join(_repo_root, "hls_dataset", "test_content.jsonl")
+        HLS_TASK_ROOT = os.path.join(args.repo_root, "hls")
+        jsonl_path = args.test_jsonl
         HLS_CODE_EXTS = {".c", ".cpp", ".cc", ".h", ".hpp"}
     elif args.language == "vhdl":
-        HLS_TASK_ROOT = os.path.join(_repo_root, "vhdl")
+        HLS_TASK_ROOT = os.path.join(args.repo_root, "vhdl")
         HLS_CODE_EXTS = {".vhd", ".vhdl"}
-        jsonl_path = os.path.join(_repo_root, "vhdl_dataset", "test_content.jsonl")
+        jsonl_path = args.test_jsonl
     elif args.language == "systemverilog":
-        HLS_TASK_ROOT = os.path.join(_repo_root, "systemverilog")
+        HLS_TASK_ROOT = os.path.join(args.repo_root, "systemverilog")
         HLS_CODE_EXTS = {".sv", ".svh", ".v",".vh"}
-        jsonl_path = os.path.join(_repo_root, "systemverilog_dataset", "test_content.jsonl")
+        jsonl_path = args.test_jsonl
     elif args.language == "chisel":
-        HLS_TASK_ROOT = os.path.join(_repo_root, "chisel")
+        HLS_TASK_ROOT = os.path.join(args.repo_root, "chisel")
         HLS_CODE_EXTS = {".scala"}
-        jsonl_path = os.path.join(_repo_root, "chisel_dataset", "test_content.jsonl")
+        jsonl_path = args.test_jsonl
     else:
         raise ValueError(f"Unsupported language: {args.language}")
     data_frame = pd.read_json(jsonl_path, lines=True)
@@ -391,6 +390,10 @@ if __name__ == "__main__":
 
     def parse_args():
         p = argparse.ArgumentParser()
+        p.add_argument("--repo-root", required=True)
+        p.add_argument("--output", required=True)
+        p.add_argument("--test-jsonl", required=True)
+        p.add_argument("--train-jsonl")
         p.add_argument(
             "--inference_type",
             type=str,
@@ -508,7 +511,7 @@ if __name__ == "__main__":
                     print(f"  [{j}] {repr(cb)}")
 
     # Optionally, write retrieval results to a JSONL for downstream usage
-    out_path = f"retrieval_{args.inference_type}_{args.language}_{args.retriever_total_context_length}.jsonl"
+    out_path = args.output
     try:
         with open(out_path, "w", encoding="utf-8") as fout:
             for q, cands in zip(queries or [], retrieved_codeblocks or []):

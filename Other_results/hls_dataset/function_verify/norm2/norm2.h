@@ -1,6 +1,0 @@
-
-#pragma once
-#define INP_IMAGE_SIZE 13
-#define INP_IMAGE_CHANNEL 256
-#define OUT_IMAGE_SIZE 13
-#define OUT_IMAGE_CHANNEL 256

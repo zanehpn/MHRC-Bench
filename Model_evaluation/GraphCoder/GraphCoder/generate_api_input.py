@@ -34,10 +34,10 @@ class PromptAssembler:
             # 3. Build the Prompt using the updated build_prompt.py (C++ comments)
             # max_top_k usually comes from CONSTANTS (10)
             prompt = build_prompt(
-                case, 
-                self.tokenizer, 
-                max_num_tokens=self.max_tokens, 
-                max_top_k=CONSTANTS.max_search_top_k, 
+                case,
+                self.tokenizer,
+                max_num_tokens=self.max_tokens,
+                max_top_k=CONSTANTS.max_search_top_k,
                 mode=self.mode
             )
 
@@ -69,8 +69,8 @@ if __name__ == '__main__':
     output_path = os.path.join("./api_input", f"{args.input_file_name}.prompts.fim.jsonl")
 
     assembler = PromptAssembler(
-        input_file=input_path, 
-        output_file=output_path, 
+        input_file=input_path,
+        output_file=output_path,
         mode=args.mode,
         max_tokens=args.max_tokens
     )

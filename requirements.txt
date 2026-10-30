@@ -1,0 +1,17 @@
+# Runtime versions used for CLI validation; CUDA drivers are installed separately.
+torch==2.11.0
+transformers==4.57.6
+peft==0.19.1
+accelerate==1.13.0
+tqdm==4.67.3
+openai==2.24.0
+requests>=2.31,<3
+numpy==1.26.4
+pandas==3.0.3
+rank-bm25==0.2.2
+networkx==3.3
+tiktoken==0.12.0
+nltk==3.9.2
+editdistance==0.8.1
+python-Levenshtein>=0.25,<1
+tree-sitter==0.25.2

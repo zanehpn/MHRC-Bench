@@ -1,4 +1,0 @@
-[warn] /ssd1/zqy/Multi-hdl-language-repo/chisel_dataset/function_verify/test_project/src/test/scala/DeviceControlRegisterFuncSpec.scala:17:7: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected
-[warn]       succeed
-[warn]       ^
-[warn] one warning found

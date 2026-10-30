@@ -23,9 +23,9 @@ from peft import LoraConfig, get_peft_model, TaskType
 LINE_PROMPT_PREFIX = """You are a precise code-completion model completing a repository blank completion task. Input: a repository concatenation where each file of the repo is wrapped in `--- FILE: <repo_name>/<rel/path/to/file> (BEGIN) ---
 <file content...>
 --- FILE: <repo name>/<rel/path/to/file> (END) ---
-`. Some lines have been replaced by the exact token `<TARGET>`. Your task: reconstruct **only** the replaced line, using the repository context. Note that for certain large repositories, functions of lesser importance were removed of their implementation, and only the signature/documentation were kept for the sake of simplicity.
+`. Some lines have been replaced by the exact token `<TARGET>`. Your task: reconstruct **only** the missing code span, using the repository context. Note that for certain large repositories, functions of lesser importance were removed of their implementation, and only the signature/documentation were kept for the sake of simplicity.
 
-OUTPUT: the reconstructed line(and nothing else)."""
+OUTPUT: the reconstructed code span (and nothing else)."""
 
 def read_jsonl(path: str) -> List[Dict]:
     out = []
@@ -46,6 +46,7 @@ def build_truncated_prompt(tokenizer, left: str, right: str, max_prompt_tokens: 
     训练时同样需要截断：prefix + left + <TARGET> + right
     以 <TARGET> 为中心裁剪 left/right（token级）
     """
+    right = ""  # Preceding-context-only protocol.
     prefix = LINE_PROMPT_PREFIX + "\n"
     replacement = "<TARGET>"
 
@@ -225,7 +226,7 @@ def main():
         r=args.lora_r,
         lora_alpha=args.lora_alpha,
         lora_dropout=args.lora_dropout,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "up_proj", "down_proj", "gate_proj"],
+        target_modules="all-linear",
     )
     model = get_peft_model(model, lora)
     model.print_trainable_parameters()

@@ -302,6 +302,7 @@ def is_meaningful_target(target: str) -> bool:
 def find_vhdl_files(repo: Path) -> List[Path]:
     out = []
     for root, dirs, files in os.walk(repo):
+        dirs[:] = [d for d in dirs if d not in {"vendor", "vendors", "third_party", "third-party", "node_modules", ".git", "dependencies"}]
         dirs[:] = [d for d in dirs if d not in [".git", "build", "out", "dist", "target"]]
         for f in files:
             p = Path(root) / f
@@ -317,44 +318,13 @@ def norm_rel(repo: Path, p: Path) -> str:
         return str(p).replace("\\", "/")
 
 
-def extract_span_within_node(
-    code: bytes,
-    node,
-    rng: random.Random,
-    max_span_lines: int,
-    min_span_lines: int = 1,
-):
-    """
-    在给定 node 内部选择一个连续的行区间作为 completion target。
-    """
-    lines = code.decode(errors="ignore").splitlines(keepends=True)
-    node_start = node.start_point[0]
-    node_end = node.end_point[0]
-    node_nlines = node_end - node_start + 1
-
-    if min_span_lines > max_span_lines:
-        min_span_lines = max_span_lines
-
-    if node_nlines <= max_span_lines:
-        start_line = node_start
-        end_line = node_end
-    else:
-        span_len = rng.randint(min_span_lines, max_span_lines)
-        start_min = node_start
-        start_max = node_end - span_len + 1
-        if start_max < start_min:
-            start_max = start_min
-        start_line = rng.randint(start_min, start_max)
-        end_line = start_line + span_len - 1
-        if end_line > node_end:
-            end_line = node_end
-
-    prefix = "".join(lines[:start_line])
-    target = "".join(lines[start_line:end_line + 1])
-    cursor_line = start_line + 1          # 1-based
-    target_lines = end_line - start_line + 1
-
-    return prefix, target, cursor_line, target_lines
+def extract_span_within_node(code, node, rng, max_span_lines, min_span_lines=1):
+    """Select the exact source span of a syntactic node, without extending to full lines."""
+    target = code[node.start_byte:node.end_byte].decode("utf-8")
+    count = len(target.splitlines())
+    if not min_span_lines <= count <= max_span_lines:
+        return "", "", node.start_point[0] + 1, 0
+    return code[:node.start_byte].decode("utf-8"), target, node.start_point[0] + 1, count
 
 
 def extract_node_code(code: bytes, node) -> str:
@@ -370,7 +340,7 @@ def collect_nodes(root, out):
         node = stack.pop()
         if node.type in TARGET_NODE_TYPES:
             out.append(node)
-        children = node.named_children 
+        children = node.named_children
         if children:
             stack.extend(reversed(children))
 
@@ -459,7 +429,7 @@ def run_vhdl_extractor(
             nodes = []
             collect_nodes(root, nodes)
 
-            nodes = [n for n in nodes if 1 <= nlines(n) <= max_block_lines]
+            nodes = [n for n in nodes if 1 <= nlines(n) <= min(max_block_lines, max_span_lines)]
             if not nodes:
                 continue
 
@@ -506,6 +476,8 @@ def run_vhdl_extractor(
                     "target_type": chosen.type,
                     "cursor_line": cursor_line,
                     "target_nlines": tlines,
+                    "start_byte": chosen.start_byte,
+                    "end_byte": chosen.end_byte,
                     "node_depth": node_depth,
                     "node_path": node_path,
                     "target": target,

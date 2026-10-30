@@ -45,22 +45,22 @@ def split_into_smaller_blocks(code_block, enable_fixed_block):
             start_line_offset = i
             end_line_offset = min(i + 12, len(lines))
             block_content = '\n'.join(lines[start_line_offset:end_line_offset])
-            smaller_blocks.append(CodeBlock(code_block.file_path, 
+            smaller_blocks.append(CodeBlock(code_block.file_path,
                                             f"file path: {code_block.file_path}\nlines: {start_line_offset}-{end_line_offset - 1}",
                                             block_content,'fixed_block'))
 
     else:
         # Split the code by spaces, then reassemble it into blocks.
         mini_blocks = []
-        current_block = [] 
-        for line in code_block.code_content.splitlines(): 
-            if line.strip() == '':  
-                if current_block: 
+        current_block = []
+        for line in code_block.code_content.splitlines():
+            if line.strip() == '':
+                if current_block:
                     mini_blocks.append(current_block)
                     current_block = []
             else:
                 current_block.append(line)
-        if current_block: 
+        if current_block:
             mini_blocks.append(current_block)
 
         max_len = 15
@@ -74,25 +74,25 @@ def split_into_smaller_blocks(code_block, enable_fixed_block):
         mini_blocks = temp_mini_blocks
 
         current_content = []
-        total_lines = 0  
+        total_lines = 0
         for block in mini_blocks:
-            if total_lines >= 5000:  
-                break  
-            if len(current_content) + len(block) <= 15:  
+            if total_lines >= 5000:
+                break
+            if len(current_content) + len(block) <= 15:
                 current_content.extend(block)
-                total_lines += len(block)  
-            else:  
-                if current_content:  
-                    smaller_blocks.append(CodeBlock(code_block.file_path, 
+                total_lines += len(block)
+            else:
+                if current_content:
+                    smaller_blocks.append(CodeBlock(code_block.file_path,
                                                     f"file path: {code_block.file_path}\nlines: {total_lines-len(current_content)+1}-{total_lines}",
                                                     '\n'.join(current_content),'mini_block'))
-                current_content = block  
-                total_lines += len(block)  
-        if current_content:  
-            smaller_blocks.append(CodeBlock(code_block.file_path, 
+                current_content = block
+                total_lines += len(block)
+        if current_content:
+            smaller_blocks.append(CodeBlock(code_block.file_path,
                                             f"file path: {code_block.file_path}\nlines: {total_lines-len(current_content)+1}-{total_lines}",
                                             '\n'.join(current_content),'mini_block'))
-        
+
     return smaller_blocks
 
 class TaskSpecificBM25:
@@ -101,12 +101,12 @@ class TaskSpecificBM25:
         self.code_blocks = {}
         self._build_indices(examples, args)
         self.args = args
-        
+
     def _build_indices(self, examples, args):
         import multiprocessing as mp
         num_cpus = mp.cpu_count()
         num_processes = min(max(1, num_cpus - 1), len(examples), 8)
-  
+
         num_examples_per_batch = math.ceil(len(examples) / num_processes)
         example_batches = [examples[i:i + num_examples_per_batch] for i in range(0, len(examples), num_examples_per_batch)]
 
@@ -116,7 +116,7 @@ class TaskSpecificBM25:
             from functools import partial
             partial_process_batch = partial(self._process_batch, enable_fixed_block=args.enable_fixed_block)
             results = pool.map(partial_process_batch, example_batches)
-        
+
         for batch_result in results:
             for task_id, code_blocks, bm25_index in batch_result:
                 self.bm25_indices[task_id] = bm25_index
@@ -128,7 +128,7 @@ class TaskSpecificBM25:
             block_num += len(code_blocks)
             for code_block in code_blocks:
                 block_len += len(code_block.code_content.splitlines())
-        
+
         logger.info(f'Block avg line: {round(block_len / block_num, 2)}')
 
     @staticmethod
@@ -144,12 +144,12 @@ class TaskSpecificBM25:
                 if normalize_path_for_compare(code_block.file_path) == sample_path_norm:
                     print("code_block.file_path: ", code_block.file_path)
                     continue
-                code_blocks.extend(split_into_smaller_blocks(code_block, enable_fixed_block))            
+                code_blocks.extend(split_into_smaller_blocks(code_block, enable_fixed_block))
 
             bm25_index = None
             if len(code_blocks) != 0:
                 bm25_index = BM25Okapi([code_block.code_content.lower().split() for code_block in code_blocks])
-            
+
             batch_result.append((example.task_id, code_blocks, bm25_index))
         return batch_result
 
@@ -184,7 +184,7 @@ class TaskSpecificBM25:
                         full_func_block_indices.append(i)
                     elif block._type == "mini_block":
                         mini_block_indices.append(i)
-                    
+
                 topk_fixed_blocks = [self.code_blocks[task_id][i] for i in fixed_block_indices[:topk]]
                 # topk_signature_blocks = [self.code_blocks[task_id][i] for i in signature_block_indices[:topk]]
                 # topk_full_func_blocks = [self.code_blocks[task_id][i] for i in full_func_block_indices[:topk]]

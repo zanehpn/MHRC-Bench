@@ -158,50 +158,21 @@ def split_tasks_whole_folders_rare_first(
 # -----------------------------
 # Masking
 # -----------------------------
-def mask_target_in_file(
-    root: Path,
-    task: Task,
-    dry_run: bool = False,
-    marker: str = "<TARGET>\n",
-) -> None:
-    """
-    Replace the target span in source file with marker line.
-    Span: [cursor_line, cursor_line + target_nlines - 1], 1-based.
-    """
-    src_path = (root / task.rel_file).resolve()
-    if not src_path.exists():
-        raise FileNotFoundError(f"Source file not found: {src_path}")
-
-    text = src_path.read_text(encoding="utf-8", errors="ignore")
-    lines = text.splitlines(keepends=True)
-
-    start = task.cursor_line - 1
-    end = start + task.target_nlines  # exclusive
-
-    if start < 0 or start >= len(lines):
-        raise ValueError(f"cursor_line out of range for {src_path}: {task.cursor_line} (file has {len(lines)} lines)")
-    if end > len(lines):
-        raise ValueError(
-            f"target span out of range for {src_path}: "
-            f"{task.cursor_line} + {task.target_nlines} - 1 exceeds file length {len(lines)}"
-        )
-
-    old_span = "".join(lines[start:end])
-    new_lines = lines[:start] + [marker] + lines[end:]
-    new_text = "".join(new_lines)
-
+def mask_target_in_file(root, task, dry_run=False, marker="<TARGET>"):
+    """Mask the verified CST byte span, retaining surrounding characters on the same line."""
+    source = (root / task.rel_file).resolve()
+    if not source.is_relative_to(root.resolve()):
+        raise ValueError("Task source must remain inside the supplied root")
+    if "start_byte" not in task.obj or "end_byte" not in task.obj:
+        raise ValueError("Regenerate task with CST byte offsets before masking")
+    data = source.read_bytes()
+    start, end = task.obj["start_byte"], task.obj["end_byte"]
+    if data[start:end].decode("utf-8") != task.obj["target"]:
+        raise ValueError("Target does not match the original source span")
     if dry_run:
-        print("=== DRY RUN: would mask ===")
-        print("file:", src_path)
-        print("span lines:", task.cursor_line, "to", task.cursor_line + task.target_nlines - 1)
-        print("--- old span ---")
-        print(old_span)
-        print("--- new marker ---")
-        print(marker.rstrip("\n"))
-        return
-
-    src_path.write_text(new_text, encoding="utf-8")
-    print(f"Masked target in: {src_path} (lines {task.cursor_line}-{task.cursor_line + task.target_nlines - 1})")
+        print(f"Would mask {source}:{start}-{end}")
+    else:
+        source.write_bytes(data[:start] + marker.encode("utf-8") + data[end:])
 
 
 # -----------------------------
