@@ -26,10 +26,18 @@ parser interface, use a separate environment with its own requirements file and
 compile the four HDL grammars with `compile_grammar.py --help`.
 
 Obtain the benchmark separately from
-[the dataset hosting page](https://huggingface.co/datasets/OvertureMMXXI/HDL-RepoBench-Sample).
-Verify the version and split before a full run. Code-only distribution does not
-replace access to the complete benchmark, host repositories, or testbenches.
-Pass their paths explicitly; the scripts do not download benchmark data automatically.
+[the dataset hosting page](https://huggingface.co/datasets/Zanehpn/MHRC-Bench).
+The [data access guide](https://huggingface.co/datasets/Zanehpn/MHRC-Bench/blob/main/DATA_ACCESS.md)
+links the original repository archive, enriched cross-file contexts, and available
+testbench assets. Download URLs, sizes, and SHA-256 checksums are listed in the
+[resource manifest](https://huggingface.co/datasets/Zanehpn/MHRC-Bench/resolve/main/resources/resource_manifest.json).
+Verify the version and split before a full run. Pass external artifact paths
+explicitly; the scripts do not download benchmark data automatically.
+
+The dataset's [manual Croissant file](https://huggingface.co/datasets/Zanehpn/MHRC-Bench/resolve/main/croissant.json)
+includes Responsible AI metadata and source provenance. Its
+[license notice](https://huggingface.co/datasets/Zanehpn/MHRC-Bench/blob/main/LICENSE.md)
+distinguishes author-created annotations from third-party source licenses.
 
 A completion record contains `task_id`, `path`, `left_context`, `right_context`,
 and `groundtruth`; add `language` for mixed-language files. Preserve `item_id`
@@ -129,6 +137,11 @@ original target span, patches an isolated copy, and records one pass/fail outcom
 compilation alone does not establish functional correctness. Missing harnesses
 abort the run. Use the paper's toolchains: Vitis HLS or g++/ac_int, Icarus Verilog
 or Verilator, GHDL, and sbt/ChiselTest. The runner cannot supply missing testbenches.
+The separately hosted legacy testbench bundle has partial coverage, recorded in
+the [coverage inventory](https://huggingface.co/datasets/Zanehpn/MHRC-Bench/resolve/main/resources/functional_coverage.json).
+It uses its own documented runners (including VCS for SystemVerilog/VHDL), not
+this runner's JSONL harness schema. Its availability does not establish complete
+functional evaluation coverage over all 1,783 test examples.
 
 ## Code checks
 
